@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.base;
+package com.tourgeek.thin.app.booking.entry.search.base;
 
 /**
  * OrderEntry.java:   Applet
@@ -32,11 +32,11 @@ import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JScreenConstants;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.search.JBaseRichScreen;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
  * Main Class for Product Context screen.
@@ -71,9 +71,9 @@ public class JProductContextScreen extends JBaseRichScreen
     {
         super.init(parent, obj);
         
-        TourAppScreen screenMain = this.getTourAppScreen();
+        TourGeekScreen screenMain = this.getTourGeekScreen();
         screenMain.getParams().addPropertyChangeListener(this);
-        Date date = (Date)this.getTourAppScreen().getParams().get(SearchConstants.DATE);
+        Date date = (Date)this.getTourGeekScreen().getParams().get(SearchConstants.DATE);
         PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(this, SearchConstants.DATE, null, date);
         this.propertyChange(propChangeEvent);   // Let me set my date to match the system
     }
@@ -140,14 +140,14 @@ public class JProductContextScreen extends JBaseRichScreen
         }
         if (Product.PRODUCT_COST_LOCAL.equalsIgnoreCase(fieldInfo.getFieldName()))
         {
-            component = this.getTourAppScreen().getDisplayPanel().addCurrencyAmount(fieldInfo, this.getFieldList().getField(Product.CURRENCY_CODE_LOCAL), null);
+            component = this.getTourGeekScreen().getDisplayPanel().addCurrencyAmount(fieldInfo, this.getFieldList().getField(Product.CURRENCY_CODE_LOCAL), null);
 
             fieldInfo = this.getFieldList().getField(Product.DISPLAY_COST_STATUS_ID);
-            this.getTourAppScreen().getDisplayPanel().addStatusComponents(fieldInfo, (JPanel)component, this);
+            this.getTourGeekScreen().getDisplayPanel().addStatusComponents(fieldInfo, (JPanel)component, this);
         }
         if (Product.PRODUCT_COST.equalsIgnoreCase(fieldInfo.getFieldName()))
         {
-            component = this.getTourAppScreen().getDisplayPanel().addCurrencyAmount(fieldInfo, this.getFieldList().getField(Product.CURRENCY_CODE), null);
+            component = this.getTourGeekScreen().getDisplayPanel().addCurrencyAmount(fieldInfo, this.getFieldList().getField(Product.CURRENCY_CODE), null);
         }
         if (Product.DISPLAY_INVENTORY_STATUS_ID.equalsIgnoreCase(fieldInfo.getFieldName()))
         {
@@ -157,7 +157,7 @@ public class JProductContextScreen extends JBaseRichScreen
                 panel.setOpaque(false);
                 panel.setLayout(new BoxLayout(panel, BoxLayout.X_AXIS));
 
-                this.getTourAppScreen().getDisplayPanel().addStatusComponents(fieldInfo, panel, this);
+                this.getTourGeekScreen().getDisplayPanel().addStatusComponents(fieldInfo, panel, this);
                 component = panel;
             }
         }
@@ -235,9 +235,9 @@ public class JProductContextScreen extends JBaseRichScreen
     /**
      * Get the the base applet that is the parent of this screen.
      */
-    public TourAppScreen getTourAppScreen()
+    public TourGeekScreen getTourGeekScreen()
     {
-        return (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        return (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
     }
     /**
      * A button was pressed in the table.
@@ -261,8 +261,8 @@ public class JProductContextScreen extends JBaseRichScreen
                         strProductType = recProduct.getField(Product.PRODUCT_TYPE).toString();
                     if ((strID != null) && (strID.length() > 0))
                     {
-                        TourAppScreen tourAppScreen = this.getTourAppScreen();
-                        tourAppScreen.addProductToSession(strProductType, strID, null);
+                        TourGeekScreen TourGeekScreen = this.getTourGeekScreen();
+                        TourGeekScreen.addProductToSession(strProductType, strID, null);
                     }
                 }
             }

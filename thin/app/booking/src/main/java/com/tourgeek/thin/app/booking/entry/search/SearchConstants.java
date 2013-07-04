@@ -5,11 +5,11 @@
  
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search;
+package com.tourgeek.thin.app.booking.entry.search;
 
 import java.awt.Dimension;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
 
 /** 
  *

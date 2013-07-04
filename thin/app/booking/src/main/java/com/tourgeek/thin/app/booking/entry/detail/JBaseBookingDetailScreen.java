@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.detail;
+package com.tourgeek.thin.app.booking.entry.detail;
 
 /**
  * OrderEntry.java:   Applet
@@ -44,10 +44,10 @@ import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
 import org.jbundle.thin.base.util.ThinUtil;
 import org.jbundle.thin.base.util.message.ThinMessageManager;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;
-import com.tourapp.thin.tour.assetdr.db.Currencys;
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.search.JBaseRichScreen;
+import com.tourgeek.thin.tour.base.db.Currencys;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
 
 /**
  * Main Class for applet OrderEntry
@@ -159,8 +159,8 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
 
         ThinMessageManager.createScreenMessageListener(record, this);
         
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(tourAppScreen, JTabbedPane.class);
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+        JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(TourGeekScreen, JTabbedPane.class);
         tabbedPane.addChangeListener(this);
     }
     /**
@@ -168,8 +168,8 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
      */
     public void free()
     {
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(tourAppScreen, JTabbedPane.class);
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+        JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(TourGeekScreen, JTabbedPane.class);
         tabbedPane.removeChangeListener(this);
 
         ThinMessageManager.freeScreenMessageListeners(this);
@@ -269,8 +269,8 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
             ScreenUtil.setEnabled(component1, false);
             if (BookingDetail.TOTAL_COST_LOCAL.equalsIgnoreCase(fieldInfo.getFieldName()))
             {
-                TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-                tourAppScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).addComponent(component1);  // Display local currency code
+                TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+                TourGeekScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).addComponent(component1);  // Display local currency code
             }
             else
                 this.getFieldList(Currencys.CURRENCYS_FILE).getField(Currencys.CURRENCY_CODE).addComponent(component1);
@@ -297,8 +297,8 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
     {
         super.fieldsToControls();
         // Also need to display the local currency code.
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        tourAppScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).displayField();  // Display local currency code
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+        TourGeekScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).displayField();  // Display local currency code
     }
     /**
      * Get the remote session.
@@ -310,10 +310,10 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
         {
             String strDetailType = recBookingDetail.getClass().getName();
             strDetailType = strDetailType.substring(strDetailType.lastIndexOf('.') + 1);
-            TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-            RemoteSession parentSessionObject = tourAppScreen.getRemoteSession();
+            TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+            RemoteSession parentSessionObject = TourGeekScreen.getRemoteSession();
             try {
-                m_remoteSession = (RemoteSession)parentSessionObject.makeRemoteSession("com.tourapp.tour.booking.remote.booking.detail." + strDetailType + "Session");
+                m_remoteSession = (RemoteSession)parentSessionObject.makeRemoteSession("com.tourgeek.tour.booking.remote.booking.detail." + strDetailType + "Session");
             } catch (RemoteException ex)    {
                 ex.printStackTrace();
             }
@@ -448,14 +448,14 @@ public class JBaseBookingDetailScreen extends JBaseRichScreen
      */
     public boolean doAction(String strAction, int iOptions)
     {
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         if (Constants.BACK.equalsIgnoreCase(strAction))
         {
             JBookingDetailMainScreen mainScreen = (JBookingDetailMainScreen)this.getTargetScreen(JBookingDetailMainScreen.class);
             if (!(mainScreen.getSource() instanceof JBookingDetailGridScreen))
             {
-                JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(tourAppScreen, JTabbedPane.class);
-                tabbedPane.setSelectedIndex(TourAppScreen.CALENDAR_TAB);
+                JTabbedPane tabbedPane = (JTabbedPane)JBasePanel.getSubScreen(TourGeekScreen, JTabbedPane.class);
+                tabbedPane.setSelectedIndex(TourGeekScreen.CALENDAR_TAB);
                 return true;
             }
         }

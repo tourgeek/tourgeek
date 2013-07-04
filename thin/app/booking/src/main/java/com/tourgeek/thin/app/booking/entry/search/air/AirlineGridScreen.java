@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.air;
+package com.tourgeek.thin.app.booking.entry.search.air;
 
 /**
  * JScreen.java:    Applet
@@ -20,7 +20,7 @@ import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
-import com.tourapp.thin.tour.product.air.db.Airline;
+import com.tourgeek.thin.tour.product.air.db.Airline;
 
 /**
  * A Basic data entry screen.

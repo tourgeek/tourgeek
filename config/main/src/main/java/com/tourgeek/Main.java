@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp;
+package com.tourgeek;
 
 /**
  * This is a convenience class, so users don't have to remember the path to SApplet.

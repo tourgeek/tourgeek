@@ -2,7 +2,7 @@
  *  @(#)HotelAvail.
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.test.hotel.db;
+package com.tourgeek.thin.app.test.hotel.db;
 
 import java.util.*;
 import org.jbundle.thin.base.util.*;

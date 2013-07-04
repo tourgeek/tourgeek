@@ -22,7 +22,7 @@ import com.tourgeek.tour.booking.db.*;
 import com.tourgeek.tour.product.base.db.*;
 import com.tourgeek.tour.product.tour.db.*;
 import com.tourgeek.tour.product.remote.*;
-import com.tourapp.thin.app.booking.entry.*;
+import com.tourgeek.thin.app.booking.entry.*;
 import com.tourgeek.tour.booking.detail.db.*;
 import com.tourgeek.tour.profile.db.*;
 import com.tourgeek.tour.base.db.*;

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.pax;
+package com.tourgeek.thin.app.booking.entry.pax;
 
 import java.util.Date;
 
@@ -11,9 +11,9 @@ import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.remote.RemoteTable;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.tour.booking.db.Booking;
-import com.tourapp.thin.tour.product.base.db.ProductType;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.tour.booking.db.Booking;
+import com.tourgeek.thin.tour.product.base.db.ProductType;
 
 /**
  * This class simply passes the call on after it synchronizes.
@@ -79,7 +79,7 @@ public class PaxCountRemoteTable extends SubFileRemoteTable
      */
     public int createNewMainRecord()
     {
-        TourAppScreen screen = (TourAppScreen)m_recMain.getOwner();
+        TourGeekScreen screen = (TourGeekScreen)m_recMain.getOwner();
         String strProductType = ProductType.TOUR;
         String strID = Constants.BLANK;
         Date dateTarget = new Date();

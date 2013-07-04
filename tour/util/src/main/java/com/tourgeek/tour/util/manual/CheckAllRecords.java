@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.tour.util.manual;
+package com.tourgeek.tour.util.manual;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -17,10 +17,10 @@ import org.jbundle.base.thread.BaseProcess;
 import org.jbundle.model.DBException;
 import org.jbundle.model.RecordOwnerParent;
 
-import com.tourapp.tour.acctpay.db.ApTrx;
-import com.tourapp.tour.booking.db.Booking;
-import com.tourapp.tour.booking.db.Tour;
-import com.tourapp.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.tour.acctpay.db.ApTrx;
+import com.tourgeek.tour.booking.db.Booking;
+import com.tourgeek.tour.booking.db.Tour;
+import com.tourgeek.tour.booking.detail.db.BookingDetail;
 
 public class CheckAllRecords extends BaseProcess {
 	

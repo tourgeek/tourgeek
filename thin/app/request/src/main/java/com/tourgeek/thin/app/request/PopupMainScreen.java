@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.request;
+package com.tourgeek.thin.app.request;
 
 /**
  * OrderEntry.java:   Applet
@@ -21,9 +21,9 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.screen.BaseApplet;
 
-import com.tourapp.thin.tour.request.db.Bundle;
-import com.tourapp.thin.tour.request.db.Request;
-import com.tourapp.thin.tour.request.db.RequestControl;
+import com.tourgeek.thin.tour.request.db.Bundle;
+import com.tourgeek.thin.tour.request.db.Request;
+import com.tourgeek.thin.tour.request.db.RequestControl;
 
 /**
  * Main Class for applet OrderEntry
@@ -64,7 +64,7 @@ public class PopupMainScreen extends AgencyMainScreen
     public boolean addSubPanels(Container parent, BaseApplet applet)
     {
         parent.setLayout(new BoxLayout(parent, BoxLayout.X_AXIS));
-        m_remoteSession = applet.makeRemoteSession(null, "com.tourapp.tour.request.remote.RequestSession");
+        m_remoteSession = applet.makeRemoteSession(null, "com.tourgeek.tour.request.remote.RequestSession");
         FieldList record = new Request(this);
         applet.linkRemoteSessionTable(m_remoteSession, record, false);
         m_screenPerson = new PopupAgencyScreen(parent, record);

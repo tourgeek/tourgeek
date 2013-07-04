@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.base;
+package com.tourgeek.thin.app.booking.entry.search.base;
 
 /**
  * OrderEntry.java:   Applet
@@ -61,12 +61,12 @@ import org.jbundle.thin.base.util.ThinMenuConstants;
 import org.jbundle.util.calendarpanel.dnd.CalendarDnDMouseListener;
 import org.jbundle.util.calendarpanel.dnd.CalendarItemTransferable;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.context.JContextPanel;
-import com.tourapp.thin.app.booking.entry.search.JDisplayPanel;
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.context.JContextPanel;
+import com.tourgeek.thin.app.booking.entry.search.JDisplayPanel;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
  * Main Class for applet OrderEntry
@@ -153,7 +153,7 @@ public class JProductGridScreen extends JGridScreen
         
         if (m_thinTableModel != null)
         {
-            TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen((Container)parent, TourAppScreen.class);
+            TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen((Container)parent, TourGeekScreen.class);
             JContextPanel contextPanel = screenMain.getContextPanel();
             ((ProductGridModel)m_thinTableModel).addMySelectionListener(contextPanel);        // Listen for (selection) changes.
 
@@ -179,7 +179,7 @@ public class JProductGridScreen extends JGridScreen
                         int iCurrentSelection = m_jTableScreen.getSelectedRow();
                         if (iStartIndex == iCurrentSelection)
                         {   // If the current selection has changed, have the context panel change too.
-                            TourAppScreen screenMain = (TourAppScreen)getTargetScreen(TourAppScreen.class);
+                            TourGeekScreen screenMain = (TourGeekScreen)getTargetScreen(TourGeekScreen.class);
                             JContextPanel contextPanel = screenMain.getContextPanel();
                             if (BookingConstants.PRODUCT.equals(contextPanel.getScreenType())
                                 && (((ProductGridModel)m_thinTableModel).getProductType().equals(contextPanel.getProductType())))
@@ -209,7 +209,7 @@ public class JProductGridScreen extends JGridScreen
 
         if (m_thinTableModel != null)
         {
-            TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+            TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
             JContextPanel contextPanel = screenMain.getContextPanel();
             ((ProductGridModel)m_thinTableModel).removeMySelectionListener(contextPanel);        // Don't listen for (selection) changes.
             if (contextPanel != null)
@@ -362,7 +362,7 @@ public class JProductGridScreen extends JGridScreen
                     if ((strID != null) && (strID.length() > 0))
                     {
                         this.addProductToSession(strProductType, strID, null);
-                        this.getDisplayPanel().getTourAppScreen().handleAction(BookingConstants.CALENDAR, null, iOptions);  // Switch to the calendar tab
+                        this.getDisplayPanel().getTourGeekScreen().handleAction(BookingConstants.CALENDAR, null, iOptions);  // Switch to the calendar tab
                     }
                 }
             }
@@ -382,7 +382,7 @@ public class JProductGridScreen extends JGridScreen
      */
     public void addProductToSession(String strProductType, String strID, Date dateTarget)
     {
-        Map<String,Object> properties = this.getDisplayPanel().getTourAppScreen().getParams().getProperties();
+        Map<String,Object> properties = this.getDisplayPanel().getTourGeekScreen().getParams().getProperties();
         
         BaseApplet baseApplet = this.getBaseApplet();
         String strDate = (String)properties.get(SearchConstants.DATE);
@@ -390,16 +390,16 @@ public class JProductGridScreen extends JGridScreen
         {
             JDisplayPanel searchPanel = this.getDisplayPanel();
             
-            if (searchPanel.enterDateDialog(baseApplet, this.getDisplayPanel().getTourAppScreen().getParams()) == null)
+            if (searchPanel.enterDateDialog(baseApplet, this.getDisplayPanel().getTourGeekScreen().getParams()) == null)
                 return;
-            properties = this.getDisplayPanel().getTourAppScreen().getParams().getProperties();
+            properties = this.getDisplayPanel().getTourGeekScreen().getParams().getProperties();
             strDate = (String)properties.get(SearchConstants.DATE);
             if (strDate == null)
                 return;
         }
         
-        TourAppScreen tourAppScreen = this.getDisplayPanel().getTourAppScreen();
-        tourAppScreen.addProductToSession(strProductType, strID, dateTarget);
+        TourGeekScreen TourGeekScreen = this.getDisplayPanel().getTourGeekScreen();
+        TourGeekScreen.addProductToSession(strProductType, strID, dateTarget);
     }
     /**
      * Get the the base applet that is the parent of this screen.

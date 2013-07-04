@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.tour.util.test.hotel.thin;
+package com.tourgeek.tour.util.test.hotel.thin;
 
 /**
  * OrderEntry.java:   Applet
@@ -85,11 +85,11 @@ public class TestThinScreen extends JScreen
 
         BaseApplet baseApplet = this.getBaseApplet();
         FieldList fieldList = this.getFieldList();
-        m_remoteSession = baseApplet.makeRemoteSession(null, "com.tourapp.app.test.hotel.thin.HotelSession");
+        m_remoteSession = baseApplet.makeRemoteSession(null, "com.tourgeek.app.test.hotel.thin.HotelSession");
         baseApplet.linkRemoteSessionTable(m_remoteSession, fieldList, false);
 //------------------------------
 //        FieldTable table = this.getFieldList().getFieldTable();
- //       RemoteSession remoteSession = ((com.tourapp.thin.base.db.client.RemoteFieldTable)table).getRemoteTableReference();
+ //       RemoteSession remoteSession = ((com.tourgeek.thin.base.db.client.RemoteFieldTable)table).getRemoteTableReference();
 //------------------------------
 
         MessageManager messageManager = this.getBaseApplet().getApplication().getMessageManager();
@@ -198,9 +198,9 @@ System.out.println("message: " + message);
         if ("StartDate".equalsIgnoreCase(fieldInfo.getFieldName()))
             component = new org.jbundle.thin.base.screen.util.cal.JCalendarDualField(fieldInfo);
         if ("HotelRate".equalsIgnoreCase(fieldInfo.getFieldName()))
-            component = this.setupPopup(new com.tourapp.thin.tour.product.hotel.db.HotelRate(null), "Hotel Rate", "Description", "HotelRate", "ID");
+            component = this.setupPopup(new com.tourgeek.thin.tour.product.hotel.db.HotelRate(null), "Hotel Rate", "Description", "HotelRate", "ID");
         if ("HotelClass".equalsIgnoreCase(fieldInfo.getFieldName()))
-            component = this.setupPopup(new com.tourapp.thin.tour.product.hotel.db.HotelClass(null), "Hotel Class", "Description", "HotelClass", "ID");
+            component = this.setupPopup(new com.tourgeek.thin.tour.product.hotel.db.HotelClass(null), "Hotel Class", "Description", "HotelClass", "ID");
         if (component == null)
             component = super.createScreenComponent(fieldInfo);
         return component;

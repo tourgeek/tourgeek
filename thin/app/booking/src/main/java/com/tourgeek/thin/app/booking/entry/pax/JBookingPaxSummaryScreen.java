@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.pax;
+package com.tourgeek.thin.app.booking.entry.pax;
 
 /**
  * OrderEntry.java:   Applet
@@ -20,7 +20,7 @@ import javax.swing.JComponent;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.screen.JScreen;
 
-import com.tourapp.thin.tour.booking.db.Booking;
+import com.tourgeek.thin.tour.booking.db.Booking;
 
 /**
  * Main Class for applet OrderEntry

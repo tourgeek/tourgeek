@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.pax;
+package com.tourgeek.thin.app.booking.entry.pax;
 
 /**
  * OrderEntry.java:   Applet
@@ -26,10 +26,10 @@ import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.grid.JCellRemoteComboBox;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.tour.booking.db.BookingPax;
-import com.tourapp.thin.tour.product.base.db.PaxCategory;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.tour.booking.db.BookingPax;
+import com.tourgeek.thin.tour.product.base.db.PaxCategory;
 
 /**
  * Main Class for applet OrderEntry
@@ -121,8 +121,8 @@ public class JBookingPaxGridScreen extends JGridScreen
         
         if (Constants.BACK.equalsIgnoreCase(strAction))
         {
-            TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-            return tourAppScreen.doAction(BookingConstants.SEARCH, iOptions);
+            TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+            return TourGeekScreen.doAction(BookingConstants.SEARCH, iOptions);
         }
         else if (Constants.RESET.equalsIgnoreCase(strAction))
         {

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.detail;
+package com.tourgeek.thin.app.booking.entry.detail;
 
 /**
  * OrderEntry.java:   Applet
@@ -45,11 +45,11 @@ import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
 import org.jbundle.util.calendarpanel.model.CalendarConstants;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.model.BookingDetailCalendarItem;
-import com.tourapp.thin.app.booking.entry.model.CustSaleDetailThinTableModel;
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.model.BookingDetailCalendarItem;
+import com.tourgeek.thin.app.booking.entry.model.CustSaleDetailThinTableModel;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
 
 /**
  * The line item (product) detail screen.
@@ -89,7 +89,7 @@ public class JBookingDetailGridScreen extends JBaseScreen
         JCellButton button = null;
         BaseApplet applet = this.getBaseApplet();
         
-        AbstractThinTableModel model = (AbstractThinTableModel)((TourAppScreen)this.getTargetScreen(TourAppScreen.class)).getCalendarModel();
+        AbstractThinTableModel model = (AbstractThinTableModel)((TourGeekScreen)this.getTargetScreen(TourGeekScreen.class)).getCalendarModel();
         m_model = model;
         JTable screenTable = new JTable(model);
         screenTable.setCellSelectionEnabled(false);
@@ -258,12 +258,12 @@ public class JBookingDetailGridScreen extends JBaseScreen
      */
     public boolean doAction(String strAction, int iOptions)
     {
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         JTable table = (JTable)JBasePanel.getSubScreen(this, JTable.class);
         int iIndex = table.getSelectedRow();
         if (Constants.BACK.equalsIgnoreCase(strAction))
         {
-            return tourAppScreen.doAction(BookingConstants.SEARCH, iOptions);
+            return TourGeekScreen.doAction(BookingConstants.SEARCH, iOptions);
         }
         else if (Constants.FORM.equalsIgnoreCase(strAction))
         {

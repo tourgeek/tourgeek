@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry;
+package com.tourgeek.thin.app.booking.entry;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -53,27 +53,27 @@ import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
 import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 
-import com.tourapp.thin.app.booking.entry.contact.JMainContactScreen;
-import com.tourapp.thin.app.booking.entry.context.JContextPanel;
-import com.tourapp.thin.app.booking.entry.detail.JBookingDetailMainScreen;
-import com.tourapp.thin.app.booking.entry.itin.ItinScreen;
-import com.tourapp.thin.app.booking.entry.itin.JItinScreen;
-import com.tourapp.thin.app.booking.entry.model.BookingDetailCalendarItem;
-import com.tourapp.thin.app.booking.entry.model.BookingDetailCalendarScreen;
-import com.tourapp.thin.app.booking.entry.model.CustSaleDetailThinTableModel;
-import com.tourapp.thin.app.booking.entry.pax.JBookingPaxMainScreen;
-import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;
-import com.tourapp.thin.app.booking.entry.search.JDisplayPanel;
-import com.tourapp.thin.app.booking.entry.search.JMainSearchPane;
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.thin.app.booking.lookup.BookingLookupScreen;
-import com.tourapp.thin.tour.assetdr.db.Currencys;
-import com.tourapp.thin.tour.booking.db.Booking;
-import com.tourapp.thin.tour.booking.db.Tour;
-import com.tourapp.thin.tour.product.tour.db.PricingType;
+import com.tourgeek.thin.app.booking.entry.contact.JMainContactScreen;
+import com.tourgeek.thin.app.booking.entry.context.JContextPanel;
+import com.tourgeek.thin.app.booking.entry.detail.JBookingDetailMainScreen;
+import com.tourgeek.thin.app.booking.entry.itin.ItinScreen;
+import com.tourgeek.thin.app.booking.entry.itin.JItinScreen;
+import com.tourgeek.thin.app.booking.entry.model.BookingDetailCalendarItem;
+import com.tourgeek.thin.app.booking.entry.model.BookingDetailCalendarScreen;
+import com.tourgeek.thin.app.booking.entry.model.CustSaleDetailThinTableModel;
+import com.tourgeek.thin.app.booking.entry.pax.JBookingPaxMainScreen;
+import com.tourgeek.thin.app.booking.entry.search.JBaseRichScreen;
+import com.tourgeek.thin.app.booking.entry.search.JDisplayPanel;
+import com.tourgeek.thin.app.booking.entry.search.JMainSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.app.booking.lookup.BookingLookupScreen;
+import com.tourgeek.thin.tour.base.db.Currencys;
+import com.tourgeek.thin.tour.booking.db.Booking;
+import com.tourgeek.thin.tour.booking.db.Tour;
+import com.tourgeek.thin.tour.product.tour.db.PricingType;
 
 
-public class TourAppScreen extends JBaseScreen
+public class TourGeekScreen extends JBaseScreen
     implements MyListSelectionListener
 {
 	private static final long serialVersionUID = 1L;
@@ -86,7 +86,7 @@ public class TourAppScreen extends JBaseScreen
     public static final int ITIN_TAB = 4;
     public static final int SEARCH_TAB = 5;
     
-    public static final String BOOKING_SESSION_CLASS = "com.tourapp.tour.booking.remote.booking.BookingSession";
+    public static final String BOOKING_SESSION_CLASS = "com.tourgeek.tour.booking.remote.booking.BookingSession";
     
     /**
      * The model for the tour detail.
@@ -111,16 +111,16 @@ public class TourAppScreen extends JBaseScreen
     protected JBasePanel m_currentDisplayPanel = null;
 
     /**
-     * TourAppScreen Class Constructor.
+     * TourGeekScreen Class Constructor.
      */
-    public TourAppScreen()
+    public TourGeekScreen()
     {
         super();
     }
     /**
-     * TourAppScreen Class Constructor.
+     * TourGeekScreen Class Constructor.
      */
-    public TourAppScreen(Object parent, Object obj)
+    public TourGeekScreen(Object parent, Object obj)
     {
         this();
         this.init(parent, obj);
@@ -614,21 +614,21 @@ public class TourAppScreen extends JBaseScreen
         if (bHandled == false)
         {
             if (ProductConstants.TOUR.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.tour.JBookingTourScreen();   // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.tour.JBookingTourScreen();   // Note: I did not initialize the class by passing the params
             else if (ProductConstants.AIR.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.air.JBookingAirScreen();   // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.air.JBookingAirScreen();   // Note: I did not initialize the class by passing the params
             else if (ProductConstants.HOTEL.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.hotel.JBookingHotelScreen();   // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.hotel.JBookingHotelScreen();   // Note: I did not initialize the class by passing the params
             else if (ProductConstants.LAND.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.land.JBookingLandScreen();  // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.land.JBookingLandScreen();  // Note: I did not initialize the class by passing the params
             else if (ProductConstants.CAR.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.car.JBookingCarScreen();  // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.car.JBookingCarScreen();  // Note: I did not initialize the class by passing the params
             else if (ProductConstants.TRANSPORTATION.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.trans.JBookingTransportationScreen();  // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.trans.JBookingTransportationScreen();  // Note: I did not initialize the class by passing the params
             else if (ProductConstants.CRUISE.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.cruise.JBookingCruiseScreen();  // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.cruise.JBookingCruiseScreen();  // Note: I did not initialize the class by passing the params
             else if (ProductConstants.ITEM.equalsIgnoreCase(strAction))
-                screen = new com.tourapp.thin.app.booking.entry.detail.item.JBookingItemScreen();  // Note: I did not initialize the class by passing the params
+                screen = new com.tourgeek.thin.app.booking.entry.detail.item.JBookingItemScreen();  // Note: I did not initialize the class by passing the params
             else
             {
                 int iTab = -1;

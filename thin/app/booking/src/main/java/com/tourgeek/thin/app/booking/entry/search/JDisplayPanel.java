@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search;
+package com.tourgeek.thin.app.booking.entry.search;
 
 /**
  * OrderEntry.java:   Applet
@@ -35,23 +35,23 @@ import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.screen.grid.JCellImage;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.search.air.JAirGridScreen;
-import com.tourapp.thin.app.booking.entry.search.base.JProductSearchPane;
-import com.tourapp.thin.app.booking.entry.search.car.JCarGridScreen;
-import com.tourapp.thin.app.booking.entry.search.cruise.JCruiseGridScreen;
-import com.tourapp.thin.app.booking.entry.search.hotel.JHotelGridScreen;
-import com.tourapp.thin.app.booking.entry.search.item.JItemGridScreen;
-import com.tourapp.thin.app.booking.entry.search.land.JLandGridScreen;
-import com.tourapp.thin.app.booking.entry.search.menu.JMenuGridScreen;
-import com.tourapp.thin.app.booking.entry.search.tour.JTourHeaderGridScreen;
-import com.tourapp.thin.app.booking.entry.search.trans.JTransportationGridScreen;
-import com.tourapp.thin.tour.product.base.db.CostStatus;
-import com.tourapp.thin.tour.product.base.db.InventoryStatus;
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.search.air.JAirGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.car.JCarGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.cruise.JCruiseGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.hotel.JHotelGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.item.JItemGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.land.JLandGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.menu.JMenuGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.tour.JTourHeaderGridScreen;
+import com.tourgeek.thin.app.booking.entry.search.trans.JTransportationGridScreen;
+import com.tourgeek.thin.tour.product.base.db.CostStatus;
+import com.tourgeek.thin.tour.product.base.db.InventoryStatus;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
- * Parent screen for the tourapp display area.
+ * Parent screen for the tourgeek display area.
  */
 public class JDisplayPanel extends JBaseRichScreen
 {
@@ -116,8 +116,8 @@ public class JDisplayPanel extends JBaseRichScreen
             else if (button instanceof JLabel)
                 icon = (ImageIcon)((JLabel)button).getIcon();
             String strDesc = icon.getDescription();
-            BaseApplet.handleAction(BookingConstants.SEARCH, this.getTourAppScreen(), null, 0);  // Make sure we are on the search tab
-            JDisplayPanel displayPanel = this.getTourAppScreen().getDisplayPanel();
+            BaseApplet.handleAction(BookingConstants.SEARCH, this.getTourGeekScreen(), null, 0);  // Make sure we are on the search tab
+            JDisplayPanel displayPanel = this.getTourGeekScreen().getDisplayPanel();
             displayPanel.switchScreens(applet, strDesc, Constants.DONT_PUSH_TO_BROWSER);
         }
         else
@@ -130,7 +130,7 @@ public class JDisplayPanel extends JBaseRichScreen
      */
     public JProductSearchPane switchScreens(BaseApplet applet, String strDesc, int iOptions)
     {
-        JProductSearchPane searchPane = this.getTourAppScreen().getMainSearchPane().switchScreens(applet, strDesc, iOptions);
+        JProductSearchPane searchPane = this.getTourGeekScreen().getMainSearchPane().switchScreens(applet, strDesc, iOptions);
         
         JBaseScreen displayScreen = this.getDisplayScreen();
         if (displayScreen != null)
@@ -193,7 +193,7 @@ public class JDisplayPanel extends JBaseRichScreen
             recCostStatus = new CostStatus(recordOwner);
         else
             recCostStatus = new InventoryStatus(recordOwner);
-        RemoteSession remoteSession = this.getTourAppScreen().getMainSearchPane().getProductSearchPane().getRemoteSession();
+        RemoteSession remoteSession = this.getTourGeekScreen().getMainSearchPane().getProductSearchPane().getRemoteSession();
         boolean bCacheTable = false;
 
         fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, recCostStatus, CostStatus.ICON, bCacheTable, CostStatus.ID, null, null);
@@ -238,10 +238,10 @@ public class JDisplayPanel extends JBaseRichScreen
     public JComponent setupMenuAndToolbar(JBasePanel baseScreen, JComponent screen)
     {
         JComponent component = super.setupMenuAndToolbar(baseScreen, screen);
-        if (this.getTourAppScreen().getMainSearchPane() != null)
-        	if (this.getTourAppScreen().getMainSearchPane().getProductSearchPane() != null)
+        if (this.getTourGeekScreen().getMainSearchPane() != null)
+        	if (this.getTourGeekScreen().getMainSearchPane().getProductSearchPane() != null)
   		{
-	        JProductSearchPane searchPane = this.getTourAppScreen().getMainSearchPane().getProductSearchPane();
+	        JProductSearchPane searchPane = this.getTourGeekScreen().getMainSearchPane().getProductSearchPane();
     	    searchPane.requeryRemoteIfStale();
         }
         return component;

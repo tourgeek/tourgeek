@@ -64,7 +64,7 @@ public class HotelRateRequestMessageOutProcessor extends BaseMessageOutProcessor
         //if (messageHeader.get(TrxMessageHeader.MESSAGE_CODE) == null)
         //    messageHeader.put(TrxMessageHeader.MESSAGE_CODE, HotelRateRequestMessageOutProcessor.MESSAGE_CODE);    // External operation name
         //if (messageHeader.get(TrxMessageHeader.MESSAGE_RESPONSE_CODE) == null)  // For email transport, need to know who processes the returned message
-        //    messageHeader.put(TrxMessageHeader.MESSAGE_RESPONSE_CODE, com.tourapp.tour.product.hotel.message.in.HotelRateResponseSOAPMsgReplyOut.MESSAGE_CODE);    // External operation name
+        //    messageHeader.put(TrxMessageHeader.MESSAGE_RESPONSE_CODE, com.tourgeek.tour.product.hotel.message.in.HotelRateResponseSOAPMsgReplyOut.MESSAGE_CODE);    // External operation name
         return null;    // No return from a message out
     }
 

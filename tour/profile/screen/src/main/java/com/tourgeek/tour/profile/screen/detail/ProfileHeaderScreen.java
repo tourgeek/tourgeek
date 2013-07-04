@@ -19,7 +19,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourgeek.tour.profile.db.*;
-import com.tourapp.model.tour.profile.db.*;
+import com.tourgeek.model.tour.profile.db.*;
 
 /**
  *  ProfileHeaderScreen - Header screen.

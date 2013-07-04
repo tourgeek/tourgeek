@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.detail;
+package com.tourgeek.thin.app.booking.entry.detail;
 
 /**
  * OrderEntry.java:   Applet
@@ -22,9 +22,9 @@ import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.thin.base.screen.util.JMainScreen;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.detail.line.JBookingLineGridScreen;
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.detail.line.JBookingLineGridScreen;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
 
 /**
  * Main Class for applet OrderEntry
@@ -81,8 +81,8 @@ public class JBookingDetailMainScreen extends JMainScreen
         }
         if (Constants.GRID.equalsIgnoreCase(strType))
         {
-            TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-            if (tourAppScreen.isUsingPricingScreens())
+            TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+            if (TourGeekScreen.isUsingPricingScreens())
                 return new JBookingLineGridScreen(this, null);
             else
                 return new JBookingDetailGridScreen(this, record);
@@ -92,21 +92,21 @@ public class JBookingDetailMainScreen extends JMainScreen
             String strProductType = ((FieldList)record).getField(BookingDetail.PRODUCT_TYPE).toString();
             String strID = ((FieldList)record).getField(Params.ID).toString();
             if ((ProductConstants.TOUR.equalsIgnoreCase(strProductType)) /*++|| (ProductConstants.TOUR_HEADER.equalsIgnoreCase(strProductType))*/)
-                return new com.tourapp.thin.app.booking.entry.detail.tour.JBookingTourScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.tour.JBookingTourScreen(this, strID);
             else if (ProductConstants.HOTEL.equalsIgnoreCase(strProductType))
-                return new com.tourapp.thin.app.booking.entry.detail.hotel.JBookingHotelScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.hotel.JBookingHotelScreen(this, strID);
             else if (ProductConstants.LAND.equalsIgnoreCase(strProductType))
-                return new com.tourapp.thin.app.booking.entry.detail.land.JBookingLandScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.land.JBookingLandScreen(this, strID);
             else if (ProductConstants.TRANSPORTATION.equalsIgnoreCase(strProductType))
-                return new com.tourapp.thin.app.booking.entry.detail.trans.JBookingTransportationScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.trans.JBookingTransportationScreen(this, strID);
             else if (ProductConstants.CRUISE.equalsIgnoreCase(strProductType))
-                return new com.tourapp.thin.app.booking.entry.detail.cruise.JBookingCruiseScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.cruise.JBookingCruiseScreen(this, strID);
             else if (ProductConstants.CAR.equalsIgnoreCase(strProductType))
-                return new com.tourapp.thin.app.booking.entry.detail.car.JBookingCarScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.car.JBookingCarScreen(this, strID);
             else if (ProductConstants.AIR.equalsIgnoreCase(strProductType))
-                return new com.tourapp.thin.app.booking.entry.detail.air.JBookingAirScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.air.JBookingAirScreen(this, strID);
             else if (ProductConstants.ITEM.equalsIgnoreCase(strProductType))
-                return new com.tourapp.thin.app.booking.entry.detail.item.JBookingItemScreen(this, strID);
+                return new com.tourgeek.thin.app.booking.entry.detail.item.JBookingItemScreen(this, strID);
         }
         return null;    // Never!
     }
@@ -118,7 +118,7 @@ public class JBookingDetailMainScreen extends JMainScreen
      */
     public AbstractThinTableModel getModel(JTable table)
     {
-        AbstractThinTableModel model = (AbstractThinTableModel)((TourAppScreen)this.getTargetScreen(TourAppScreen.class)).getCalendarModel();
+        AbstractThinTableModel model = (AbstractThinTableModel)((TourGeekScreen)this.getTargetScreen(TourGeekScreen.class)).getCalendarModel();
         return model;
     }
     /**

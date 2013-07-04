@@ -5,7 +5,7 @@
  
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.itin;
+package com.tourgeek.thin.app.booking.entry.itin;
 
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
@@ -20,7 +20,7 @@ import org.jbundle.thin.base.screen.cal.grid.CalendarThinTableModel;
 import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
 import org.jbundle.thin.base.screen.util.html.JHtmlView;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
 
 /** 
  *
@@ -32,7 +32,7 @@ public class ItinScreen extends JHtmlView
 	private static final long serialVersionUID = 1L;
 
 	public static String ITIN_DESC = "ItinDesc";
-    public static String DEFAULT_TEXT = "<html><body><center><font color=\"blue\">TourApp</font>.<br>"
+    public static String DEFAULT_TEXT = "<html><body><center><font color=\"blue\">tourgeek</font>.<br>"
             + "No current itinerary."
             + "</center></body></html>";
 
@@ -79,7 +79,7 @@ public class ItinScreen extends JHtmlView
         else
         {
             String strURL = Constants.DEFAULT_XHTML_SERVLET;
-            strURL = Util.addURLParam(strURL, Params.SCREEN, "com.tourapp.tour.booking.report.itinerary.ItineraryReportScreen");
+            strURL = Util.addURLParam(strURL, Params.SCREEN, "com.tourgeek.tour.booking.report.itinerary.ItineraryReportScreen");
             strURL = Util.addURLParam(strURL, "forms", "display");
             strURL = Util.addURLParam(strURL, "template", "itinerary");
             strURL = Util.addURLParam(strURL, "command", "Submit");
@@ -121,7 +121,7 @@ public class ItinScreen extends JHtmlView
                                 if (iEnd == -1)
                                     iEnd = strURL.length();
                                 String strObjectID = strURL.substring(iStart, iEnd);
-                                CalendarThinTableModel model = (CalendarThinTableModel)((TourAppScreen)getTargetScreen(TourAppScreen.class)).getCalendarModel();
+                                CalendarThinTableModel model = (CalendarThinTableModel)((TourGeekScreen)getTargetScreen(TourGeekScreen.class)).getCalendarModel();
                                 int iRows = model.getRowCount();
                                 for (int iRowIndex = 0; iRowIndex < iRows; iRowIndex++)
                                 {
@@ -153,7 +153,7 @@ public class ItinScreen extends JHtmlView
         
         if (Constants.RESET.equalsIgnoreCase(strAction))
         {
-            TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+            TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
             FieldList record = screenMain.getFieldList();
             String strID = record.getField(Params.ID).toString();
             this.displayItinerary(strID);

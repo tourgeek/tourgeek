@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.context;
+package com.tourgeek.thin.app.booking.entry.context;
 
 import java.awt.Color;
 import java.awt.Dimension;
@@ -16,7 +16,7 @@ import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.thin.base.screen.cal.popup.ProductTypeInfo;
 import org.jbundle.util.calendarpanel.util.JUnderlinedLabel;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
 
 /**
  * This panel displays the Legend (instructions) for the Calendar screen.

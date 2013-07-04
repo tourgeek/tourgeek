@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.pax;
+package com.tourgeek.thin.app.booking.entry.pax;
 
 /**
  * OrderEntry.java:   Applet
@@ -23,8 +23,8 @@ import org.jbundle.thin.base.screen.JScreen;
 import org.jbundle.thin.base.screen.util.JRemoteComboBox;
 import org.jbundle.thin.base.screen.util.JThreeStateCheckBox;
 
-import com.tourapp.thin.tour.booking.db.BookingPax;
-import com.tourapp.thin.tour.product.base.db.PaxCategory;
+import com.tourgeek.thin.tour.booking.db.BookingPax;
+import com.tourgeek.thin.tour.product.base.db.PaxCategory;
 
 /**
  * Main Class for applet OrderEntry

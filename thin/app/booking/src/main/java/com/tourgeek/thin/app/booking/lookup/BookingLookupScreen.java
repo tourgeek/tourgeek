@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.lookup;
+package com.tourgeek.thin.app.booking.lookup;
 
 /**
  * JRemoteMenuScreen.java:  Applet
@@ -32,8 +32,8 @@ import org.jbundle.thin.base.screen.action.ActionManager;
 import org.jbundle.thin.base.screen.menu.JBaseMenuScreen;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
-import com.tourapp.thin.tour.booking.db.Booking;
-import com.tourapp.thin.tour.booking.db.Tour;
+import com.tourgeek.thin.tour.booking.db.Booking;
+import com.tourgeek.thin.tour.booking.db.Tour;
 
 /**
  * A Basic data entry screen.
@@ -84,7 +84,7 @@ public class BookingLookupScreen extends JBaseMenuScreen
         if (applet != null)
             if ((Util.isNumeric(strAction)) || (Constants.FORM.equalsIgnoreCase(strAction)))
         {
-            applet.setProperty(Params.SCREEN, com.tourapp.thin.app.booking.entry.TourAppScreen.class.getName());
+            applet.setProperty(Params.SCREEN, com.tourgeek.thin.app.booking.entry.TourGeekScreen.class.getName());
             if ((Util.isNumeric(strAction)) && (!"0".equals(strAction)))
                 applet.setProperty(Constants.OBJECT_ID, strAction);
             applet.addSubPanels(null, 0);
@@ -97,7 +97,7 @@ public class BookingLookupScreen extends JBaseMenuScreen
     public FieldList buildFieldList()
     {
         BaseApplet applet = this.getBaseApplet();
-        m_remoteSession = applet.makeRemoteSession(null, "com.tourapp.tour.booking.remote.lookup.BookingMenuSession");
+        m_remoteSession = applet.makeRemoteSession(null, "com.tourgeek.tour.booking.remote.lookup.BookingMenuSession");
 
         m_recBookingMenuLookup = new BookingMenuLookup(this); // If overriding class didn't set this
         try   {

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.detail.line;
+package com.tourgeek.thin.app.booking.entry.detail.line;
 
 /**
  * OrderEntry.java:   Applet
@@ -26,11 +26,11 @@ import org.jbundle.thin.base.screen.AbstractThinTableModel;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.detail.JBookingDetailGridScreen;
-import com.tourapp.thin.app.booking.entry.detail.JBookingDetailMainScreen;
-import com.tourapp.thin.tour.booking.detail.db.BookingLine;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.detail.JBookingDetailGridScreen;
+import com.tourgeek.thin.app.booking.entry.detail.JBookingDetailMainScreen;
+import com.tourgeek.thin.tour.booking.detail.db.BookingLine;
 
 /**
  * Main Class for applet OrderEntry
@@ -105,12 +105,12 @@ public class JBookingLineGridScreen extends JGridScreen
         };
         field.setDataClass(Double.class);
 
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        RemoteSession parentSessionObject = tourAppScreen.getRemoteSession();
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+        RemoteSession parentSessionObject = TourGeekScreen.getRemoteSession();
         try {
-            m_remoteSession = (RemoteSession)parentSessionObject.makeRemoteSession("com.tourapp.tour.booking.remote.booking.BookingLineSession");
+            m_remoteSession = (RemoteSession)parentSessionObject.makeRemoteSession("com.tourgeek.tour.booking.remote.booking.BookingLineSession");
             
-            tourAppScreen.linkRemoteSessionTable(m_remoteSession, (BookingLine)record, true);
+            TourGeekScreen.linkRemoteSessionTable(m_remoteSession, (BookingLine)record, true);
         } catch (RemoteException ex)    {
             ex.printStackTrace();
         }
@@ -131,11 +131,11 @@ public class JBookingLineGridScreen extends JGridScreen
     public boolean doAction(String strAction, int iOptions)
     {
         boolean bAction = false;
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         
         if (Constants.BACK.equalsIgnoreCase(strAction))
         {
-            return tourAppScreen.doAction(BookingConstants.SEARCH, iOptions);
+            return TourGeekScreen.doAction(BookingConstants.SEARCH, iOptions);
         }
         else if (Constants.RESET.equalsIgnoreCase(strAction))
         {
@@ -153,7 +153,7 @@ public class JBookingLineGridScreen extends JGridScreen
             {
                 JBaseScreen screen = null;
                 Integer intDetailID = (Integer)recBookingLine.getField(BookingLine.BOOKING_DETAIL_ID).getData();
-                FieldTable tlbBookingDetail = ((AbstractThinTableModel)tourAppScreen.getCalendarModel()).getFieldTable();
+                FieldTable tlbBookingDetail = ((AbstractThinTableModel)TourGeekScreen.getCalendarModel()).getFieldTable();
                 if ((intDetailID != null) && (intDetailID.intValue() != 0))
                 {
                     try {

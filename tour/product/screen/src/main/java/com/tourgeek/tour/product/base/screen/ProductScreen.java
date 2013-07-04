@@ -19,7 +19,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourgeek.tour.product.base.db.*;
-import com.tourapp.thin.app.booking.entry.*;
+import com.tourgeek.thin.app.booking.entry.*;
 
 /**
  *  ProductScreen - .

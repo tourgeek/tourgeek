@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.context;
+package com.tourgeek.thin.app.booking.entry.context;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.GridBagConstraints;
@@ -22,12 +22,12 @@ import org.jbundle.thin.base.screen.JScreen;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.util.ThinUtil;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.tour.booking.db.Booking;
-import com.tourapp.thin.tour.booking.db.Tour;
-import com.tourapp.thin.tour.product.base.db.BookingStatus;
-import com.tourapp.thin.tour.product.base.db.PricingStatus;
-import com.tourapp.thin.tour.product.tour.db.TourStatus;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.tour.booking.db.Booking;
+import com.tourgeek.thin.tour.booking.db.Tour;
+import com.tourgeek.thin.tour.product.base.db.BookingStatus;
+import com.tourgeek.thin.tour.product.base.db.PricingStatus;
+import com.tourgeek.thin.tour.product.tour.db.TourStatus;
 
 /**
  * This panel displays the Legend (instructions) for the Calendar screen.
@@ -59,8 +59,8 @@ public class JSummaryScreen extends JScreen
     {
         m_parent = parent;  // Now I can do the next call.
         if (record == null)
-            record = this.getTourAppScreen().getFieldList();
-        this.addFieldList(this.getTourAppScreen().getTourRecord());
+            record = this.getTourGeekScreen().getFieldList();
+        this.addFieldList(this.getTourGeekScreen().getTourRecord());
         super.init(parent, record);
         
         JPanel button = new JLegendScreen(null);
@@ -90,11 +90,11 @@ public class JSummaryScreen extends JScreen
     }
     /**
      * Utility to get the main tour studio screen.
-     * @return the TourAppScreen.
+     * @return the TourGeekScreen.
      */
-    public TourAppScreen getTourAppScreen()
+    public TourGeekScreen getTourGeekScreen()
     {
-        return (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        return (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
     }
     /**
      * Utility to get the main tour studio screen's tour record.
@@ -102,7 +102,7 @@ public class JSummaryScreen extends JScreen
      */
     public FieldList getTourRecord()
     {
-        return this.getTourAppScreen().getTourRecord();
+        return this.getTourGeekScreen().getTourRecord();
     }
     /**
      * Get this field (or return null if this field doesn't belong on the screen).
@@ -188,7 +188,7 @@ public class JSummaryScreen extends JScreen
         if (fieldInfo.getFieldName().equals(Booking.BOOKING_STATUS_ID))
         {
             FieldList record = new BookingStatus(this);
-            component = this.getTourAppScreen().getMainSearchPane().addSecondaryIconComponent(record, fieldInfo, BookingStatus.ID, BookingStatus.ICON, BookingStatus.DESCRIPTION);
+            component = this.getTourGeekScreen().getMainSearchPane().addSecondaryIconComponent(record, fieldInfo, BookingStatus.ID, BookingStatus.ICON, BookingStatus.DESCRIPTION);
         }
         else if (fieldInfo.getFieldName().equals(Tour.DESCRIPTION))
         {
@@ -200,7 +200,7 @@ public class JSummaryScreen extends JScreen
         else if (fieldInfo.getFieldName().equals(Tour.TOUR_STATUS_ID))
         {
             FieldList record = new TourStatus(this);
-            component = this.getTourAppScreen().getMainSearchPane().addSecondaryIconComponent(record, fieldInfo, TourStatus.ID, TourStatus.ICON, TourStatus.DESCRIPTION);
+            component = this.getTourGeekScreen().getMainSearchPane().addSecondaryIconComponent(record, fieldInfo, TourStatus.ID, TourStatus.ICON, TourStatus.DESCRIPTION);
         }
         else if (fieldInfo.getFieldName().equals(Booking.GROSS))
         {
@@ -211,12 +211,12 @@ public class JSummaryScreen extends JScreen
             FieldList recPricingStatus = new PricingStatus(this);
             FieldList recBooking = fieldInfo.getField().getRecord();
             Converter fldPricingStatus = recBooking.getField(Booking.PRICING_STATUS_ID);
-            JComponent compPricingStatus = this.getTourAppScreen().getMainSearchPane().addSecondaryIconComponent(recPricingStatus, fldPricingStatus, PricingStatus.ID, PricingStatus.ICON, null);        
+            JComponent compPricingStatus = this.getTourGeekScreen().getMainSearchPane().addSecondaryIconComponent(recPricingStatus, fldPricingStatus, PricingStatus.ID, PricingStatus.ICON, null);        
             this.addScreenComponent(panelTotal, fldPricingStatus, compPricingStatus);
             panelTotal.add(Box.createHorizontalStrut(3));
 
             Converter fldPrice = recBooking.getField(Booking.GROSS); 
-            component = this.getTourAppScreen().getMainSearchPane().addCurrencyAmount(fldPrice, this.getFieldList().getField(Booking.CURRENCY_CODE), panelTotal);
+            component = this.getTourGeekScreen().getMainSearchPane().addCurrencyAmount(fldPrice, this.getFieldList().getField(Booking.CURRENCY_CODE), panelTotal);
             component = panelTotal;
         }
 
@@ -250,7 +250,7 @@ public class JSummaryScreen extends JScreen
                 if (Booking.CODE.equals(string))
                 {
                     String strBookingID = field.toString();
-                    this.getTourAppScreen().readThisBooking(strBookingID, Booking.CODE, true);
+                    this.getTourGeekScreen().readThisBooking(strBookingID, Booking.CODE, true);
                 }
         }
     }

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.hotel;
+package com.tourgeek.thin.app.booking.entry.search.hotel;
 
 /**
  * OrderEntry.java:   Applet
@@ -24,9 +24,9 @@ import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.Converter;
 import org.jbundle.thin.base.screen.BaseApplet;
 
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductContextScreen;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
  * Main Class for Product Context screen.
@@ -131,7 +131,7 @@ public class JHotelContextScreen extends JProductContextScreen
                     intNights = new Integer(1);
             }
             PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(button, SearchConstants.NIGHTS, null, intNights);
-            this.getTourAppScreen().getParams().propertyChange(propChangeEvent);
+            this.getTourGeekScreen().getParams().propertyChange(propChangeEvent);
         }
         else
             super.actionPerformed(evt);

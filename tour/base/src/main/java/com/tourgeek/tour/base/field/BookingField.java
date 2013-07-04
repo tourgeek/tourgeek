@@ -16,7 +16,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
-import com.tourapp.model.tour.booking.db.*;
+import com.tourgeek.model.tour.booking.db.*;
 
 /**
  *  BookingField - Booking Reference/Lookup Field.

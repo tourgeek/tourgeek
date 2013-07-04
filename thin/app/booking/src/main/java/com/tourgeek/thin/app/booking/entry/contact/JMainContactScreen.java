@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.contact;
+package com.tourgeek.thin.app.booking.entry.contact;
 
 /**
  * OrderEntry.java:   Applet
@@ -28,8 +28,8 @@ import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.action.ActionManager;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
 
 /**
  * Main Class for applet OrderEntry
@@ -126,10 +126,10 @@ public class JMainContactScreen extends JBaseScreen
      */
     public boolean doAction(String strAction, int iOptions)
     {
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         if (Constants.BACK.equalsIgnoreCase(strAction))
         {
-            return tourAppScreen.doAction(BookingConstants.SEARCH, iOptions);
+            return TourGeekScreen.doAction(BookingConstants.SEARCH, iOptions);
         }
         return super.doAction(strAction, iOptions);
     }

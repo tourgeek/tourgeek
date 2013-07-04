@@ -5,7 +5,7 @@
  
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry;
+package com.tourgeek.thin.app.booking.entry;
 
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 import org.jbundle.thin.opt.location.JTreePanel;

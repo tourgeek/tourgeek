@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.model;
+package com.tourgeek.thin.app.booking.entry.model;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -17,12 +17,12 @@ import org.jbundle.thin.base.screen.cal.popup.ProductTypeInfo;
 import org.jbundle.util.calendarpanel.model.CalendarConstants;
 import org.jbundle.util.calendarpanel.model.CalendarItem;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
-import com.tourapp.thin.tour.product.base.db.ProductType;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.tour.product.base.db.ProductType;
 
 public class BookingDetailCalendarItem extends BookingDetail
-    implements CalendarItem   //?, com.tourapp.jfo.product.ProductItem
+    implements CalendarItem   //?, com.tourgeek.jfo.product.ProductItem
 {
 	private static final long serialVersionUID = 1L;
 
@@ -283,11 +283,11 @@ public class BookingDetailCalendarItem extends BookingDetail
     public java.lang.String getProductType() throws RemoteException {
         return ProductType.HOTEL;
     }
-//  public void addCategory(final com.tourapp.jfo.product.SearchableCatalog p1) throws RemoteException {
+//  public void addCategory(final com.tourgeek.jfo.product.SearchableCatalog p1) throws RemoteException {
 //  }
     public void setDescriptionURL(java.lang.String p1,int p2) throws RemoteException {
     }
-//  public com.tourapp.jfo.product.SearchableCatalog getNextCategory() throws java.rmi.RemoteException {
+//  public com.tourgeek.jfo.product.SearchableCatalog getNextCategory() throws java.rmi.RemoteException {
 //      return null;
 //  }
     public java.lang.String getDescriptionURL(int p1) throws RemoteException {

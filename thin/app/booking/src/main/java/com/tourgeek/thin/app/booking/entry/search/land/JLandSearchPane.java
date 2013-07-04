@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.land;
+package com.tourgeek.thin.app.booking.entry.search.land;
 
 /**
  * OrderEntry.java:   Applet
@@ -20,8 +20,8 @@ import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.thin.app.booking.entry.search.base.JProductSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductSearchPane;
 
 /**
  * Main Class for applet OrderEntry
@@ -78,7 +78,7 @@ public class JLandSearchPane extends JProductSearchPane
             {   // User manually typed the location
                 String strString = ((JTextField)evt.getSource()).getText();
                 PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(evt.getSource(), SearchConstants.PAX, null, strString);
-                this.getMainSearchPane().getTourAppScreen().getParams().propertyChange(propChangeEvent);
+                this.getMainSearchPane().getTourGeekScreen().getParams().propertyChange(propChangeEvent);
             }
         }
         super.actionPerformed(evt);

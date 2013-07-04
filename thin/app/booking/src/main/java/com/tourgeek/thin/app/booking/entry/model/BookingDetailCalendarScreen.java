@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.model;
+package com.tourgeek.thin.app.booking.entry.model;
 
 /**
  * OrderEntry.java:   Applet
@@ -36,10 +36,10 @@ import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.util.calendarpanel.util.CalendarCache;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.search.JDisplayPanel;
-import com.tourapp.thin.app.booking.entry.search.base.JProductSearchPane;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.search.JDisplayPanel;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductSearchPane;
 
 /**
  * A JMainScreen is a holder screen for a Grid/Form screen.
@@ -92,7 +92,7 @@ public class BookingDetailCalendarScreen extends JBaseScreen
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
         // Calendar panel
-        TourAppScreen screen = (TourAppScreen)this.getParentObject();
+        TourGeekScreen screen = (TourGeekScreen)this.getParentObject();
         ImageIcon backgroundImage = null;
         if (screen.getBaseApplet() != null)
         	backgroundImage = screen.getBaseApplet().getBackgroundImage();	// Calendar panel is transparent, but this helps with rendering see-thru components 
@@ -120,13 +120,13 @@ public class BookingDetailCalendarScreen extends JBaseScreen
      */
     public boolean doAction(String strAction, int iOptions)
     {
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getParentObject();
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getParentObject();
         
-        CalendarModel model = tourAppScreen.getCalendarModel();
+        CalendarModel model = TourGeekScreen.getCalendarModel();
         CalendarPanel calpanel = (CalendarPanel)JBasePanel.getSubScreen(this, CalendarPanel.class);
         if (Constants.BACK.equalsIgnoreCase(strAction))
         {
-            return tourAppScreen.doAction(BookingConstants.SEARCH, iOptions);
+            return TourGeekScreen.doAction(BookingConstants.SEARCH, iOptions);
         }
         else if (Constants.FORM.equalsIgnoreCase(strAction))
         {
@@ -142,9 +142,9 @@ public class BookingDetailCalendarScreen extends JBaseScreen
         }
         else if (ProductTypeInfo.getProductType(strAction) != null)
         {
-            JDisplayPanel displayPanel = tourAppScreen.getDisplayPanel();
+            JDisplayPanel displayPanel = TourGeekScreen.getDisplayPanel();
             JProductSearchPane pane = displayPanel.switchScreens(this.getBaseApplet(), strAction, iOptions);
-            tourAppScreen.handleAction(BookingConstants.SEARCH, null, iOptions);  // Make sure we are on the search tab
+            TourGeekScreen.handleAction(BookingConstants.SEARCH, null, iOptions);  // Make sure we are on the search tab
             pane.requestFocus();
             return true;
         }

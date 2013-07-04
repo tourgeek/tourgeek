@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.air;
+package com.tourgeek.thin.app.booking.entry.search.air;
 
 /**
  * OrderEntry.java:   Applet
@@ -25,10 +25,10 @@ import org.jbundle.thin.base.remote.RemoteSession;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.cal.popup.ProductConstants;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.thin.app.booking.entry.search.base.JProductSearchPane;
-import com.tourapp.thin.tour.product.air.db.AirClass;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductSearchPane;
+import com.tourgeek.thin.tour.product.air.db.AirClass;
 
 /**
  * Main Class for applet OrderEntry
@@ -95,7 +95,7 @@ public class JAirSearchPane extends JProductSearchPane
             {   // User manually typed the location
                 String strString = ((JTextField)evt.getSource()).getText();
                 PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(evt.getSource(), SearchConstants.AIRLINE, null, strString);
-                this.getMainSearchPane().getTourAppScreen().getParams().propertyChange(propChangeEvent);
+                this.getMainSearchPane().getTourGeekScreen().getParams().propertyChange(propChangeEvent);
             }
             if (strButtonName != null)
                 if ((strButtonName.startsWith(SearchConstants.AIRLINE))
@@ -107,7 +107,7 @@ public class JAirSearchPane extends JProductSearchPane
                 String strLocationParam = strButtonName.substring(0, strButtonName.lastIndexOf(SearchConstants.BUTTON));
                 AirlineGridScreen gridScreen = new AirlineGridScreen(job, strLocationParam);
                 job.changeSubScreen(null, gridScreen, null, Constants.DONT_PUSH_TO_BROWSER);
-                TourAppScreen screenMain = this.getMainSearchPane().getTourAppScreen();
+                TourGeekScreen screenMain = this.getMainSearchPane().getTourGeekScreen();
                 gridScreen.addPropertyChangeListener(screenMain.getParams());
                 job.run();
             }

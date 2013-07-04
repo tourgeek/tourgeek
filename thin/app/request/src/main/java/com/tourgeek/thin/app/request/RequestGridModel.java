@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.request;
+package com.tourgeek.thin.app.request;
 
 /**
  * OrderEntry.java:   Applet
@@ -15,8 +15,8 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.screen.grid.ThinTableModel;
 
-import com.tourapp.thin.tour.request.db.Brochure;
-import com.tourapp.thin.tour.request.db.RequestInput;
+import com.tourgeek.thin.tour.base.db.shared.Brochure;
+import com.tourgeek.thin.tour.request.db.RequestInput;
 
 /**
  * Main Class for applet OrderEntry

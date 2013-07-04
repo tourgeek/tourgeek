@@ -5,7 +5,7 @@
 
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.base;
+package com.tourgeek.thin.app.booking.entry.search.base;
 
 import java.awt.Component;
 import java.awt.Container;
@@ -15,8 +15,8 @@ import java.util.Map;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.util.calendarpanel.dnd.CalendarItemProperties;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
  * Object used to transfer data from here to there.
@@ -55,14 +55,14 @@ public class ProductItemProperties extends CalendarItemProperties
         Container container = ((Component)source).getParent();
         while (container != null)
         {
-            if (container instanceof TourAppScreen)
+            if (container instanceof TourGeekScreen)
             {
                 if (this.get(Product.PRODUCT_TYPE) != null)
                 {
                     String strProductType = (String)this.get(Product.PRODUCT_TYPE);
                     Integer intID = (Integer)this.get(Product.ID);
                     String strID = intID.toString();
-                    ((TourAppScreen)container).addProductToSession(strProductType, strID, dateTarget);
+                    ((TourGeekScreen)container).addProductToSession(strProductType, strID, dateTarget);
                     return true;
                 }
             }

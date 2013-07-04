@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search;
+package com.tourgeek.thin.app.booking.entry.search;
 
 /**
  * OrderEntry.java:   Applet
@@ -38,22 +38,22 @@ import org.jbundle.util.calendarpanel.CalendarPanel;
 import org.jbundle.util.calendarpanel.model.CalendarModel;
 import org.jbundle.util.calendarpanel.util.MouseDateListener;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.search.air.JAirSearchPane;
-import com.tourapp.thin.app.booking.entry.search.base.JProductSearchPane;
-import com.tourapp.thin.app.booking.entry.search.car.JCarSearchPane;
-import com.tourapp.thin.app.booking.entry.search.cruise.JCruiseSearchPane;
-import com.tourapp.thin.app.booking.entry.search.hotel.JHotelSearchPane;
-import com.tourapp.thin.app.booking.entry.search.item.JItemSearchPane;
-import com.tourapp.thin.app.booking.entry.search.land.JLandSearchPane;
-import com.tourapp.thin.app.booking.entry.search.menu.JMenuSearchPane;
-import com.tourapp.thin.app.booking.entry.search.tour.JTourHeaderSearchPane;
-import com.tourapp.thin.app.booking.entry.search.trans.JTransportationSearchPane;
-import com.tourapp.thin.tour.booking.db.Booking;
-import com.tourapp.thin.tour.booking.db.Tour;
-import com.tourapp.thin.tour.product.base.db.PricingStatus;
-import com.tourapp.thin.tour.product.tour.db.TourStatus;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.search.air.JAirSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.car.JCarSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.cruise.JCruiseSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.hotel.JHotelSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.item.JItemSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.land.JLandSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.menu.JMenuSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.tour.JTourHeaderSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.trans.JTransportationSearchPane;
+import com.tourgeek.thin.tour.booking.db.Booking;
+import com.tourgeek.thin.tour.booking.db.Tour;
+import com.tourgeek.thin.tour.product.base.db.PricingStatus;
+import com.tourgeek.thin.tour.product.tour.db.TourStatus;
 
 /**
  * Main Class for applet OrderEntry
@@ -92,8 +92,8 @@ public class JMainSearchPane extends JBaseRichScreen
     public void init(Object obj, BaseApplet applet)
     {
         m_parent = obj;  // Now I can do the next call.
-        FieldList recBooking = this.getTourAppScreen().getFieldList();   // Booking
-        this.addFieldList(this.getTourAppScreen().getTourRecord());  // Tour
+        FieldList recBooking = this.getTourGeekScreen().getFieldList();   // Booking
+        this.addFieldList(this.getTourGeekScreen().getTourRecord());  // Tour
         super.init(obj, recBooking);
 
         this.switchScreens(applet, null, Constants.DONT_PUSH_TO_BROWSER);
@@ -107,7 +107,7 @@ public class JMainSearchPane extends JBaseRichScreen
     {
         if (parent == null)
             parent = this;
-        TourAppScreen screenMain = (TourAppScreen)m_parent;
+        TourGeekScreen screenMain = (TourGeekScreen)m_parent;
         BaseApplet applet = this.getBaseApplet();
 
         JPanel panel = new JPanel();
@@ -177,8 +177,8 @@ public class JMainSearchPane extends JBaseRichScreen
      */
     public void free()
     {
-        FieldList recBooking = this.getTourAppScreen().getFieldList();   // Booking
-        FieldList recTour = this.getTourAppScreen().getTourRecord();  // Tour
+        FieldList recBooking = this.getTourGeekScreen().getFieldList();   // Booking
+        FieldList recTour = this.getTourGeekScreen().getTourRecord();  // Tour
         if (recTour != null)
             this.disconnectControls(recTour);
         if (recBooking != null)
@@ -224,7 +224,7 @@ public class JMainSearchPane extends JBaseRichScreen
     /**
      * Add the small calendar to this panel.
      */
-    public JPanel addSmallCalendar(BaseApplet applet, JPanel panelParent, CalendarModel model, TourAppScreen screenMain)
+    public JPanel addSmallCalendar(BaseApplet applet, JPanel panelParent, CalendarModel model, TourGeekScreen screenMain)
     {
         JScrollPane scrollpane = new JScrollPane(ScrollPaneConstants.VERTICAL_SCROLLBAR_AS_NEEDED, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER );
         scrollpane.setOpaque(false);
@@ -312,8 +312,8 @@ public class JMainSearchPane extends JBaseRichScreen
         String strButtonName = button.getName();
         if (SearchConstants.SEARCH_BUTTON.equals(strButtonName))
         {
-            BaseApplet.handleAction(BookingConstants.SEARCH, this.getTourAppScreen(), null, 0);  // Make sure we are on the search tab
-            JDisplayPanel displayPanel = (JDisplayPanel)this.getTourAppScreen().getCurrentDisplayPanel();
+            BaseApplet.handleAction(BookingConstants.SEARCH, this.getTourGeekScreen(), null, 0);  // Make sure we are on the search tab
+            JDisplayPanel displayPanel = (JDisplayPanel)this.getTourGeekScreen().getCurrentDisplayPanel();
             displayPanel.actionPerformed(evt);
         }
         else

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.item;
+package com.tourgeek.thin.app.booking.entry.search.item;
 
 /**
  * OrderEntry.java:   Applet
@@ -10,7 +10,7 @@ package com.tourapp.thin.app.booking.entry.search.item;
  *  @author Don Corley don@donandann.com
  *  @version 1.0.0.
  */
-import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductContextScreen;
 
 /**
  * Main Class for Product Context screen.

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.config.web.other;
+package com.tourgeek.config.web.other;
 
 import java.util.Dictionary;
 
@@ -150,7 +150,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
                 httpContext = new FileHttpContext(servlet, context.getBundle());
                 String path = this.getProperty("wwwDemoPath");    // Basepath (usually pointing to a directory) is supplied in menu properties
                 if (path == null)
-                    path = "com/tourapp/res/docs/com/tourgeek/www/";
+                    path = "com/tourgeek/res/docs/com/tourgeek/www/";
                 properties.put(DefaultServlet.BASE_PATH, path);
             }
             else if (WEBAPP_REDIRECT.equalsIgnoreCase(alias))

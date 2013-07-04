@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.detail.car;
+package com.tourgeek.thin.app.booking.entry.detail.car;
 
 /**
  * OrderEntry.java:   Applet
@@ -10,7 +10,7 @@ package com.tourapp.thin.app.booking.entry.detail.car;
  *  @author Don Corley don@donandann.com
  *  @version 1.0.0.
  */
-import com.tourapp.thin.app.booking.entry.detail.JBookingDetailContextScreen;
+import com.tourgeek.thin.app.booking.entry.detail.JBookingDetailContextScreen;
 
 /**
  * Main Class for applet OrderEntry

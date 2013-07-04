@@ -2,7 +2,7 @@
  *  @(#)TestTable.
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.tour.util.test.hotel.thin;
+package com.tourgeek.tour.util.test.hotel.thin;
 
 import java.util.Date;
 

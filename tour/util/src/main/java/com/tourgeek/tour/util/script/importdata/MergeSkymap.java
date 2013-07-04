@@ -67,7 +67,7 @@ public class MergeSkymap extends MergeCity
     {
         String strSource = this.getProperty("source");
         if (strSource == null)
-            strSource = System.getProperty("user.home") + "/workspace/tourapp/data/java/tour/externaldata/skymap/Location.dat";
+            strSource = System.getProperty("user.home") + "/workspace/tourgeek/data/java/tour/externaldata/skymap/Location.dat";
         File file = new File(strSource);
         
         LineNumberReader reader = null;

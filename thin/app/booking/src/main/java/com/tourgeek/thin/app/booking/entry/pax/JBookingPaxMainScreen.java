@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.pax;
+package com.tourgeek.thin.app.booking.entry.pax;
 
 /**
  * OrderEntry.java:   Applet
@@ -22,9 +22,9 @@ import org.jbundle.thin.base.remote.RemoteTable;
 import org.jbundle.thin.base.screen.JBaseScreen;
 import org.jbundle.thin.base.screen.util.JMainScreen;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.tour.booking.db.BookingPax;
-import com.tourapp.thin.tour.product.base.db.PaxCategory;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.tour.booking.db.BookingPax;
+import com.tourgeek.thin.tour.product.base.db.PaxCategory;
 
 /**
  * Main Class for applet OrderEntry
@@ -78,8 +78,8 @@ public class JBookingPaxMainScreen extends JMainScreen
         	return success;
 
         // Next, add the summary screen.
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        FieldList recBooking = tourAppScreen.getFieldList();
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+        FieldList recBooking = TourGeekScreen.getFieldList();
         
         JBaseScreen bottomPane = new JBookingPaxSummaryScreen(this, recBooking);
         bottomPane.setOpaque(false);
@@ -96,22 +96,22 @@ public class JBookingPaxMainScreen extends JMainScreen
         JBaseScreen screenNew = null;
         if (record == null)
         { // First time only
-            TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-            RemoteSession parentSessionObject = tourAppScreen.getRemoteSession();
+            TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+            RemoteSession parentSessionObject = TourGeekScreen.getRemoteSession();
             try {
-                m_remoteSession = (RemoteSession)parentSessionObject.makeRemoteSession("com.tourapp.tour.booking.remote.booking.BookingPaxSession");
+                m_remoteSession = (RemoteSession)parentSessionObject.makeRemoteSession("com.tourgeek.tour.booking.remote.booking.BookingPaxSession");
                 record = new BookingPax(this);
                 ((BookingPax)record).getField(BookingPax.PAX_CATEGORY_ID).setDefault(new Integer(PaxCategory.DOUBLE_ID));   // Room type defaults to double
-                RemoteFieldTable table = (RemoteFieldTable)tourAppScreen.linkRemoteSessionTable(m_remoteSession, (BookingPax)record, true);
+                RemoteFieldTable table = (RemoteFieldTable)TourGeekScreen.linkRemoteSessionTable(m_remoteSession, (BookingPax)record, true);
                 RemoteTable tableRemote = table.getRemoteTableType(null);
-                FieldList recBooking = tourAppScreen.getFieldList();
+                FieldList recBooking = TourGeekScreen.getFieldList();
                 tableRemote = new PaxCountRemoteTable(tableRemote, recBooking);
                 table.setRemoteTable(tableRemote, null);
                 if (m_recPaxCategory == null)
-                {  // Now set up the PaxCategory (remember TourApp will automatically set this up as a TABLE link).
+                {  // Now set up the PaxCategory (remember tourgeek will automatically set this up as a TABLE link).
                     m_recPaxCategory = new PaxCategory(this);
                     boolean bUseCache = true;
-                    tourAppScreen.linkRemoteSessionTable(parentSessionObject, m_recPaxCategory, bUseCache);
+                    TourGeekScreen.linkRemoteSessionTable(parentSessionObject, m_recPaxCategory, bUseCache);
                 }
             } catch (RemoteException ex)    {
                 ex.printStackTrace();

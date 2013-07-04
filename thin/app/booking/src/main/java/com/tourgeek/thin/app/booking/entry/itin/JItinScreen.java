@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.itin;
+package com.tourgeek.thin.app.booking.entry.itin;
 
 /**
  * OrderEntry.java:   Applet
@@ -44,8 +44,8 @@ import org.jbundle.thin.base.screen.JBaseToolbar;
 import org.jbundle.thin.base.screen.action.ActionManager;
 import org.jbundle.thin.base.util.ThinMenuConstants;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
 
 /**
  * Main Class for applet OrderEntry
@@ -91,13 +91,13 @@ public class JItinScreen extends JBaseScreen
      */
     public void createItineraryChangeMessageListener()
     {        
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         // Now add listeners to update screen when data changes
-        FieldList recTour = tourAppScreen.getTourRecord();
+        FieldList recTour = TourGeekScreen.getTourRecord();
         FieldTable table = recTour.getTable();
         RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)table).getRemoteTableType(Remote.class);
 
-        MessageManager messageManager = tourAppScreen.getBaseApplet().getApplication().getMessageManager();
+        MessageManager messageManager = TourGeekScreen.getBaseApplet().getApplication().getMessageManager();
         BaseMessageReceiver messageReceiver = (BaseMessageReceiver)messageManager.getMessageQueue(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE).getMessageReceiver();
         MessageReceiverFilterList messageFilters = messageReceiver.getMessageFilterList();
         BaseMessageHeader messageHeaderFilter = new BaseMessageHeader(MessageConstants.RECORD_QUEUE_NAME, MessageConstants.INTRANET_QUEUE, null, null);
@@ -144,7 +144,7 @@ public class JItinScreen extends JBaseScreen
      */
     public void refreshItinerary()
     {
-        TourAppScreen screenMain = (TourAppScreen)getTargetScreen(TourAppScreen.class);
+        TourGeekScreen screenMain = (TourGeekScreen)getTargetScreen(TourGeekScreen.class);
         FieldList record = screenMain.getFieldList();
         String strID = record.getField(Params.ID).toString();
         ItinScreen itinScreen = (ItinScreen)JBasePanel.getSubScreen(this, ItinScreen.class);
@@ -204,8 +204,8 @@ public class JItinScreen extends JBaseScreen
     {
         if (Constants.BACK.equalsIgnoreCase(strAction))
         {
-            TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-            return tourAppScreen.doAction(BookingConstants.SEARCH, iOptions);
+            TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+            return TourGeekScreen.doAction(BookingConstants.SEARCH, iOptions);
         }
         return super.doAction(strAction, iOptions);
     }

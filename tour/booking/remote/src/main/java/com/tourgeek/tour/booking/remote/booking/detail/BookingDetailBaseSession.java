@@ -20,7 +20,7 @@ import org.jbundle.base.remote.db.*;
 import com.tourgeek.tour.booking.db.*;
 import org.jbundle.thin.base.remote.*;
 import org.jbundle.base.remote.*;
-import com.tourapp.thin.app.booking.entry.search.*;
+import com.tourgeek.thin.app.booking.entry.search.*;
 import com.tourgeek.tour.booking.detail.db.*;
 import com.tourgeek.tour.product.base.db.*;
 import com.tourgeek.tour.acctpay.db.*;

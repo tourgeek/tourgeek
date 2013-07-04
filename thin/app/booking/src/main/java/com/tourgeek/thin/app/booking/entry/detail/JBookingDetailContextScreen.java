@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.detail;
+package com.tourgeek.thin.app.booking.entry.detail;
 
 /**
  * OrderEntry.java:   Applet
@@ -33,11 +33,11 @@ import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.cal.JCalendarDualField;
 import org.jbundle.thin.base.util.ThinUtil;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.model.BookingDetailCalendarItem;
-import com.tourapp.thin.app.booking.entry.search.JBaseRichScreen;
-import com.tourapp.thin.tour.assetdr.db.Currencys;
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.model.BookingDetailCalendarItem;
+import com.tourgeek.thin.app.booking.entry.search.JBaseRichScreen;
+import com.tourgeek.thin.tour.base.db.Currencys;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
 
 /**
  * Main Class for applet OrderEntry
@@ -99,8 +99,8 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
             m_vFieldListList = null;
         }
         // Remember to disconnect these.
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        this.disconnectControls(tourAppScreen.getCurrencyRecord());
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+        this.disconnectControls(TourGeekScreen.getCurrencyRecord());
         super.free();
     }
     /**
@@ -178,8 +178,8 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
             ScreenUtil.setEnabled(component1, false);
             if (BookingDetail.TOTAL_COST_LOCAL.equalsIgnoreCase(fieldInfo.getFieldName()))
             {
-                TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-                tourAppScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).addComponent(component1);  // Display local currency code
+                TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+                TourGeekScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).addComponent(component1);  // Display local currency code
             }
             else
                 this.getFieldList().getField(BookingDetail.CURRENCY_CODE).addComponent(component1);
@@ -199,8 +199,8 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
     {
         super.fieldsToControls();
         // Also need to display the local currency code.
-        TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
-        tourAppScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).displayField();  // Display local currency code
+        TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
+        TourGeekScreen.getCurrencyRecord().getField(Currencys.CURRENCY_CODE).displayField();  // Display local currency code
     }
     /**
      * Add the description labels to the first column of the grid.
@@ -243,9 +243,9 @@ public class JBookingDetailContextScreen extends JBaseRichScreen
             if ((BookingDetail.DETAIL_DATE.equals(field.getFieldName()))
                 || (BookingDetail.DETAIL_END_DATE.equals(field.getFieldName())))
             {
-                TourAppScreen tourAppScreen = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+                TourGeekScreen TourGeekScreen = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
                 
-                CalendarThinTableModel calendarModel = (CalendarThinTableModel)tourAppScreen.getCalendarModel();
+                CalendarThinTableModel calendarModel = (CalendarThinTableModel)TourGeekScreen.getCalendarModel();
                 int iRowIndex = calendarModel.getSelectedRow();
                 BookingDetailCalendarItem item = (BookingDetailCalendarItem)calendarModel.makeRowCurrent(iRowIndex, false);
                 if (fieldList.getField(BookingDetail.ID).getData().equals(item.getField(BookingDetail.ID).getData()))

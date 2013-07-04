@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.request;
+package com.tourgeek.thin.app.request;
 
 /**
  * OrderEntry.java:   Applet
@@ -32,9 +32,9 @@ import org.jbundle.thin.base.screen.JScreenToolbar;
 import org.jbundle.thin.base.screen.grid.opt.JAltGridScreen;
 import org.jbundle.thin.base.util.Application;
 
-import com.tourapp.thin.tour.request.db.Request;
-import com.tourapp.thin.tour.request.db.RequestDetail;
-import com.tourapp.thin.tour.request.db.RequestInput;
+import com.tourgeek.thin.tour.request.db.Request;
+import com.tourgeek.thin.tour.request.db.RequestDetail;
+import com.tourgeek.thin.tour.request.db.RequestInput;
 
 /**
  * Main Class for applet OrderEntry
@@ -97,7 +97,7 @@ public class RequestMainScreen extends JBaseScreen
     {
         parent.setLayout(new BoxLayout(parent, BoxLayout.X_AXIS));
 
-        m_remoteSession = applet.makeRemoteSession(null, "com.tourapp.tour.request.remote.RequestSession");
+        m_remoteSession = applet.makeRemoteSession(null, "com.tourgeek.tour.request.remote.RequestSession");
         FieldList record = new Request(this);
         applet.linkRemoteSessionTable(m_remoteSession, record, false);
         m_screenPerson = new CompanyScreen(parent, record);

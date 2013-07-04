@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.hotel;
+package com.tourgeek.thin.app.booking.entry.search.hotel;
 
 /**
  * OrderEntry.java:   Applet
@@ -14,8 +14,8 @@ import org.jbundle.model.db.Convert;
 import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.db.FieldTable;
 
-import com.tourapp.thin.app.booking.entry.search.base.ProductGridModel;
-import com.tourapp.thin.tour.product.hotel.db.Hotel;
+import com.tourgeek.thin.app.booking.entry.search.base.ProductGridModel;
+import com.tourgeek.thin.tour.product.hotel.db.Hotel;
 
 /**
  * Main Class for applet OrderEntry

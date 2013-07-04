@@ -24,7 +24,7 @@ import com.tourgeek.tour.product.base.db.*;
 import com.tourgeek.tour.product.car.db.*;
 import com.tourgeek.tour.acctpay.db.*;
 import com.tourgeek.tour.base.db.*;
-import com.tourapp.thin.app.booking.entry.*;
+import com.tourgeek.thin.app.booking.entry.*;
 import com.tourgeek.tour.booking.entry.base.*;
 
 /**

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search;
+package com.tourgeek.thin.app.booking.entry.search;
 
 /**
  * OrderEntry.java:   Applet
@@ -48,9 +48,9 @@ import org.jbundle.thin.base.screen.util.JMultiFieldPanel;
 import org.jbundle.thin.base.screen.util.JRemoteComboBox;
 import org.jbundle.thin.base.util.ThinUtil;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
 
 /**
 * Base JScreen with support for a bunch of cool controls.
@@ -236,7 +236,7 @@ public class JBaseRichScreen extends JScreen
      */
     public JComponent addSecondaryIconComponent(FieldList record, Converter fieldInfo, String strIndexName, String strIconFieldName, String strDescFieldName)
     {
-        this.getTourAppScreen().linkRemoteSessionTable(null, record, false);
+        this.getTourGeekScreen().linkRemoteSessionTable(null, record, false);
         boolean bCacheTable = false;
 
         Converter fieldInfo2 = new SecondaryRecordConverter(fieldInfo, null, record, strIconFieldName, bCacheTable, strIndexName, null, "1");
@@ -305,7 +305,7 @@ public class JBaseRichScreen extends JScreen
      */
     public Object getMainProperty(String strKey)
     {
-        return this.getTourAppScreen().getParams().get(strKey);
+        return this.getTourGeekScreen().getParams().get(strKey);
     }
     /**
      *  For the action listener (menu commands).
@@ -316,9 +316,9 @@ public class JBaseRichScreen extends JScreen
         String strButtonName = button.getName();
         if (DATE_BUTTON.equals(strButtonName))
         {   // Create and display the Location Window.
-            Date date = (Date)this.getTourAppScreen().getParams().get(SearchConstants.DATE);
+            Date date = (Date)this.getTourGeekScreen().getParams().get(SearchConstants.DATE);
             JComponent cal = org.jbundle.util.jcalendarbutton.JCalendarPopup.createCalendarPopup(date, button);
-            cal.addPropertyChangeListener(this.getTourAppScreen().getParams());
+            cal.addPropertyChangeListener(this.getTourGeekScreen().getParams());
         }
         else if (DATE_FIELD.equals(strButtonName))
         {
@@ -339,7 +339,7 @@ public class JBaseRichScreen extends JScreen
                 }
             }
             PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(button, SearchConstants.DATE, null, date);
-            this.getTourAppScreen().getParams().propertyChange(propChangeEvent);
+            this.getTourGeekScreen().getParams().propertyChange(propChangeEvent);
         }
         else
             super.actionPerformed(evt);
@@ -355,7 +355,7 @@ public class JBaseRichScreen extends JScreen
             String strDate = Constants.BLANK;
             Date dateTarget = (Date)evt.getNewValue();
             if (dateTarget == null)     // mouseexit - Set to current value
-                dateTarget = (Date)this.getTourAppScreen().getParams().get(SearchConstants.DATE);
+                dateTarget = (Date)this.getTourGeekScreen().getParams().get(SearchConstants.DATE);
             Converter.initGlobals();
             if (dateTarget != null)
             {
@@ -383,9 +383,9 @@ public class JBaseRichScreen extends JScreen
     /**
      * Get the the base applet that is the parent of this screen.
      */
-    public TourAppScreen getTourAppScreen()
+    public TourGeekScreen getTourGeekScreen()
     {
-        return (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        return (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
     }
     /**
     *

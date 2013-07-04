@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry;
+package com.tourgeek.thin.app.booking.entry;
 
 /**
  * The maven webstart-plugin requires a class with a main method,

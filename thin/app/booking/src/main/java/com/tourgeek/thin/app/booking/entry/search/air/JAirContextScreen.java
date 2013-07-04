@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.air;
+package com.tourgeek.thin.app.booking.entry.search.air;
 
 /**
  * OrderEntry.java:   Applet
@@ -19,9 +19,9 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.util.ThinUtil;
 
-import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
-import com.tourapp.thin.tour.product.air.db.Air;
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductContextScreen;
+import com.tourgeek.thin.tour.product.air.db.Air;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
  * Main Class for Product Context screen.

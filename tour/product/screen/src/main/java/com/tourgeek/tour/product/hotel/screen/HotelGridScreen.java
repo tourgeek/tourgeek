@@ -22,7 +22,7 @@ import com.tourgeek.tour.product.base.screen.*;
 import com.tourgeek.tour.product.hotel.event.*;
 import com.tourgeek.tour.product.base.db.*;
 import org.jbundle.thin.base.message.*;
-import com.tourapp.thin.app.booking.entry.*;
+import com.tourgeek.thin.app.booking.entry.*;
 import com.tourgeek.tour.product.base.event.*;
 import com.tourgeek.tour.product.hotel.db.*;
 import com.tourgeek.tour.booking.detail.db.*;

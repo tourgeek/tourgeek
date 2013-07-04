@@ -8,7 +8,7 @@
  
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.lookup;
+package com.tourgeek.thin.app.booking.lookup;
 
 import java.util.Date;
 
@@ -16,8 +16,8 @@ import org.jbundle.thin.base.db.Constants;
 import org.jbundle.thin.base.db.FieldInfo;
 import org.jbundle.thin.base.db.FieldList;
 
-import com.tourapp.thin.tour.booking.db.Booking;
-import com.tourapp.thin.tour.booking.db.Tour;
+import com.tourgeek.thin.tour.booking.db.Booking;
+import com.tourgeek.thin.tour.booking.db.Tour;
 
 /** 
  *

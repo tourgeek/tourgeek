@@ -24,7 +24,7 @@ import com.tourgeek.tour.base.db.*;
 import com.tourgeek.tour.product.land.db.*;
 import com.tourgeek.tour.product.base.db.*;
 import com.tourgeek.tour.booking.db.*;
-import com.tourapp.thin.app.booking.entry.*;
+import com.tourgeek.thin.app.booking.entry.*;
 import com.tourgeek.tour.booking.entry.base.*;
 
 /**

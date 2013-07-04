@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry;
+package com.tourgeek.thin.app.booking.entry;
 
 import java.awt.BorderLayout;
 import java.awt.Container;
@@ -10,21 +10,21 @@ import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.JBaseFrame;
 
 
-public class TourAppApplet extends BaseApplet
+public class TourGeekApplet extends BaseApplet
 {
 	private static final long serialVersionUID = 1L;
 
 	/**
      *  OrderEntry Class Constructor.
      */
-    public TourAppApplet()
+    public TourGeekApplet()
     {
         super();
     }
     /**
      *  OrderEntry Class Constructor.
      */
-    public TourAppApplet(String[] args)
+    public TourGeekApplet(String[] args)
     {
         this();
         this.init(args);
@@ -59,7 +59,7 @@ public class TourAppApplet extends BaseApplet
     {
         parent.setLayout(new BorderLayout());
         
-        TourAppScreen panel = new TourAppScreen();
+        TourGeekScreen panel = new TourGeekScreen();
         if (!this.checkSecurity(panel))
             return false;
         panel.init(this, null);
@@ -90,9 +90,9 @@ public class TourAppApplet extends BaseApplet
     public static void main(String[] args)
     {
         BaseApplet.main(args);
-        TourAppApplet applet = (TourAppApplet)TourAppApplet.getSharedInstance();
+        TourGeekApplet applet = (TourGeekApplet)TourGeekApplet.getSharedInstance();
         if (applet == null)
-            applet = new TourAppApplet(args);
-        new JBaseFrame("TourApp", applet);
+            applet = new TourGeekApplet(args);
+        new JBaseFrame("tourgeek", applet);
     }
 }

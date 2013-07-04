@@ -5,7 +5,7 @@
 
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.base;
+package com.tourgeek.thin.app.booking.entry.search.base;
 
 import java.awt.Container;
 import java.awt.datatransfer.Transferable;
@@ -18,7 +18,7 @@ import org.jbundle.util.calendarpanel.dnd.CalendarItemProperties;
 import org.jbundle.util.calendarpanel.dnd.CalendarItemTransferable;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
 
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
  * This class packages up a product into a ProductTransferable object.

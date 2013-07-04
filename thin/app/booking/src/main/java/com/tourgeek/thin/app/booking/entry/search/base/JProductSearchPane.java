@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.base;
+package com.tourgeek.thin.app.booking.entry.search.base;
 
 /**
  * OrderEntry.java:   Applet
@@ -44,12 +44,12 @@ import org.jbundle.thin.base.screen.util.JRemoteComboBox;
 import org.jbundle.thin.opt.location.JLocationScreen;
 import org.jbundle.thin.opt.location.JTreePanel;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.context.JContextPanel;
-import com.tourapp.thin.app.booking.entry.search.JDisplayPanel;
-import com.tourapp.thin.app.booking.entry.search.JMainSearchPane;
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.context.JContextPanel;
+import com.tourgeek.thin.app.booking.entry.search.JDisplayPanel;
+import com.tourgeek.thin.app.booking.entry.search.JMainSearchPane;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
 
 /**
  * Product search parameter input screen.
@@ -96,7 +96,7 @@ public class JProductSearchPane extends JBaseScreen
         this.setOpaque(false);
         this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
 
-        TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         if (screenMain != null)
         {
             this.addPropertyChangeListener(screenMain.getParams());
@@ -114,7 +114,7 @@ public class JProductSearchPane extends JBaseScreen
      */
     public void free()
     {
-        TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         if (screenMain != null)
         {
             this.removePropertyChangeListener(screenMain.getParams());
@@ -141,7 +141,7 @@ public class JProductSearchPane extends JBaseScreen
                 String strLocationParam = strButtonName.substring(0, strButtonName.lastIndexOf(SearchConstants.BUTTON));
                 JLocationScreen locationScreen = new JLocationScreen(job, strLocationParam);
                 job.changeSubScreen(null, locationScreen, null, Constants.DONT_PUSH_TO_BROWSER);
-                TourAppScreen screenMain = this.getMainSearchPane().getTourAppScreen();
+                TourGeekScreen screenMain = this.getMainSearchPane().getTourGeekScreen();
                 locationScreen.addPropertyChangeListener(screenMain.getParams());
                 job.run();
             }
@@ -152,16 +152,16 @@ public class JProductSearchPane extends JBaseScreen
                 String strString = ((JTextField)evt.getSource()).getText();
                 // First, clear the current location ID (without echoing it to the remote session).
                 PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(this, strButtonName + "ID", null, null);
-                this.getMainSearchPane().getTourAppScreen().getParams().propertyChange(propChangeEvent);
+                this.getMainSearchPane().getTourGeekScreen().getParams().propertyChange(propChangeEvent);
                 // Then, set the new location (for the remote session to process).
                 propChangeEvent = new PropertyChangeEvent(evt.getSource(), strButtonName, null, strString);
-                this.getMainSearchPane().getTourAppScreen().getParams().propertyChange(propChangeEvent);
+                this.getMainSearchPane().getTourGeekScreen().getParams().propertyChange(propChangeEvent);
             }
             else if (SearchConstants.SEARCH_TEXT.equals(strButtonName))
             {   // User manually typed the location
                 String strString = ((JTextField)evt.getSource()).getText();
                 PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(evt.getSource(), SearchConstants.SEARCH_TEXT, null, strString);
-                this.getMainSearchPane().getTourAppScreen().getParams().propertyChange(propChangeEvent);
+                this.getMainSearchPane().getTourGeekScreen().getParams().propertyChange(propChangeEvent);
             }
             else
                 super.actionPerformed(evt);
@@ -199,7 +199,7 @@ public class JProductSearchPane extends JBaseScreen
      */
     public boolean isDisplayed()
     {
-       return (this.getMainSearchPane().getTourAppScreen().getSelectedIndex() == TourAppScreen.SEARCH_TAB);
+       return (this.getMainSearchPane().getTourGeekScreen().getSelectedIndex() == TourGeekScreen.SEARCH_TAB);
     }
     protected boolean m_bRequeryOnDisplay = false;
     /**
@@ -223,8 +223,8 @@ public class JProductSearchPane extends JBaseScreen
             m_bRequeryOnDisplay = true;
             return;
         }
-        Map<String,Object> properties = this.getMainSearchPane().getTourAppScreen().getParams().getProperties();
-        TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        Map<String,Object> properties = this.getMainSearchPane().getTourGeekScreen().getParams().getProperties();
+        TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         Object cursor = null;
 
         synchronized (this.getBaseApplet().getRemoteTask())
@@ -248,7 +248,7 @@ public class JProductSearchPane extends JBaseScreen
                             if (!((Map)objReturn).get(strKey).equals(properties.get(strKey)))
                             {   // This key changed, notify everyone else (saying I am the source keeps this from echoing to me).
                                 PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(this, strKey, properties.get(strKey), ((Map)objReturn).get(strKey));
-                                this.getMainSearchPane().getTourAppScreen().getParams().propertyChange(propChangeEvent);
+                                this.getMainSearchPane().getTourGeekScreen().getParams().propertyChange(propChangeEvent);
                             }
                         }
                     }
@@ -256,7 +256,7 @@ public class JProductSearchPane extends JBaseScreen
                 if (boolSuccess != null)
                     if (boolSuccess.booleanValue())
                 {
-                    JBasePanel displayPanel = this.getMainSearchPane().getTourAppScreen().getCurrentDisplayPanel();
+                    JBasePanel displayPanel = this.getMainSearchPane().getTourGeekScreen().getCurrentDisplayPanel();
                     if (!(displayPanel instanceof JDisplayPanel))
                         return;
                     JBaseScreen screenDisplay = ((JDisplayPanel)displayPanel).getDisplayScreen();
@@ -273,7 +273,7 @@ public class JProductSearchPane extends JBaseScreen
                         }
                         int iCurrentRow = searchTable.getSelectedRow();
                         boolean bContextPanelCurrent = false;
-                        JContextPanel contextPanel = this.getMainSearchPane().getTourAppScreen().getContextPanel();
+                        JContextPanel contextPanel = this.getMainSearchPane().getTourGeekScreen().getContextPanel();
                         if (BookingConstants.PRODUCT.equals(contextPanel.getScreenType())
                             && (searchTable instanceof ProductGridModel)
                             && (((ProductGridModel)searchTable).getProductType().equals(contextPanel.getProductType())))
@@ -394,7 +394,7 @@ public class JProductSearchPane extends JBaseScreen
      */
     public Object getMainProperty(String strKey)
     {
-        return this.getMainSearchPane().getTourAppScreen().getParams().get(strKey);
+        return this.getMainSearchPane().getTourGeekScreen().getParams().get(strKey);
     }
     /**
      * Make the remote session.
@@ -404,17 +404,17 @@ public class JProductSearchPane extends JBaseScreen
         RemoteSession remoteSession = null;
         if (parentScreen == null)
             return null;
-        RemoteSession parentSessionObject = ((JMainSearchPane)parentScreen).getTourAppScreen().getRemoteSession();
+        RemoteSession parentSessionObject = ((JMainSearchPane)parentScreen).getTourGeekScreen().getRemoteSession();
         String strTableName = this.getRemoteTableName();
         if (strTableName != null)
         {
-            String strRemoteSession = "com.tourapp.tour.product.remote.search." + strTableName + "SearchSession";
+            String strRemoteSession = "com.tourgeek.tour.product.remote.search." + strTableName + "SearchSession";
             try   {
                 remoteSession = (RemoteSession)parentSessionObject.makeRemoteSession(strRemoteSession);
 //                RemoteTable remoteTable = remoteSession.getRemoteTable(strTableName);
 //                this.setFieldList(remoteTable.makeFieldList(null));
-//                remoteTable = new com.tourapp.thin.base.db.client.CachedRemoteTable(remoteTable);
-//                new com.tourapp.thin.base.db.client.RemoteFieldTable(this.getFieldList(), remoteTable, applet);
+//                remoteTable = new com.tourgeek.thin.base.db.client.CachedRemoteTable(remoteTable);
+//                new com.tourgeek.thin.base.db.client.RemoteFieldTable(this.getFieldList(), remoteTable, applet);
             } catch (RemoteException ex)    {
                 ex.printStackTrace();
             }
@@ -440,7 +440,7 @@ public class JProductSearchPane extends JBaseScreen
                 strID = Integer.toString(iID - 1);
         }
         PropertyChangeEvent propChangeEvent = new PropertyChangeEvent(evt.getSource(), strProperty, null, strID);
-        this.getMainSearchPane().getTourAppScreen().getParams().propertyChange(propChangeEvent);
+        this.getMainSearchPane().getTourGeekScreen().getParams().propertyChange(propChangeEvent);
         return;
     }
     /**

@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking;
+package com.tourgeek.thin.app.booking;
 
 /**
  * OrderEntry.java:   Applet
@@ -66,12 +66,12 @@ public class BookingApplet extends BaseApplet
 //      this.linkNewRemoteTable(null, record);
 
         FieldList record = null;
-//      FieldList record = new com.tourapp.thin.main.Menus(this);  // If overriding class didn't set this
+//      FieldList record = new com.tourgeek.thin.main.Menus(this);  // If overriding class didn't set this
 //      this.linkNewRemoteTable(null, record);
         if (this.getProperty(Params.MENU) == null)
             this.setProperty(Params.MENU, "1205");
         JScreen thinscreen = new org.jbundle.thin.base.screen.menu.JRemoteMenuScreen(this, record);    // test
-//      JScreen thinscreen = new com.tourapp.thin.app.booking.lookup.BookingLookupScreen(this, record);  // test
+//      JScreen thinscreen = new com.tourgeek.thin.app.booking.lookup.BookingLookupScreen(this, record);  // test
  
         thinscreen.setMinimumSize(new Dimension(100, 100));
         thinscreen.setAlignmentX(LEFT_ALIGNMENT);

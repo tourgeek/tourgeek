@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.model;
+package com.tourgeek.thin.app.booking.entry.model;
 
 import java.util.Date;
 
@@ -17,7 +17,7 @@ import org.jbundle.thin.base.db.FieldTable;
 import org.jbundle.thin.base.screen.cal.grid.CalendarThinTableModel;
 import org.jbundle.thin.base.screen.grid.JCellTextField;
 
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
 
 public class CustSaleDetailThinTableModel extends CalendarThinTableModel
 {

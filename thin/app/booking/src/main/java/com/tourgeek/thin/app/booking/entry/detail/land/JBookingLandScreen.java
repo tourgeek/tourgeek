@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.detail.land;
+package com.tourgeek.thin.app.booking.entry.detail.land;
 
 /**
  * OrderEntry.java:   Applet
@@ -21,12 +21,12 @@ import org.jbundle.thin.base.db.FieldList;
 import org.jbundle.thin.base.screen.BaseApplet;
 import org.jbundle.thin.base.screen.util.JRemoteComboBox;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.detail.JBaseBookingDetailScreen;
-import com.tourapp.thin.tour.booking.detail.db.BookingDetail;
-import com.tourapp.thin.tour.booking.detail.db.BookingLand;
-import com.tourapp.thin.tour.product.land.db.Land;
-import com.tourapp.thin.tour.product.land.db.LandClass;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.detail.JBaseBookingDetailScreen;
+import com.tourgeek.thin.tour.booking.detail.db.BookingDetail;
+import com.tourgeek.thin.tour.booking.detail.db.BookingLand;
+import com.tourgeek.thin.tour.product.land.db.Land;
+import com.tourgeek.thin.tour.product.land.db.LandClass;
 
 /**
  * Main Class for applet OrderEntry

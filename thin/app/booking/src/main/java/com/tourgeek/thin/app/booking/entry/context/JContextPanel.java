@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.context;
+package com.tourgeek.thin.app.booking.entry.context;
 
 import java.awt.Color;
 import java.awt.Container;
@@ -21,13 +21,13 @@ import org.jbundle.util.calendarpanel.event.MyListSelectionEvent;
 import org.jbundle.util.calendarpanel.event.MyListSelectionListener;
 import org.jbundle.thin.base.screen.grid.JGridScreen;
 
-import com.tourapp.thin.app.booking.entry.BookingConstants;
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.model.BookingDetailCalendarItem;
-import com.tourapp.thin.app.booking.entry.model.CustSaleDetailThinTableModel;
-import com.tourapp.thin.app.booking.entry.search.base.JProductContextScreen;
-import com.tourapp.thin.app.booking.entry.search.base.ProductGridModel;
-import com.tourapp.thin.tour.product.tour.db.TourHeader;
+import com.tourgeek.thin.app.booking.entry.BookingConstants;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.model.BookingDetailCalendarItem;
+import com.tourgeek.thin.app.booking.entry.model.CustSaleDetailThinTableModel;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductContextScreen;
+import com.tourgeek.thin.app.booking.entry.search.base.ProductGridModel;
+import com.tourgeek.thin.tour.product.tour.db.TourHeader;
 
 /**
  * The ContextPanel displays a sub-panel for the current screen context.
@@ -149,7 +149,7 @@ public class JContextPanel extends JBasePanel
         {
             if (bScreenChange)
                 return;     // Already disconnected!
-            TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+            TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
             if (screenMain == null)
                 return;
             if (screenMain.getTourRecord() == null)
@@ -321,21 +321,21 @@ public class JContextPanel extends JBasePanel
     {
         JBaseScreen subPanel = null;
         if ((strItemType != null) && (strItemType.startsWith(ProductConstants.TOUR)))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.tour.JTourHeaderContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.tour.JTourHeaderContextScreen(parent, fieldListNew);
         else if (ProductConstants.AIR.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.air.JAirContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.air.JAirContextScreen(parent, fieldListNew);
         else if (ProductConstants.HOTEL.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.hotel.JHotelContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.hotel.JHotelContextScreen(parent, fieldListNew);
         else if (ProductConstants.LAND.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.land.JLandContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.land.JLandContextScreen(parent, fieldListNew);
         else if (ProductConstants.CAR.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.car.JCarContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.car.JCarContextScreen(parent, fieldListNew);
         else if (ProductConstants.TRANSPORTATION.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.trans.JTransportationContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.trans.JTransportationContextScreen(parent, fieldListNew);
         else if (ProductConstants.CRUISE.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.cruise.JCruiseContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.cruise.JCruiseContextScreen(parent, fieldListNew);
         else if (ProductConstants.ITEM.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.search.item.JItemContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.search.item.JItemContextScreen(parent, fieldListNew);
         return subPanel;
     }
     /**
@@ -349,21 +349,21 @@ public class JContextPanel extends JBasePanel
     {
         JBaseScreen subPanel = null;
         if (ProductConstants.TOUR.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.tour.JBookingTourContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.tour.JBookingTourContextScreen(parent, fieldListNew);
         else if (ProductConstants.AIR.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.air.JBookingAirContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.air.JBookingAirContextScreen(parent, fieldListNew);
         else if (ProductConstants.HOTEL.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.hotel.JBookingHotelContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.hotel.JBookingHotelContextScreen(parent, fieldListNew);
         else if (ProductConstants.LAND.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.land.JBookingLandContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.land.JBookingLandContextScreen(parent, fieldListNew);
         else if (ProductConstants.CAR.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.car.JBookingCarContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.car.JBookingCarContextScreen(parent, fieldListNew);
         else if (ProductConstants.TRANSPORTATION.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.trans.JBookingTransportationContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.trans.JBookingTransportationContextScreen(parent, fieldListNew);
         else if (ProductConstants.CRUISE.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.cruise.JBookingCruiseContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.cruise.JBookingCruiseContextScreen(parent, fieldListNew);
         else if (ProductConstants.ITEM.equalsIgnoreCase(strItemType))
-            subPanel = new com.tourapp.thin.app.booking.entry.detail.item.JBookingItemContextScreen(parent, fieldListNew);
+            subPanel = new com.tourgeek.thin.app.booking.entry.detail.item.JBookingItemContextScreen(parent, fieldListNew);
         return subPanel;
     }
     /**

@@ -41,7 +41,7 @@ import org.jbundle.base.screen.model.calendar.*;
 import javax.swing.*;
 import org.jbundle.thin.base.screen.*;
 import com.tourgeek.tour.product.base.db.*;
-import com.tourapp.thin.app.booking.entry.*;
+import com.tourgeek.thin.app.booking.entry.*;
 import org.jbundle.model.util.*;
 
 /**

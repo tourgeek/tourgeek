@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.base;
+package com.tourgeek.thin.app.booking.entry.search.base;
 
 /**
  * OrderEntry.java:   Applet
@@ -44,13 +44,13 @@ import org.jbundle.thin.base.screen.util.JFSTextField;
 import org.jbundle.thin.base.screen.util.JFSTextScroller;
 import org.jbundle.thin.base.util.message.ThinMessageManager;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.context.JContextPanel;
-import com.tourapp.thin.app.booking.entry.search.JDisplayPanel;
-import com.tourapp.thin.app.booking.entry.search.SearchConstants;
-import com.tourapp.thin.tour.product.air.db.Air;
-import com.tourapp.thin.tour.product.air.db.City;
-import com.tourapp.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.context.JContextPanel;
+import com.tourgeek.thin.app.booking.entry.search.JDisplayPanel;
+import com.tourgeek.thin.app.booking.entry.search.SearchConstants;
+import com.tourgeek.thin.tour.product.air.db.Air;
+import com.tourgeek.thin.tour.base.db.City;
+import com.tourgeek.thin.tour.product.base.db.Product;
 
 /**
  * Main Class for applet OrderEntry
@@ -136,7 +136,7 @@ public class JProductScreen extends JScreen
             applet = BaseApplet.getSharedInstance();
         applet.getApplication().getResources(applet.getApplication().getProperty(Params.RESOURCE), true);   // Make sure I'm using default resources
 
-        TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         JContextPanel contextPanel = screenMain.getContextPanel();
         contextPanel.selectPanel(SearchConstants.PRODUCT, this.getRemoteTableName(), record, true);        // Display this context panel and link to this record.
         
@@ -149,7 +149,7 @@ public class JProductScreen extends JScreen
     {
         ThinMessageManager.freeScreenMessageListeners(this);
 
-        TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+        TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
         JContextPanel contextPanel = screenMain.getContextPanel();
         if (contextPanel != null)
             contextPanel.selectPanel(SearchConstants.PRODUCT, this.getRemoteTableName(), null, true);   // Clear this context screen (if it is still being displayed).
@@ -213,7 +213,7 @@ public class JProductScreen extends JScreen
             this.addFieldList(record);
             RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)this.getFieldList().getTable()).getRemoteTableType(Remote.class);
             boolean bCacheTable = true;
-            TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+            TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
             screenMain.linkRemoteSessionTable(remoteSession, record, bCacheTable);
 
             if (!Product.CITY_ID.equalsIgnoreCase(fieldInfo.getFieldName()))
@@ -252,7 +252,7 @@ public class JProductScreen extends JScreen
             component = this.getDisplayPanel().addCurrencyAmount(fieldInfo, this.getFieldList().getField(Product.CURRENCY_CODE), null);
             component = this.getDisplayPanel().addCurrencyAmount(this.getFieldList().getField(Product.PRODUCT_COST_LOCAL), this.getFieldList().getField(Product.CURRENCY_CODE_LOCAL), (JPanel)component);
         }
-        if (com.tourapp.thin.tour.product.land.db.Land.DAYS_OF_WEEK.equalsIgnoreCase(fieldInfo.getFieldName()))
+        if (com.tourgeek.thin.tour.product.land.db.Land.DAYS_OF_WEEK.equalsIgnoreCase(fieldInfo.getFieldName()))
         {
             fieldInfo = new LinkedConverter(fieldInfo)
             {

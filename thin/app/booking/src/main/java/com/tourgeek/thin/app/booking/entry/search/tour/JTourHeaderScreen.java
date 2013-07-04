@@ -1,7 +1,7 @@
 /*
  * Copyright © 2012 jbundle.org. All rights reserved.
  */
-package com.tourapp.thin.app.booking.entry.search.tour;
+package com.tourgeek.thin.app.booking.entry.search.tour;
 
 /**
  * OrderEntry.java:   Applet
@@ -24,11 +24,11 @@ import org.jbundle.thin.base.screen.db.converter.SecondaryRecordConverter;
 import org.jbundle.thin.base.screen.landf.ScreenUtil;
 import org.jbundle.thin.base.screen.util.JFSTextField;
 
-import com.tourapp.thin.app.booking.entry.TourAppScreen;
-import com.tourapp.thin.app.booking.entry.search.base.JProductScreen;
-import com.tourapp.thin.tour.product.base.db.Product;
-import com.tourapp.thin.tour.product.tour.db.TourHeader;
-import com.tourapp.thin.tour.product.tour.db.TourType;
+import com.tourgeek.thin.app.booking.entry.TourGeekScreen;
+import com.tourgeek.thin.app.booking.entry.search.base.JProductScreen;
+import com.tourgeek.thin.tour.product.base.db.Product;
+import com.tourgeek.thin.tour.product.tour.db.TourHeader;
+import com.tourgeek.thin.tour.product.tour.db.TourType;
 
 /**
  * Main Class for applet OrderEntry
@@ -129,7 +129,7 @@ public class JTourHeaderScreen extends JProductScreen
             this.addFieldList(record);
             RemoteSession remoteSession = ((org.jbundle.thin.base.db.client.RemoteFieldTable)this.getFieldList().getTable()).getRemoteTableType(Remote.class);
             boolean bCacheTable = false;
-            TourAppScreen screenMain = (TourAppScreen)this.getTargetScreen(TourAppScreen.class);
+            TourGeekScreen screenMain = (TourGeekScreen)this.getTargetScreen(TourGeekScreen.class);
             screenMain.linkRemoteSessionTable(remoteSession, record, bCacheTable);
 
             fieldInfo = new SecondaryRecordConverter(fieldInfo, remoteSession, record, TourType.DESCRIPTION, bCacheTable, TourType.ID, null, null);
