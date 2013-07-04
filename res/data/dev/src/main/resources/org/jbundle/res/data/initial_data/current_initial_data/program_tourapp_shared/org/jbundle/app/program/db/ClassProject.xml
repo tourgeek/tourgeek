@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<ClassProject ID="1048575">
-		<LastChanged>2012-01-13T19:52:21</LastChanged>
+		<LastChanged>2013-07-03T17:10:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>tour</Name>
 		<ParentFolderID>1,048,588</ParentFolderID>
@@ -9,13 +9,13 @@
 		<Code/>
 		<Description/>
 		<SystemClasses/>
-		<PackageName>com.tourapp.tour</PackageName>
+		<PackageName>com.tourgeek.tour</PackageName>
 		<ProjectPath>tour</ProjectPath>
-		<InterfacePackage>com.tourapp.model.tour</InterfacePackage>
+		<InterfacePackage>com.tourgeek.model.tour</InterfacePackage>
 		<InterfaceProjectPath/>
-		<ThinPackage>com.tourapp.thin.tour</ThinPackage>
+		<ThinPackage>com.tourgeek.thin.tour</ThinPackage>
 		<ThinProjectPath/>
-		<ResourcePackage>com.tourapp.res.tour</ResourcePackage>
+		<ResourcePackage>com.tourgeek.res.tour</ResourcePackage>
 		<ResProjectPath/>
 		<Properties/>
 		<ArtifactId/>
@@ -286,9 +286,9 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048588">
-		<LastChanged>2013-01-21T11:50:21</LastChanged>
+		<LastChanged>2013-07-03T17:10:10</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>tourapp</Name>
+		<Name>tourgeek</Name>
 		<ParentFolderID>16,777,309</ParentFolderID>
 		<Sequence/>
 		<Comment/>
@@ -1276,7 +1276,7 @@
 		<GroupId/>
 	</ClassProject>
 	<ClassProject ID="1048633">
-		<LastChanged>2012-04-08T07:48:10</LastChanged>
+		<LastChanged>2013-07-03T17:11:04</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>model</Name>
 		<ParentFolderID>1,048,588</ParentFolderID>
@@ -1285,13 +1285,13 @@
 		<Code/>
 		<Description>Tour model classes</Description>
 		<SystemClasses>N</SystemClasses>
-		<PackageName>com.tourapp.model</PackageName>
+		<PackageName>com.tourgeek.model</PackageName>
 		<ProjectPath>model</ProjectPath>
-		<InterfacePackage/>
+		<InterfacePackage>com.tourgeek.model.model</InterfacePackage>
 		<InterfaceProjectPath/>
-		<ThinPackage/>
+		<ThinPackage>com.tourgeek.model.thin</ThinPackage>
 		<ThinProjectPath/>
-		<ResourcePackage/>
+		<ResourcePackage>com.tourgeek.model.res</ResourcePackage>
 		<ResProjectPath/>
 		<Properties/>
 		<ArtifactId/>
