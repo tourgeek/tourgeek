@@ -198,7 +198,7 @@ public class TourHeaderGridScreen extends GridScreen
         {
             iCommandOptions = ScreenConstants.USE_NEW_WINDOW | ScreenConstants.DONT_PUSH_TO_BROWSER;     // Must open a new window
             strCommand = Utility.addURLParam(null, DBParams.APPLET, DBParams.BASE_APPLET);
-            strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourgeek.thin.app.booking.entry.tourgeekScreen.class.getName());
+            strCommand = Utility.addURLParam(strCommand, DBParams.SCREEN, com.tourgeek.thin.app.booking.entry.TourGeekScreen.class.getName());
             if ((this.getMainRecord().getEditMode() == DBConstants.EDIT_IN_PROGRESS) ||
                 (this.getMainRecord().getEditMode() == DBConstants.EDIT_CURRENT))
             {   // Add booking ID
