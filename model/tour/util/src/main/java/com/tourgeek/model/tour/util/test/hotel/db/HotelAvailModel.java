@@ -1,4 +1,8 @@
-
+/**
+  * @(#)HotelAvailModel.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.model.tour.util.test.hotel.db;
 
 import org.jbundle.model.db.*;

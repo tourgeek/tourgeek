@@ -1,4 +1,8 @@
-
+/**
+  * @(#)MergeCodeTable.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.util.script.merge;
 
 import java.util.*;

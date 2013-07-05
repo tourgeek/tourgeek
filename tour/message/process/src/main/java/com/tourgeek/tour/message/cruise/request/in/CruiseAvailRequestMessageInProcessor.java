@@ -1,4 +1,8 @@
-
+/**
+  * @(#)CruiseAvailRequestMessageInProcessor.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.message.cruise.request.in;
 
 import java.util.*;

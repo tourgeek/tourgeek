@@ -1,4 +1,8 @@
-
+/**
+  * @(#)Tour.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.thin.tour.booking.db;
 
 import com.tourgeek.model.tour.product.tour.db.*;

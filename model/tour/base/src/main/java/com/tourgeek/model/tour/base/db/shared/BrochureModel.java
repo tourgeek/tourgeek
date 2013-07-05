@@ -1,4 +1,8 @@
-
+/**
+  * @(#)BrochureModel.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.model.tour.base.db.shared;
 
 import org.jbundle.model.db.*;

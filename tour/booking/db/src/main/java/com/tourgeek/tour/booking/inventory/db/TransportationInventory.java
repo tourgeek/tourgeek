@@ -1,4 +1,8 @@
-
+/**
+  * @(#)TransportationInventory.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.booking.inventory.db;
 
 import java.util.*;

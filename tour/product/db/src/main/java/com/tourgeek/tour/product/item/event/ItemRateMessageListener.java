@@ -1,4 +1,8 @@
-
+/**
+  * @(#)ItemRateMessageListener.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.product.item.event;
 
 import java.util.*;

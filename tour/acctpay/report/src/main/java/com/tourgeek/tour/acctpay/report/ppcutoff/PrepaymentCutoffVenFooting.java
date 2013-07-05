@@ -1,4 +1,8 @@
-
+/**
+  * @(#)PrepaymentCutoffVenFooting.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.acctpay.report.ppcutoff;
 
 import java.util.*;

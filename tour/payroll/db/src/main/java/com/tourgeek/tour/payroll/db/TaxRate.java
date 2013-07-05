@@ -1,4 +1,8 @@
-
+/**
+  * @(#)TaxRate.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.payroll.db;
 
 import java.util.*;

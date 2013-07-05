@@ -1,4 +1,8 @@
-
+/**
+  * @(#)ItemMessageData.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.message.item.request.data;
 
 import java.util.*;

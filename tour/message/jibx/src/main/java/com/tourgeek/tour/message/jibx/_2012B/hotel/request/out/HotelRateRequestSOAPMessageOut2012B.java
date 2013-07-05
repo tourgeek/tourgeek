@@ -1,4 +1,8 @@
-
+/**
+  * @(#)HotelRateRequestSOAPMessageOut2012B.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.message.jibx._2012B.hotel.request.out;
 
 import java.util.*;

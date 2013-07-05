@@ -1,4 +1,8 @@
-
+/**
+  * @(#)PingService2012BImpl.
+  * Copyright © 2013 tourgeek.com. All rights reserved.
+  * GPL3 Open Source Software License.
+  */
 package com.tourgeek.tour.message.service._2012B.ping;
 
 import java.util.*;
