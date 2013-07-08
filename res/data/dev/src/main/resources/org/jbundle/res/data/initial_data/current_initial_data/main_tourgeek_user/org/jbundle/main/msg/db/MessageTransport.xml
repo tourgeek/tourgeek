@@ -30,7 +30,7 @@ mail.smtp.port=465
 sendUsing=smtp
 messageTimeoutSeconds=259200
 receiveTransport=pop3
-smtp.password=NDgwEhwD
+smtp.password=NDgwEhwDSrE=
 mail.pop3.port=995
 smtp.username=don@tourgeek.com
 host=smtp.gmail.com
@@ -38,7 +38,7 @@ mail.pop3.ssl.enable=true
 sendTransport=smtp
 replyTo=don@tourgeek.com
 baseURL=http\://www.tourgeek.com/
-pop3password=NDgwEhwD
+pop3password=NDgwEhwDSrE=
 ]]></Properties>
 		<MessageTransportType>ManualResp</MessageTransportType>
 	</MessageTransport>
