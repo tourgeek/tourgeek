@@ -7,7 +7,7 @@
     <artifactId>tourgeek-config-web-reactor</artifactId>
     <version>0.8.2-SNAPSHOT</version>
   </parent>
-
+  
   <artifactId>com.tourgeek.config.web.httpweb</artifactId>
 
 	<name>tourgeek-config-web-httpweb - Hybrid osgi webapp</name>
@@ -47,12 +47,12 @@
 				</configuration>
 			</plugin>
 
-			<plugin>
+			<!-- plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-dependency-plugin</artifactId>
 				<executions>
 					<execution>
-						<id>move-dojo-resources</id> <!--  Copy dojo resources before packaging starts. -->
+						<id>move-dojo-resources</id>
 						<phase>process-resources</phase>
 						<goals>
 							<goal>unpack</goal>
@@ -114,15 +114,6 @@
 							<excludes>docs\/programmer\/**,docs\/help\/specifications\/**,docs\/test\/**
 							</excludes>
 						</artifactItem>
-						<!-- artifactItem>
-							<groupId>org.jbundle.config.web</groupId>
-							<artifactId>jbundle-config-web-jnlp</artifactId>
-							<version>${jbundle-version}</version>
-							<classifier>bin</classifier>
-							<type>zip</type>
-							<outputDirectory>${project.build.directory}/${project.build.finalName}
-							</outputDirectory>
-						</artifactItem -->
 						<artifactItem>
 						  <groupId>org.jbundle.util.osgi.wrapped</groupId>
 						  <artifactId>org.jbundle.util.osgi.wrapped.uk.org.pajhome.crypt.sha1</artifactId>
@@ -130,21 +121,6 @@
 							<type>jar</type>
 							<outputDirectory>${project.build.directory}/sha</outputDirectory>
 						</artifactItem>
-						<!-- artifactItem>
-							<groupId>com.tourgeek.config</groupId>
-							<artifactId>tourgeek-config-web-jnlp</artifactId>
-							<version>${project.version}</version>
-							<classifier>bin</classifier>
-							<type>zip</type>
-							<outputDirectory>${project.build.directory}/${project.build.finalName}
-							</outputDirectory>
-						</artifactItem -->
-						<!--
-							artifactItem> <groupId>org.jbundle.config</groupId>
-							<artifactId>org.jbundle.config.web.cocoon</artifactId>
-							<version>${project.version}</version> <type>war</type>
-							<outputDirectory>${project.build.directory}/${project.build.finalName}</outputDirectory>
-							</artifactItem -->
 					</artifactItems>
 				</configuration>
 			</plugin>
@@ -171,10 +147,10 @@
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
+			</plugin -->
 		</plugins>
 
-		<resources>
+		<!-- resources>
 			<resource>
 				<directory>${project.build.directory}/sha/org/jbundle/util/osgi/wrapped/uk/org/pajhome/crypt/sha1</directory>
 				<targetPath>docs/styles/js/sha</targetPath>
@@ -183,7 +159,7 @@
 				<directory>${project.build.directory}/${project.build.finalName}</directory>
 				<targetPath />
 			</resource>
-		</resources>
+		</resources -->
 	</build>
 
 	<dependencies>	    

@@ -10621,7 +10621,7 @@ A tourgeek.com Outbound Tour Operator software demonstration in under two minute
 	<Menus ID="1824">
 		<LastChanged>2011-08-31T22:26:42</LastChanged>
 		<Deleted>N</Deleted>
-		<Name>Register</Name>
+		<Name>Get Started</Name>
 		<ParentFolderID>1,750</ParentFolderID>
 		<Sequence>40</Sequence>
 		<Comment type="XML"><html>
@@ -10629,13 +10629,13 @@ A tourgeek.com Outbound Tour Operator software demonstration in under two minute
 Start using tourgeek<font color="orange">.</font>com now.
  </body>
 </html></Comment>
-		<Code>register</Code>
+		<Code>getstarted</Code>
 		<Type>menu</Type>
 		<AutoDesc>Y</AutoDesc>
-		<Program>register</Program>
+		<Program>getstarted</Program>
 		<Params type="XML"><properties>
    <comment>Field properties</comment>
-   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/registration.xml</entry>
+   <entry key="xml">com/tourgeek/res/docs/com/tourgeek/getstarted.xml</entry>
 </properties></Params>
 		<IconResource>Edit</IconResource>
 		<Keywords/>
