@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-booking-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.2-SNAPSHOT</version>
+    <version>0.8.2</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.booking.remote</artifactId>

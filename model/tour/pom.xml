@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourgeek-model-reactor</artifactId>
     <groupId>com.tourgeek.model</groupId>
-    <version>0.8.2-SNAPSHOT</version>
+    <version>0.8.2</version>
   </parent>
 
   <artifactId>tourgeek-model-tour-reactor</artifactId>
