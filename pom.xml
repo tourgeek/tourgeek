@@ -12,7 +12,7 @@
 
   <groupId>com.tourgeek.config</groupId>
   <artifactId>tourgeek-project-reactor</artifactId>
-  <version>0.8.3-SNAPSHOT</version>
+  <version>0.8.3</version>
   <packaging>pom</packaging>
   <name>tour-project-reactor - Top Level Project parent</name>
   <description>Parent project for tour applications</description>

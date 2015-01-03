@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-config-dep-reactor</artifactId>
     <groupId>com.tourgeek.config</groupId>
-    <version>0.8.3-SNAPSHOT</version>
+    <version>0.8.3</version>
   </parent>
 
   <artifactId>tourgeek-config-dep-res</artifactId>
