@@ -13,3 +13,5 @@ skeleton_test_data*
 release.properties
 *.log
 .gitignore
+*.iml
+.idea
