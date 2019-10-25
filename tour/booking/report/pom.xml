@@ -31,12 +31,7 @@
       <version>${tourgeek-version-range}</version>
       <artifactId>com.tourgeek.model.tour.booking</artifactId>
     </dependency>
-    <dependency>
-      <groupId>com.tourgeek.tour</groupId>
-      <version>${tourgeek-version-range}</version>
-      <artifactId>com.tourgeek.tour.booking.entry</artifactId>
-    </dependency>
-    
+
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.booking</artifactId>

@@ -122,10 +122,10 @@
 				servlet is tiny, the jar is huge -->
 		</dependency>
 		<dependency>
-			<groupId>org.mortbay.jetty</groupId>
-			<artifactId>jetty</artifactId>
-			<version>6.1.26</version>
-			<scope>provided</scope>   <!-- This is usually included in distributions. If you do include this, the 
+			<groupId>org.eclipse.jetty</groupId>
+			<artifactId>jetty-http</artifactId>
+			<version>${jetty-version}</version>
+			<scope>provided</scope>   <!-- This is usually included in distributions. If you do include this, the
 				servlet is tiny, the jar is huge -->
 		</dependency>
 		<dependency>
