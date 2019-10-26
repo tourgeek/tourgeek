@@ -80,22 +80,23 @@
                 </goals>
               </execution>
             </executions>
-            <configuration>
+            <configuration> <!-- This plugin populates the databases: mvn -P import exec:java -->
             <mainClass>org.jbundle.base.db.xmlutil.XmlInOut</mainClass>
             <arguments>
               <argument>allFiles=true</argument>
               <argument>loadInitialData=false</argument>
-              <argument>archiveDir=/home/don/workspace/workspace/jbundle/jbundle/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
-              /home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
-	      /home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
-              /home/don/workspace/workspace/tourgeek/res/data/data/src/main/webapp/org/jbundle/res/data/initial_data/current_initial_data/,
-              /home/don/workspace/workspace/tourgeek/res/data/data/src/main/webapp/com/tourgeek/res/data/initial_data/current_initial_data/</argument>
+              <argument>archiveDir=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/data/src/main/resources/org/jbundle/res/data/initial_data/current_initial_data,
+          /home/dcorley/workspace/workspace/jbundle/jbundle/res/data/test/src/main/resources/org/jbundle/res/data/initial_data/current_initial_data,
+          /home/dcorley/workspace/workspace/jbundle/jbundle/res/data/app/src/main/resources/org/jbundle/res/data/initial_data/current_initial_data,
+          /home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/com/tourgeek/res/data/initial_data/current_initial_data,
+          /home/dcorley/workspace/workspace/app/tourgeek/res/data/dev/src/main/resources/org/jbundle/res/data/initial_data/current_initial_data</argument>
               <!-- argument>connectionType=proxy</argument>
         <argument>remotehost=${jbundle.server}</argument>
         <argument>codebase=${jbundle.codebase}</argument -->
         <argument>local=Jdbc</argument>
         <argument>remote=Jdbc</argument>
         <argument>table=Jdbc</argument>
+                <argument>messageserver=false</argument>
 		<!-- argument>databaseproduct=derby</argument -->
             </arguments>
           <systemProperties>
