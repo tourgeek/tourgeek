@@ -96,8 +96,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
 
     /**
      * Make sure the dependent services are up, then call startupService.
-     * @param versionRange Bundle version
-     * @param baseBundleServiceClassName
+     * @param bundleContext
      * @return false if I'm waiting for the service to startup.
      */
     public boolean checkDependentServices(BundleContext bundleContext)
@@ -119,7 +118,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
     /**
      * Make a servlet tracker for the servlet at this alias.
      */
-    public ServiceTracker makeServletTracker(String alias, Dictionary<String, String> properties)
+    public ServiceTracker makeServletTracker(String alias, Dictionary<String, Object> properties)
     {
 //?        dictionary.put(HttpServiceTracker.SERVICE_PID, getServicePid(context));
 //?        dictionary.put(HttpServiceTracker.SERVLET_CLASS, getServletClass(context));
@@ -148,7 +147,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
             {
                 servlet = (Servlet)ClassServiceUtility.getClassService().makeObjectFromClassName(RedirectServlet.class.getName());
                 httpContext = new FileHttpContext(servlet, context.getBundle());
-                String path = this.getProperty("wwwDemoPath");    // Basepath (usually pointing to a directory) is supplied in menu properties
+                String path = (String)this.getProperty("wwwDemoPath");    // Basepath (usually pointing to a directory) is supplied in menu properties
                 if (path == null)
                     path = "com/tourgeek/res/docs/com/tourgeek/www/";
                 properties.put(DefaultServlet.BASE_PATH, path);
@@ -254,7 +253,7 @@ public class HttpServiceActivator extends MultipleHttpServiceActivator
      * @param alias
      * @param properties
      */
-    public void addRedirectProperties(String alias, Dictionary<String, String> properties)
+    public void addRedirectProperties(String alias, Dictionary<String, Object> properties)
     {
         // This redirects root url to index.html
         properties.put(RedirectServlet.MATCH, DBConstants.BLANK);
