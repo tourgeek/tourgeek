@@ -22,11 +22,11 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
 import com.tourgeek.tour.product.base.ota.db.*;
-import org.jibx.schema.org.opentravel._2012B.codetable.*;
+import org.jibx.schema.org.opentravel._2014B.codetable.*;
 import javax.xml.bind.*;
 import java.io.*;
 import javax.xml.datatype.*;
-import org.jibx.schema.org.opentravel._2012B.base.*;
+import org.jibx.schema.org.opentravel._2014B.base.*;
 import org.jibx.runtime.*;
 import org.joda.time.*;
 
@@ -100,7 +100,7 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                 CodeTables.CodeTable.Descriptions descriptions = table.getDescriptions();
                 Map<String,Object> properties = null;
                 if (descriptions != null)
-                    for (org.jibx.schema.org.opentravel._2012B.base.FreeText desc : descriptions.getDescriptionList())
+                    for (org.jibx.schema.org.opentravel._2014B.base.FreeText desc : descriptions.getDescriptionList())
                     {
                         String strLanguage = desc.getLanguage();
                         String strValue = desc.getString();

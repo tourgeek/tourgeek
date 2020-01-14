@@ -100461,7 +100461,7 @@ return iErrorCode;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>PingRequestJibxMessageOut2012B</MethodClassName>
+		<MethodClassName>PingRequestJibxMessageOut2014B</MethodClassName>
 		<LogicSource><![CDATA[BaseMessage message = this.getMessage();
 String strMessage = message.getString(PingRequestMessageInProcessor.MESSAGE_PARAM);
 	

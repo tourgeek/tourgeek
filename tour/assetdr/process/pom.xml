@@ -19,10 +19,10 @@
       <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
       <version>${tourgeek-version-range}</version>
     </dependency>
-    <dependency>
+    <!-- dependency> This web service has been discontinued.
       <groupId>org.jibx.schema.net.webservicex</groupId>
       <artifactId>org.jibx.schema.net.webservicex.currencyconvertor</artifactId>
-    </dependency>
+    </dependency -->
     <dependency>
       <groupId>org.jbundle.base.message</groupId>
       <artifactId>org.jbundle.base.message.jibx</artifactId>

@@ -34,12 +34,12 @@
     </dependency>
 
 	<dependency>
-	  <groupId>org.jibx.schema.org.opentravel._2012B</groupId>
-	  <artifactId>org.jibx.schema.org.opentravel._2012B.ping</artifactId>
+	  <groupId>org.jibx.schema.org.opentravel._2014B</groupId>
+	  <artifactId>org.jibx.schema.org.opentravel._2014B.ping</artifactId>
 	</dependency>
 	<dependency>
-	  <groupId>org.jibx.schema.org.opentravel._2012B</groupId>
-	  <artifactId>org.jibx.schema.org.opentravel._2012B.hotel</artifactId>
+	  <groupId>org.jibx.schema.org.opentravel._2014B</groupId>
+	  <artifactId>org.jibx.schema.org.opentravel._2014B.hotel</artifactId>
 	</dependency>
 
     <dependency>

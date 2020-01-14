@@ -21,7 +21,7 @@ import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
-import org.jibx.schema.net.webservicex.currencyconvertor.*;
+// import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.core.trx.internal.*;
 import org.jbundle.base.message.trx.message.external.*;
@@ -64,6 +64,7 @@ public class CurrencyResponseSOAPMessageIn extends JibxConvertToMessage
      */
     public int convertMarshallableObjectToInternal(Object root, RecordOwner recordOwner)
     {
+        /**
         if (root instanceof ConversionRateResponse)
         {       // Always
             ConversionRateResponse msg = (ConversionRateResponse)root;
@@ -72,6 +73,7 @@ public class CurrencyResponseSOAPMessageIn extends JibxConvertToMessage
             BaseMessage message = this.getMessage();
             message.put(ManualMessage.MESSAGE_PARAM, rate);
         }
+         **/
         
         return DBConstants.NORMAL_RETURN;
     }
