@@ -111,8 +111,8 @@
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
         <dependency>
-            <groupId>org.jbundle.util.osgi.wrapped</groupId>
-            <artifactId>org.jbundle.util.osgi.wrapped.jnlp.sample</artifactId>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>webstart-jnlp-servlet</artifactId>
 			<scope>provided</scope> <!-- Hey this is OSGi -->
 		</dependency>
 		<dependency>
