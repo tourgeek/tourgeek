@@ -100486,7 +100486,7 @@ return root;]]></LogicSource>
 		<LogicDescription/>
 		<MethodReturns/>
 		<MethodInterface/>
-		<MethodClassName>PingResponseJibxMessageIn2012B</MethodClassName>
+		<MethodClassName>PingResponseJibxMessageIn2014B</MethodClassName>
 		<LogicSource><![CDATA[if (root instanceof PingRS)
 {       // Always
     PingRS msg = (PingRS)root;
