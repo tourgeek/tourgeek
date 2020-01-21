@@ -97977,7 +97977,7 @@ new Country(this);]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="7540">
-		<LastChanged>2012-01-31T10:43:55</LastChanged>
+		<LastChanged>2020-01-20T21:27:52</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>200</Sequence>
 		<MethodName>updateAllCurrencies</MethodName>
@@ -97995,7 +97995,7 @@ try {
             continue;
         record.edit();
         
-        double dRate = this.getConversionRate(record.getField(Currencys.CURRENCY_CODE).toString());
+        double dRate = 0.0; // this.getConversionRate(record.getField(Currencys.CURRENCY_CODE).toString());
         if (dRate != 0.0)
             record.getField(Currencys.LAST_RATE).setValue(1 / dRate);
         
@@ -98025,7 +98025,7 @@ try {
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="7542">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
+		<LastChanged>2020-01-20T21:25:23</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>convertInternalToMarshallableObject</MethodName>
@@ -98033,7 +98033,8 @@ try {
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>CurrencyRequestSOAPMessageOut</MethodClassName>
-		<LogicSource><![CDATA[BaseMessage message = this.getMessage();
+		<LogicSource><![CDATA[/*
+BaseMessage message = this.getMessage();
 String currencyCode = message.getString(ManualMessage.MESSAGE_PARAM);
 
 ConversionRate root = new ConversionRate();
@@ -98043,14 +98044,16 @@ if (currency == null)
 root.setFromCurrency(org.jibx.schema.net.webservicex.currencyconvertor.Currency.USD);
 root.setToCurrency(currency);
 
-return root;]]></LogicSource>
+return root;
+*/
+return null;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
 		<CopyFrom/>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="7543">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
+		<LastChanged>2020-01-20T21:43:47</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>convertMarshallableObjectToInternal</MethodName>
@@ -98058,7 +98061,8 @@ return root;]]></LogicSource>
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>CurrencyResponseSOAPMessageIn</MethodClassName>
-		<LogicSource><![CDATA[if (root instanceof ConversionRateResponse)
+		<LogicSource><![CDATA[/*
+if (root instanceof ConversionRateResponse)
 {       // Always
     ConversionRateResponse msg = (ConversionRateResponse)root;
     double rate = msg.getConversionRateResult();
@@ -98066,15 +98070,16 @@ return root;]]></LogicSource>
     BaseMessage message = this.getMessage();
     message.put(ManualMessage.MESSAGE_PARAM, rate);
 }
-
-return DBConstants.NORMAL_RETURN;]]></LogicSource>
+*/
+return DBConstants.NORMAL_RETURN;
+]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
 		<CopyFrom/>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="7544">
-		<LastChanged>2011-08-05T15:59:52</LastChanged>
+		<LastChanged>2020-01-20T21:40:41</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>500</Sequence>
 		<MethodName>getConversionRate</MethodName>
@@ -98082,7 +98087,8 @@ return DBConstants.NORMAL_RETURN;]]></LogicSource>
 		<MethodReturns>double</MethodReturns>
 		<MethodInterface>String currencyCode</MethodInterface>
 		<MethodClassName>CurrencyUpdateProcess</MethodClassName>
-		<LogicSource><![CDATA[ConversionRate root = new ConversionRate();
+		<LogicSource><![CDATA[/*
+ConversionRate root = new ConversionRate();
 org.jibx.schema.net.webservicex.currencyconvertor.Currency currency = null;
 try {
     currency = org.jibx.schema.net.webservicex.currencyconvertor.Currency.valueOf(currencyCode);
@@ -98107,6 +98113,7 @@ SOAPMessageTransport transport = new SOAPMessageTransport(this.getTask());
 BaseMessage messageIn = transport.sendMessageRequest(message);
 if (messageIn.getMessageHeader() == null)   // Yes
     messageIn.setMessageHeader(new TrxMessageHeader(null, null));
+/*
 SoapTrxMessageIn externalMessageIn = (SoapTrxMessageIn)messageIn.getExternalMessage();
 TrxMessageHeader messageHeaderIn = (TrxMessageHeader)messageIn.getMessageHeader();
 messageHeaderIn.put(SOAPMessageTransport.SOAP_PACKAGE, "net.webservicex.currencyconverter");
@@ -98115,7 +98122,9 @@ messageHeaderIn.put(TrxMessageHeader.MESSAGE_MARSHALLER_CLASS, JibxConvertToMess
 ConversionRateResponse rootIn = (ConversionRateResponse)externalMessageIn.convertToMessage();
 if (rootIn == null)
     return 0.0;
-return rootIn.getConversionRateResult();]]></LogicSource>
+return rootIn.getConversionRateResult();
+*/
+return 0.0;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
 		<CopyFrom/>

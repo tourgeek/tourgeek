@@ -51118,21 +51118,6 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
-	<ClassFields ID="4945">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassInfoClassName>CurrencyRequestSOAPMessageOut</ClassInfoClassName>
-		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.net.webservicex.currencyconvertor</ClassFieldClass>
-		<ClassFieldSequence>0</ClassFieldSequence>
-		<ClassFieldName/>
-		<ClassFieldDesc/>
-		<ClassFieldProtect/>
-		<ClassFieldInitial/>
-		<ClassFieldInitialValue/>
-		<ClassFieldsType>P</ClassFieldsType>
-		<IncludeScope>1</IncludeScope>
-	</ClassFields>
 	<ClassFields ID="4946">
 		<LastChanged>2011-08-05T15:59:49</LastChanged>
 		<Deleted>N</Deleted>
@@ -51191,21 +51176,6 @@ static  {
 		<ClassFieldInitial/>
 		<ClassFieldInitialValue/>
 		<ClassFieldsType>I</ClassFieldsType>
-		<IncludeScope>1</IncludeScope>
-	</ClassFields>
-	<ClassFields ID="4953">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassInfoClassName>CurrencyUpdateProcess</ClassInfoClassName>
-		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.net.webservicex.currencyconvertor</ClassFieldClass>
-		<ClassFieldSequence>0</ClassFieldSequence>
-		<ClassFieldName/>
-		<ClassFieldDesc/>
-		<ClassFieldProtect/>
-		<ClassFieldInitial/>
-		<ClassFieldInitialValue/>
-		<ClassFieldsType>P</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
 	<ClassFields ID="4954">
