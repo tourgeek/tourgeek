@@ -51163,21 +51163,6 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
-	<ClassFields ID="4948">
-		<LastChanged>2011-08-05T15:59:49</LastChanged>
-		<Deleted>N</Deleted>
-		<ClassInfoClassName>CurrencyResponseSOAPMessageIn</ClassInfoClassName>
-		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.net.webservicex.currencyconvertor</ClassFieldClass>
-		<ClassFieldSequence>0</ClassFieldSequence>
-		<ClassFieldName/>
-		<ClassFieldDesc/>
-		<ClassFieldProtect/>
-		<ClassFieldInitial/>
-		<ClassFieldInitialValue/>
-		<ClassFieldsType>P</ClassFieldsType>
-		<IncludeScope>1</IncludeScope>
-	</ClassFields>
 	<ClassFields ID="4950">
 		<LastChanged>2011-08-05T15:59:49</LastChanged>
 		<Deleted>N</Deleted>

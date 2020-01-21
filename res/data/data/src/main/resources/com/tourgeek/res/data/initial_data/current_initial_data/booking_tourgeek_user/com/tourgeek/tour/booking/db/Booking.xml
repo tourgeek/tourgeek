@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Booking ID="1">
 		<LastChanged>2012-09-21T18:07:18</LastChanged>
 		<Deleted>N</Deleted>
@@ -46,11 +46,11 @@
 		<FinalPaymentReceived/>
 		<FinalPaymentDue/>
 		<Cancelled/>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Tue Apr 05 15:20:17 PDT 2011
 eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
-</Properties>
+]]></Properties>
 		<Deposit>800.00</Deposit>
 		<DepositDueDate>2013-06-16</DepositDueDate>
 		<FinalPaymentDueDate>2013-08-21</FinalPaymentDueDate>
@@ -114,12 +114,12 @@ eventStatus.Proposal.2=Y
 		<FinalPaymentReceived>Y</FinalPaymentReceived>
 		<FinalPaymentDue/>
 		<Cancelled/>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun May 01 15:23:36 PDT 2011
 eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
 eventStatus.Okay.5=Y
-</Properties>
+]]></Properties>
 		<Deposit>600.00</Deposit>
 		<DepositDueDate>2013-06-16</DepositDueDate>
 		<FinalPaymentDueDate>2013-08-06</FinalPaymentDueDate>
@@ -183,11 +183,11 @@ eventStatus.Okay.5=Y
 		<FinalPaymentReceived/>
 		<FinalPaymentDue/>
 		<Cancelled/>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun May 01 15:23:34 PDT 2011
 eventStatus.Accepted.3=Y
 eventStatus.Proposal.2=Y
-</Properties>
+]]></Properties>
 		<Deposit>400.00</Deposit>
 		<DepositDueDate>2013-07-16</DepositDueDate>
 		<FinalPaymentDueDate>2013-08-24</FinalPaymentDueDate>

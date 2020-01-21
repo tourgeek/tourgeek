@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Tour ID="1">
 		<LastChanged>2012-09-21T18:07:19</LastChanged>
 		<Deleted>N</Deleted>
@@ -55,7 +55,7 @@
 		<Code/>
 		<TourHeaderID>1</TourHeaderID>
 		<DepartureDate>2013-09-21</DepartureDate>
-		<TourStatusSummary>#Field properties
+		<TourStatusSummary><![CDATA[#Field properties
 #Fri Apr 01 17:23:29 PDT 2011
 InfoStatusID.5=5,1301703720000
 InfoStatusID.4=5,1301703718000
@@ -85,7 +85,7 @@ ProductStatusID.2=2,1301703716000
 ProductStatusID.1=2,1301703715000
 InfoStatusID.7=5,1301703724000
 InfoStatusID.6=5,1301703721000
-</TourStatusSummary>
+]]></TourStatusSummary>
 		<TourStatusID>13</TourStatusID>
 		<ManualTourStatus>N</ManualTourStatus>
 		<MinToOp/>
@@ -183,7 +183,7 @@ InfoStatusID.6=5,1301703721000
 		<Code/>
 		<TourHeaderID>4</TourHeaderID>
 		<DepartureDate>2013-09-06</DepartureDate>
-		<TourStatusSummary>#Field properties
+		<TourStatusSummary><![CDATA[#Field properties
 #Sun May 01 15:23:36 PDT 2011
 InfoStatusID.12=5,1301703875000
 InventoryStatusID.9=5,1301703871000
@@ -205,7 +205,7 @@ InventoryStatusID.11=5,1301703871000
 InventoryStatusID.10=5,1301703871000
 InfoStatusID.9=5,1301703874000
 InfoStatusID.8=5,1301703872000
-</TourStatusSummary>
+]]></TourStatusSummary>
 		<TourStatusID>5</TourStatusID>
 		<ManualTourStatus/>
 		<MinToOp/>
@@ -254,7 +254,7 @@ InfoStatusID.8=5,1301703872000
 		<Code/>
 		<TourHeaderID>4</TourHeaderID>
 		<DepartureDate>2013-09-24</DepartureDate>
-		<TourStatusSummary>#Field properties
+		<TourStatusSummary><![CDATA[#Field properties
 #Sun May 01 15:22:25 PDT 2011
 InfoStatusID.17=5,1304288496000
 InfoStatusID.16=5,1304288493000
@@ -276,7 +276,7 @@ InventoryStatusID.16=5,1304288490000
 InventoryStatusID.15=5,1304288490000
 InventoryStatusID.14=5,1304288489000
 InventoryStatusID.13=5,1304288545000
-</TourStatusSummary>
+]]></TourStatusSummary>
 		<TourStatusID>13</TourStatusID>
 		<ManualTourStatus/>
 		<MinToOp/>

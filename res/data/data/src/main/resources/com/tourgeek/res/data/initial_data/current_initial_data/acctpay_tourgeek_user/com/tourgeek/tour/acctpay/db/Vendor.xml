@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Vendor ID="1">
 		<LastChanged>2012-09-21T18:06:11</LastChanged>
 		<Deleted>N</Deleted>
@@ -224,8 +224,8 @@
 		<Deleted>N</Deleted>
 		<Code>FOEX01</Code>
 		<Name>Foreign Exchange Corporation</Name>
-		<AddressLine1>1234 Wilshire Blvd
-Suite 1243</AddressLine1>
+		<AddressLine1><![CDATA[1234 Wilshire Blvd
+Suite 1243]]></AddressLine1>
 		<AddressLine2/>
 		<CityOrTown>Los Angeles</CityOrTown>
 		<StateOrRegion>CA</StateOrRegion>
@@ -382,11 +382,11 @@ Suite 1243</AddressLine1>
 		<MessageTransportID>11</MessageTransportID>
 		<MessageServer/>
 		<WSDLPath/>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Thu Mar 10 16:11:49 PST 2011
 destinationMessage=http\://www.tourgeek.com\:8181/ws
 wsdlPath=http\://www.tourgeek.com/wsdl
-</Properties>
+]]></Properties>
 		<VendorStatusID/>
 		<PaymentCycleID/>
 		<PaymentCodeID>1</PaymentCodeID>
@@ -958,11 +958,11 @@ wsdlPath=http\://www.tourgeek.com/wsdl
 		<MessageTransportID/>
 		<MessageServer/>
 		<WSDLPath/>
-		<Properties>#Field properties
+		<Properties><![CDATA[#Field properties
 #Sun Nov 01 07:09:31 PST 2009
 destinationMessage=http\://www.tourgeek.com/xmlws
-wsdlPath=http\://www.tourgeek.com/tourgeek/wsdl?wsdlversion\=1.1&amp;version\=2004B
-</Properties>
+wsdlPath=http\://www.tourgeek.com/tourgeek/wsdl?wsdlversion\=1.1&version\=2004B
+]]></Properties>
 		<VendorStatusID>1</VendorStatusID>
 		<PaymentCycleID>1</PaymentCycleID>
 		<PaymentCodeID>1</PaymentCodeID>

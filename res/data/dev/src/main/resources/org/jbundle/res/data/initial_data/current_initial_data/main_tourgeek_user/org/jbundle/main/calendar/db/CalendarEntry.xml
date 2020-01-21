@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<CalendarEntry ID="1">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-06-01T00:00:00</StartDateTime>
+		<StartDateTime>2013-10-01T00:00:00</StartDateTime>
 		<EndDateTime/>
 		<Description>Email Financials to CEO</Description>
 		<CalendarCategoryID/>
@@ -12,10 +12,10 @@
 		<AnnivMasterID>2</AnnivMasterID>
 	</CalendarEntry>
 	<CalendarEntry ID="2">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-07-01T00:00:00</StartDateTime>
+		<StartDateTime>2013-11-01T00:00:00</StartDateTime>
 		<EndDateTime/>
 		<Description>Email Financials to CEO</Description>
 		<CalendarCategoryID/>
@@ -24,10 +24,10 @@
 		<AnnivMasterID>2</AnnivMasterID>
 	</CalendarEntry>
 	<CalendarEntry ID="3">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-08-01T00:00:00</StartDateTime>
+		<StartDateTime>2013-12-01T00:00:00</StartDateTime>
 		<EndDateTime/>
 		<Description>Email Financials to CEO</Description>
 		<CalendarCategoryID/>
@@ -36,10 +36,10 @@
 		<AnnivMasterID>2</AnnivMasterID>
 	</CalendarEntry>
 	<CalendarEntry ID="4">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-09-01T00:00:00</StartDateTime>
+		<StartDateTime>2014-01-01T00:00:00</StartDateTime>
 		<EndDateTime/>
 		<Description>Email Financials to CEO</Description>
 		<CalendarCategoryID/>
@@ -48,47 +48,1367 @@
 		<AnnivMasterID>2</AnnivMasterID>
 	</CalendarEntry>
 	<CalendarEntry ID="5">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-07-01T00:00:00</StartDateTime>
-		<EndDateTime>2013-07-01T23:59:00</EndDateTime>
+		<StartDateTime>2014-02-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="6">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-03-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="7">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-04-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="8">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-05-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="9">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-06-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="10">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-07-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="11">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="12">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-09-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="13">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-10-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="14">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-11-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="15">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-12-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="16">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-01-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="17">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-02-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="18">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-03-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="19">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-04-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="20">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-05-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="21">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-06-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="22">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-07-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="23">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="24">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-09-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="25">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-10-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="26">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-11-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="27">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-12-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="28">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-01-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="29">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-02-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="30">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-03-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="31">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-04-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="32">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-05-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="33">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-06-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="34">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-07-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="35">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="36">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-09-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="37">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-10-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="38">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-11-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="39">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-12-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="40">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-01-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="41">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-02-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="42">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-03-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="43">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-04-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="44">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-05-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="45">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-06-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="46">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-07-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="47">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="48">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-09-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="49">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-10-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="50">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-11-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="51">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-12-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="52">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-01-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="53">
+		<LastChanged>2020-01-20T21:02:21</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-02-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="54">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-03-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="55">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-04-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="56">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-05-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="57">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-06-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="58">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-07-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="59">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="60">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-09-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="61">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-10-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="62">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-11-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="63">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-12-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="64">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-01-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="65">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-02-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="66">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-03-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="67">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-04-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="68">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-05-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="69">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-06-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="70">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-07-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="71">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-08-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="72">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-09-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="73">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-10-01T00:00:00</StartDateTime>
+		<EndDateTime/>
+		<Description>Email Financials to CEO</Description>
+		<CalendarCategoryID/>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>2</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="74">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2013-11-26T00:00:00</StartDateTime>
+		<EndDateTime>2013-11-26T23:59:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>3</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="75">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-11-26T23:59:00</StartDateTime>
+		<EndDateTime>2014-11-27T23:58:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>3</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="76">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-11-27T23:58:00</StartDateTime>
+		<EndDateTime>2015-11-28T23:57:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>3</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="77">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-11-28T23:57:00</StartDateTime>
+		<EndDateTime>2016-11-29T23:56:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>3</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="78">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-11-29T23:56:00</StartDateTime>
+		<EndDateTime>2017-11-30T23:55:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>3</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="79">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-11-30T23:55:00</StartDateTime>
+		<EndDateTime>2018-12-01T23:54:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>3</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="80">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-12-01T23:54:00</StartDateTime>
+		<EndDateTime>2019-12-02T23:53:00</EndDateTime>
+		<Description>Memorial Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>3</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="81">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-07-01T00:00:00</StartDateTime>
+		<EndDateTime>2014-07-01T23:59:00</EndDateTime>
 		<Description>New Year's Day</Description>
 		<CalendarCategoryID>3</CalendarCategoryID>
 		<Hidden>N</Hidden>
 		<Properties/>
 		<AnnivMasterID>4</AnnivMasterID>
 	</CalendarEntry>
-	<CalendarEntry ID="6">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+	<CalendarEntry ID="82">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-08-18T00:00:00</StartDateTime>
-		<EndDateTime>2013-08-18T23:59:00</EndDateTime>
+		<StartDateTime>2015-07-01T23:59:00</StartDateTime>
+		<EndDateTime>2015-07-02T23:58:00</EndDateTime>
+		<Description>New Year's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>4</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="83">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-07-02T23:58:00</StartDateTime>
+		<EndDateTime>2016-07-03T23:57:00</EndDateTime>
+		<Description>New Year's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>4</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="84">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-07-03T23:57:00</StartDateTime>
+		<EndDateTime>2017-07-04T23:56:00</EndDateTime>
+		<Description>New Year's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>4</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="85">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-07-04T23:56:00</StartDateTime>
+		<EndDateTime>2018-07-05T23:55:00</EndDateTime>
+		<Description>New Year's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>4</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="86">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-07-05T23:55:00</StartDateTime>
+		<EndDateTime>2019-07-06T23:54:00</EndDateTime>
+		<Description>New Year's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>4</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="87">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-08-18T00:00:00</StartDateTime>
+		<EndDateTime>2014-08-18T23:59:00</EndDateTime>
 		<Description>President's Day</Description>
 		<CalendarCategoryID>3</CalendarCategoryID>
 		<Hidden>N</Hidden>
 		<Properties/>
 		<AnnivMasterID>5</AnnivMasterID>
 	</CalendarEntry>
-	<CalendarEntry ID="7">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+	<CalendarEntry ID="88">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-05-27T00:00:00</StartDateTime>
-		<EndDateTime>2013-05-27T23:59:00</EndDateTime>
+		<StartDateTime>2015-08-18T23:59:00</StartDateTime>
+		<EndDateTime>2015-08-19T23:58:00</EndDateTime>
+		<Description>President's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>5</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="89">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-08-19T23:58:00</StartDateTime>
+		<EndDateTime>2016-08-20T23:57:00</EndDateTime>
+		<Description>President's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>5</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="90">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-08-20T23:57:00</StartDateTime>
+		<EndDateTime>2017-08-21T23:56:00</EndDateTime>
+		<Description>President's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>5</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="91">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-08-21T23:56:00</StartDateTime>
+		<EndDateTime>2018-08-22T23:55:00</EndDateTime>
+		<Description>President's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>5</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="92">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-08-22T23:55:00</StartDateTime>
+		<EndDateTime>2019-08-23T23:54:00</EndDateTime>
+		<Description>President's Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>5</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="93">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-01-04T00:00:00</StartDateTime>
+		<EndDateTime>2014-01-04T23:59:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>6</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="94">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-01-04T23:59:00</StartDateTime>
+		<EndDateTime>2015-01-05T23:58:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>6</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="95">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-01-05T23:58:00</StartDateTime>
+		<EndDateTime>2016-01-06T23:57:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>6</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="96">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-01-06T23:57:00</StartDateTime>
+		<EndDateTime>2017-01-07T23:56:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>6</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="97">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-01-07T23:56:00</StartDateTime>
+		<EndDateTime>2018-01-08T23:55:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>6</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="98">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-01-08T23:55:00</StartDateTime>
+		<EndDateTime>2019-01-09T23:54:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>6</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="99">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2020-01-09T23:54:00</StartDateTime>
+		<EndDateTime>2020-01-10T23:53:00</EndDateTime>
+		<Description>Independence Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>6</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="100">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-02-01T00:00:00</StartDateTime>
+		<EndDateTime>2014-02-01T23:59:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>7</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="101">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-02-01T23:59:00</StartDateTime>
+		<EndDateTime>2015-02-02T23:58:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>7</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="102">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-02-02T23:58:00</StartDateTime>
+		<EndDateTime>2016-02-03T23:57:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>7</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="103">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-02-03T23:57:00</StartDateTime>
+		<EndDateTime>2017-02-04T23:56:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>7</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="104">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-02-04T23:56:00</StartDateTime>
+		<EndDateTime>2018-02-05T23:55:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>7</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="105">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-02-05T23:55:00</StartDateTime>
+		<EndDateTime>2019-02-06T23:54:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>7</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="106">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2020-02-06T23:54:00</StartDateTime>
+		<EndDateTime>2020-02-07T23:53:00</EndDateTime>
+		<Description>Labor Day</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>7</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="107">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-05-27T00:00:00</StartDateTime>
+		<EndDateTime>2014-05-27T23:59:00</EndDateTime>
 		<Description>Thanksgiving</Description>
 		<CalendarCategoryID>3</CalendarCategoryID>
 		<Hidden>N</Hidden>
 		<Properties/>
 		<AnnivMasterID>8</AnnivMasterID>
 	</CalendarEntry>
-	<CalendarEntry ID="8">
-		<LastChanged>2013-07-03T16:34:18</LastChanged>
+	<CalendarEntry ID="108">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
 		<Deleted>N</Deleted>
 		<CalendarEntryTypeID>2</CalendarEntryTypeID>
-		<StartDateTime>2013-06-25T00:00:00</StartDateTime>
-		<EndDateTime>2013-06-25T23:59:00</EndDateTime>
+		<StartDateTime>2015-05-27T23:59:00</StartDateTime>
+		<EndDateTime>2015-05-28T23:58:00</EndDateTime>
+		<Description>Thanksgiving</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>8</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="109">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-05-28T23:58:00</StartDateTime>
+		<EndDateTime>2016-05-29T23:57:00</EndDateTime>
+		<Description>Thanksgiving</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>8</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="110">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-05-29T23:57:00</StartDateTime>
+		<EndDateTime>2017-05-30T23:56:00</EndDateTime>
+		<Description>Thanksgiving</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>8</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="111">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-05-30T23:56:00</StartDateTime>
+		<EndDateTime>2018-05-31T23:55:00</EndDateTime>
+		<Description>Thanksgiving</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>8</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="112">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-05-31T23:55:00</StartDateTime>
+		<EndDateTime>2019-06-01T23:54:00</EndDateTime>
+		<Description>Thanksgiving</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>8</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="113">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2014-06-25T00:00:00</StartDateTime>
+		<EndDateTime>2014-06-25T23:59:00</EndDateTime>
+		<Description>Christmas</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>9</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="114">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2015-06-25T23:59:00</StartDateTime>
+		<EndDateTime>2015-06-26T23:58:00</EndDateTime>
+		<Description>Christmas</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>9</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="115">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2016-06-26T23:58:00</StartDateTime>
+		<EndDateTime>2016-06-27T23:57:00</EndDateTime>
+		<Description>Christmas</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>9</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="116">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2017-06-27T23:57:00</StartDateTime>
+		<EndDateTime>2017-06-28T23:56:00</EndDateTime>
+		<Description>Christmas</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>9</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="117">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2018-06-28T23:56:00</StartDateTime>
+		<EndDateTime>2018-06-29T23:55:00</EndDateTime>
+		<Description>Christmas</Description>
+		<CalendarCategoryID>3</CalendarCategoryID>
+		<Hidden>N</Hidden>
+		<Properties/>
+		<AnnivMasterID>9</AnnivMasterID>
+	</CalendarEntry>
+	<CalendarEntry ID="118">
+		<LastChanged>2020-01-20T21:02:22</LastChanged>
+		<Deleted>N</Deleted>
+		<CalendarEntryTypeID>2</CalendarEntryTypeID>
+		<StartDateTime>2019-06-29T23:55:00</StartDateTime>
+		<EndDateTime>2019-06-30T23:54:00</EndDateTime>
 		<Description>Christmas</Description>
 		<CalendarCategoryID>3</CalendarCategoryID>
 		<Hidden>N</Hidden>

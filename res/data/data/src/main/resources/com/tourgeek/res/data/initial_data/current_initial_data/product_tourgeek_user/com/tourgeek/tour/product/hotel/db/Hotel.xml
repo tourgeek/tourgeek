@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><file>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><file>
 	<Hotel ID="4">
 		<LastChanged>2012-09-21T18:06:54</LastChanged>
 		<Deleted>N</Deleted>
@@ -156,8 +156,8 @@
 		<CityID>1,388</CityID>
 		<Etd>12:00:00</Etd>
 		<AckDays/>
-		<Comments>Locally entered rates
-10 room block</Comments>
+		<Comments><![CDATA[Locally entered rates
+10 room block]]></Comments>
 		<Properties/>
 		<ItineraryDesc/>
 		<DescSort>DUSIT THAN</DescSort>
@@ -303,8 +303,8 @@
 		<CityID>682</CityID>
 		<Etd>12:00:00</Etd>
 		<AckDays/>
-		<Comments>Directly retrieved rates
-12 room block</Comments>
+		<Comments><![CDATA[Directly retrieved rates
+12 room block]]></Comments>
 		<Properties/>
 		<ItineraryDesc/>
 		<DescSort>MANDARIN H</DescSort>
