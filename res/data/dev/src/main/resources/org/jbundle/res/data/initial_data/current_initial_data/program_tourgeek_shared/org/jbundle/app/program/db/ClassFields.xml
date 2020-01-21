@@ -63781,7 +63781,7 @@ static  {
 	<ClassFields ID="5918">
 		<LastChanged>2012-05-29T15:05:21</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2014B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BaseProductResponse</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63796,7 +63796,7 @@ static  {
 	<ClassFields ID="5919">
 		<LastChanged>2012-05-29T15:05:26</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2012B</ClassInfoClassName>
+		<ClassInfoClassName>HotelRateResponseSOAPMsgReplyOut2014B</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>BookingDetail</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63841,7 +63841,7 @@ static  {
 	<ClassFields ID="5922">
 		<LastChanged>2012-06-09T12:47:50</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingService2012BImpl</ClassInfoClassName>
+		<ClassInfoClassName>PingService2014BImpl</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
@@ -63856,7 +63856,7 @@ static  {
 	<ClassFields ID="5923">
 		<LastChanged>2012-06-09T12:47:55</LastChanged>
 		<Deleted>N</Deleted>
-		<ClassInfoClassName>PingService2012BImpl</ClassInfoClassName>
+		<ClassInfoClassName>PingService2014BImpl</ClassInfoClassName>
 		<ClassInfoID/>
 		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.ping.ws</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
