@@ -100,7 +100,7 @@ public class ImportOTACodeTablesProcess extends BaseProcess
                 CodeTables.CodeTable.Descriptions descriptions = table.getDescriptions();
                 Map<String,Object> properties = null;
                 if (descriptions != null)
-                    for (org.jibx.schema.org.opentravel._2014B.base.FreeText desc : descriptions.getDescriptionList())
+                    for (FreeText desc : descriptions.getDescriptionList())
                     {
                         String strLanguage = desc.getLanguage();
                         String strValue = desc.getString();

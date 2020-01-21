@@ -1,11 +1,25 @@
 /**
-  * @(#)PingRequestJibxMessageOut2012B.
+  * @(#)PingRequestJibxMessageOut2014B.
   * Copyright © 2013 tourgeek.com. All rights reserved.
   * GPL3 Open Source Software License.
   */
 package com.tourgeek.tour.message.jibx._2014B.base.request.out;
 
+import java.util.*;
+
+import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
+import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
 import org.jbundle.base.model.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
 import org.jibx.schema.org.opentravel._2014B.ping.*;
 import org.jibx.schema.org.opentravel._2014B.base.*;
 import org.jbundle.base.message.trx.message.external.*;
@@ -13,7 +27,7 @@ import org.jbundle.thin.base.message.*;
 import com.tourgeek.tour.message.base.request.in.*;
 
 /**
- *  PingRequestJibxMessageOut2012B - .
+ *  PingRequestJibxMessageOut2014B - .
  */
 public class PingRequestJibxMessageOut2014B extends BaseJibxMessageOut2014B
 {

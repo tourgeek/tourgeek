@@ -22,7 +22,6 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
 import com.tourgeek.tour.base.db.*;
-//import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.base.message.core.trx.*;
 import org.jbundle.thin.base.message.*;
 import org.jbundle.base.message.trx.transport.soap.*;
@@ -85,7 +84,7 @@ public class CurrencyUpdateProcess extends BaseProcess
                     continue;
                 record.edit();
                 
-                double dRate = 0.0; // TODO This webService has been discontinued - this.getConversionRate(record.getField(Currencys.CURRENCY_CODE).toString());
+                double dRate = 0.0; // this.getConversionRate(record.getField(Currencys.CURRENCY_CODE).toString());
                 if (dRate != 0.0)
                     record.getField(Currencys.LAST_RATE).setValue(1 / dRate);
                 
@@ -98,8 +97,9 @@ public class CurrencyUpdateProcess extends BaseProcess
     /**
      * GetConversionRate Method.
      */
-/*    public double getConversionRate(String currencyCode)
+    public double getConversionRate(String currencyCode)
     {
+        /*
         ConversionRate root = new ConversionRate();
         org.jibx.schema.net.webservicex.currencyconvertor.Currency currency = null;
         try {
@@ -125,6 +125,7 @@ public class CurrencyUpdateProcess extends BaseProcess
         BaseMessage messageIn = transport.sendMessageRequest(message);
         if (messageIn.getMessageHeader() == null)   // Yes
             messageIn.setMessageHeader(new TrxMessageHeader(null, null));
+        /*
         SoapTrxMessageIn externalMessageIn = (SoapTrxMessageIn)messageIn.getExternalMessage();
         TrxMessageHeader messageHeaderIn = (TrxMessageHeader)messageIn.getMessageHeader();
         messageHeaderIn.put(SOAPMessageTransport.SOAP_PACKAGE, "net.webservicex.currencyconverter");
@@ -134,6 +135,8 @@ public class CurrencyUpdateProcess extends BaseProcess
         if (rootIn == null)
             return 0.0;
         return rootIn.getConversionRateResult();
+        */
+        return 0.0;
     }
-*/
+
 }

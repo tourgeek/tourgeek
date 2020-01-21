@@ -22,7 +22,6 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import org.jbundle.base.message.trx.message.external.convert.jibx.*;
 import org.jbundle.thin.base.message.*;
-// import org.jibx.schema.net.webservicex.currencyconvertor.*;
 import org.jbundle.base.message.trx.message.external.*;
 import org.jbundle.base.message.core.trx.internal.*;
 
@@ -68,9 +67,10 @@ public class CurrencyRequestSOAPMessageOut extends JibxConvertToNative
      */
     public Object convertInternalToMarshallableObject(RecordOwner recordOwner)
     {
+        /*
         BaseMessage message = this.getMessage();
         String currencyCode = message.getString(ManualMessage.MESSAGE_PARAM);
-        /*
+        
         ConversionRate root = new ConversionRate();
         org.jibx.schema.net.webservicex.currencyconvertor.Currency currency = org.jibx.schema.net.webservicex.currencyconvertor.Currency.valueOf(currencyCode);
         if (currency == null)
@@ -78,7 +78,8 @@ public class CurrencyRequestSOAPMessageOut extends JibxConvertToNative
         root.setFromCurrency(org.jibx.schema.net.webservicex.currencyconvertor.Currency.USD);
         root.setToCurrency(currency);
         
-        return root; */
+        return root;
+        */
         return null;
     }
 
