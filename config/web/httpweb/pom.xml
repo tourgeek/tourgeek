@@ -98,7 +98,7 @@
                         <artifactItem>
                             <groupId>org.jbundle.util.osgi</groupId>
                             <artifactId>org.jbundle.res.docs.styles</artifactId>
-                            <version>${jbundle-auto-webstart-version}</version>
+                            <version>${jbundle-util-osgi-webstart-version}</version>
                             <type>jar</type>
                             <outputDirectory>${project.build.directory}/${project.build.finalName}
                             </outputDirectory>

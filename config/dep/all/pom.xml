@@ -66,7 +66,7 @@
     <dependency>	
       <groupId>org.jbundle.base.screen</groupId>
       <artifactId>org.jbundle.base.screen.view.swing</artifactId>
-      <version>${jbundle-swing-version-range}</version>
+      <version>${jbundle-view-swing-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
