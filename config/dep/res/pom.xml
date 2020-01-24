@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-config-dep-reactor</artifactId>
     <groupId>com.tourgeek.config</groupId>
-    <version>0.8.4-SNAPSHOT</version>
+    <version>0.8.4</version>
   </parent>
 
   <artifactId>tourgeek-config-dep-res</artifactId>
@@ -17,52 +17,52 @@
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.acctpay</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.acctrec</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.app</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.assetdr</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.booking</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.genled</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.payroll</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.product</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.profile</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.tour.request</artifactId>
-        <version>0.8.4-SNAPSHOT</version>
+        <version>0.8.4</version>
     </dependency>
   </dependencies>
   

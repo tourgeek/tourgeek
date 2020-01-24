@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-message-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.4-SNAPSHOT</version>
+    <version>0.8.4</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.message.jibx</artifactId>
@@ -17,7 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
       <artifactId>com.tourgeek.tour.message.process</artifactId>
     </dependency>
     <dependency>
@@ -45,18 +45,18 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.message</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.booking.db</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.product.db</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
   </dependencies>
 </project>

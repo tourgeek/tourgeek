@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.4-SNAPSHOT</version>
+    <version>0.8.4</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.util</artifactId>
@@ -25,34 +25,34 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
       <artifactId>com.tourgeek.model.tour.util</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.base</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.message</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.message.process</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
 
   <dependency>
     <groupId>com.tourgeek.tour</groupId>
   <artifactId>com.tourgeek.tour.product.db</artifactId>
-    <version>0.8.4-SNAPSHOT</version>
+    <version>0.8.4</version>
 </dependency>
 <dependency>
     <groupId>com.tourgeek.tour</groupId>
   <artifactId>com.tourgeek.tour.booking.db</artifactId>
-    <version>0.8.4-SNAPSHOT</version>
+    <version>0.8.4</version>
 </dependency>
 <dependency>
   <groupId>org.jibx.schema.org.opentravel._2014B</groupId>
@@ -63,12 +63,12 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.acctpay.db</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.thin</groupId>
       <artifactId>com.tourgeek.thin.tour.product</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.app.program</groupId>
@@ -79,7 +79,7 @@
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.util</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>net.sf.jtidy</groupId>

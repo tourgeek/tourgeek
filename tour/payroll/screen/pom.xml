@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-payroll-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.4-SNAPSHOT</version>
+    <version>0.8.4</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.payroll.screen</artifactId>
@@ -16,12 +16,12 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
       <artifactId>com.tourgeek.tour.payroll.db</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
       <artifactId>com.tourgeek.model.tour.payroll</artifactId>
     </dependency>
     <dependency>
@@ -34,23 +34,23 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.base</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.genled.db</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.payroll</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>0.8.4</version>
     </dependency>
   </dependencies>
 
