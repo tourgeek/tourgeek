@@ -17,12 +17,12 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.request.db</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.profile.screen</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>

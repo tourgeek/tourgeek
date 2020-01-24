@@ -16,7 +16,7 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.genled</artifactId>
     </dependency>
     <dependency>
@@ -29,7 +29,7 @@
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.genled</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
