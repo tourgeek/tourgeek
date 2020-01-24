@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-product-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.4</version>
+    <version>0.8.5-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.product.db</artifactId>
@@ -27,38 +27,38 @@
     <dependency>	<!-- Get rid of this dependency -->
       <groupId>com.tourgeek.thin.app</groupId>
       <artifactId>com.tourgeek.thin.app.booking</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.base</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.genled.db</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.acctrec.db</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.acctpay.db</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
       <artifactId>com.tourgeek.tour.message</artifactId>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.product</artifactId>
     </dependency>
     <dependency>
@@ -70,7 +70,7 @@
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.product</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

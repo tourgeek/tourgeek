@@ -4,7 +4,7 @@
   <parent>
     <artifactId>tourgeek-res-tour-reactor</artifactId>
     <groupId>com.tourgeek.res</groupId>
-    <version>0.8.4</version>
+    <version>0.8.5-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourgeek.res.tour.acctpay</artifactId>

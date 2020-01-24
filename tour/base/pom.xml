@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.4</version>
+    <version>0.8.5-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.base</artifactId>
@@ -23,17 +23,17 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.base</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.product</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.booking</artifactId>
     </dependency>
     <dependency>
@@ -52,7 +52,7 @@
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.base</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.tourgeek.tour</groupId>
     <artifactId>tourgeek-tour-assetdr-reactor</artifactId>
-    <version>0.8.4</version>
+    <version>0.8.5-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.assetdr.process</artifactId>
@@ -17,7 +17,7 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
-      <version>0.8.4</version>
+      <version>0.8.5-SNAPSHOT</version>
     </dependency>
     <!-- dependency> This web service has been discontinued.
       <groupId>org.jibx.schema.net.webservicex</groupId>
