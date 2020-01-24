@@ -17,24 +17,24 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.acctpay.db</artifactId>
-      0.8.4-SNAPSHOT
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.booking.db</artifactId>
-      0.8.4-SNAPSHOT
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      0.8.4-SNAPSHOT
+      <version>0.8.4-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.acctpay</artifactId>
     </dependency>
     
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.acctpay</artifactId>
-      0.8.4-SNAPSHOT
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

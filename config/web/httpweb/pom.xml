@@ -165,7 +165,7 @@
 	<dependencies>	    
 		<dependency>
 		    <groupId>com.tourgeek.config</groupId>
-		    0.8.4-SNAPSHOT
+		    <version>0.8.4-SNAPSHOT</version>
 			<artifactId>tourgeek-config-dep-all</artifactId>
 			<type>pom</type>
 			<scope>provided</scope>	<!-- Hey this is OSGi -->
