@@ -14,7 +14,7 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      0.8.4-SNAPSHOT
+      <version>0.8.4-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.assetdr</artifactId>
     </dependency>
   </dependencies>
