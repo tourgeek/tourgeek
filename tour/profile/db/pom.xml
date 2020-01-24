@@ -16,24 +16,24 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>${tourgeek-version-range}</version>
       <artifactId>com.tourgeek.model.tour.profile</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.genled.db</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>${tourgeek-version-range}</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.base</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>${tourgeek-version-range}</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.profile</artifactId>
-      <version>0.8.4-SNAPSHOT</version>
+      <version>${tourgeek-version-range}</version>
     </dependency>
   </dependencies>
 
