@@ -17,7 +17,7 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
       <artifactId>com.tourgeek.tour.message.process</artifactId>
     </dependency>
     <dependency>
@@ -45,18 +45,18 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.message</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.booking.db</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.product.db</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
   </dependencies>
 </project>

@@ -33,23 +33,23 @@
     <dependency>
       <groupId>com.tourgeek.model</groupId>
       <artifactId>com.tourgeek.model.tour.booking</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.product.db</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.booking</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.images</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

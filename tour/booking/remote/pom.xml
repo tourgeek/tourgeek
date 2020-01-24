@@ -23,24 +23,24 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.booking</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
       <artifactId>com.tourgeek.tour.booking.db</artifactId>
     </dependency>
     
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.booking</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.images</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

@@ -15,12 +15,12 @@
     <dependency>
       <groupId>com.tourgeek.model</groupId>
       <artifactId>com.tourgeek.model.tour.product</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
       <artifactId>com.tourgeek.model.tour.acctrec</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

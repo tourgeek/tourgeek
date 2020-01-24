@@ -16,22 +16,22 @@
   	<dependency>
 	    <groupId>com.tourgeek.thin</groupId>
 	    <artifactId>com.tourgeek.thin.tour.product</artifactId>
-	    <version>${tourgeek-version-range}</version>
+	    <version>0.8.4-SNAPSHOT</version>
   	</dependency>
   	<dependency>
 	    <groupId>com.tourgeek.thin</groupId>
 	    <artifactId>com.tourgeek.thin.tour.booking</artifactId>
-	    <version>${tourgeek-version-range}</version>
+	    <version>0.8.4-SNAPSHOT</version>
   	</dependency>
   	<dependency>
 	    <groupId>com.tourgeek.thin</groupId>
 	    <artifactId>com.tourgeek.thin.tour.request</artifactId>
-	    <version>${tourgeek-version-range}</version>
+	    <version>0.8.4-SNAPSHOT</version>
   	</dependency>
   	<dependency>
 	    <groupId>com.tourgeek.thin</groupId>
 	    <artifactId>com.tourgeek.thin.tour.assetdr</artifactId>
-	    <version>${tourgeek-version-range}</version>
+	    <version>0.8.4-SNAPSHOT</version>
   	</dependency>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>

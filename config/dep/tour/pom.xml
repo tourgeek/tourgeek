@@ -17,172 +17,172 @@
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.acctpay.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.acctpay.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.acctpay.report</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.acctpay.air</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.acctrec.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.acctrec.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.acctrec.report</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.base</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.assetdr.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.assetdr.report</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.assetdr.process</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.booking.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.booking.entry</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.booking.remote</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.booking.report</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.genled.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.genled.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.genled.report</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.genled.finstmt</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.payroll.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.payroll.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.payroll.report</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.product.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.product.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.profile.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.profile.detail</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.profile.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.request.db</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.request.screen</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.request.report</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.request.misc</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.message.jibx</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.tour</groupId>
         <artifactId>com.tourgeek.tour.util</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
   </dependencies>
   

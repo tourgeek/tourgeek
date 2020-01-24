@@ -17,7 +17,7 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.assetdr.db</artifactId>
-      <version>${tourgeek-version-range}</version>
+      <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <!-- dependency> This web service has been discontinued.
       <groupId>org.jibx.schema.net.webservicex</groupId>

@@ -17,45 +17,45 @@
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-res</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
         <type>pom</type>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-thin</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
         <type>pom</type>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-tour</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
         <type>pom</type>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.test_data</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.site_data</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.initial_data</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.dev</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.docs</artifactId>
-        <version>${tourgeek-version-range}</version>
+        <version>0.8.4-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>
