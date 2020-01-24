@@ -4,7 +4,7 @@
   <parent>
     <artifactId>tourgeek-model-tour-reactor</artifactId>
     <groupId>com.tourgeek.model</groupId>
-    <version>0.8.4-SNAPSHOT</version>
+    <version>0.8.4</version>
   </parent>
 
   <artifactId>com.tourgeek.model.tour.acctrec</artifactId>
@@ -14,7 +14,7 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>${tourgeek-version-range}</version>
+      0.8.4-SNAPSHOT
       <artifactId>com.tourgeek.model.tour.assetdr</artifactId>
     </dependency>
   </dependencies>

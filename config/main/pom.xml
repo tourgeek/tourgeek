@@ -116,7 +116,7 @@
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-all</artifactId>
-        <version>${tourgeek-version-range}</version>
+        0.8.4-SNAPSHOT
         <type>pom</type>
     </dependency>
   </dependencies>
