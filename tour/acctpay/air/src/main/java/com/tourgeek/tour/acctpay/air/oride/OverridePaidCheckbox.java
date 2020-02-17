@@ -55,16 +55,16 @@ public class OverridePaidCheckbox extends CheckConverter
     /**
      * Set the state of this field for binary fields (don't override this).
      * Usually overidden.
-     * @param bState the state to set the data to.
+     * @param state the state to set the data to.
      * @param bDisplayOption Display the data on the screen if true.
      * @param iMoveMode INIT, SCREEN, or READ move mode.
      * @return The error code.
      */
-    public int setState(boolean bState, boolean bDisplayOption, int iMoveMode)
+    public int setState(boolean state, boolean bDisplayOption, int iMoveMode)
     {
-        int iErrorCode = super.setState(bState, bDisplayOption, iMoveMode);
+        int iErrorCode = super.setState(state, bDisplayOption, iMoveMode);
         if (iErrorCode == DBConstants.NORMAL_RETURN)
-            if (bState == true) if (this.getState() == false)
+            if (state == true) if (this.getState() == false)
                 ((BaseField)this.getField()).moveFieldToThis(((BaseField)this.getField()).getRecord().getField(TicketTrx.OVERRIDE_AMOUNT));
         return iErrorCode;
     }

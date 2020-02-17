@@ -8,18 +8,9 @@ package com.tourgeek.tour.product.tour.schedule.screen;
 import java.util.*;
 
 import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
 import org.jbundle.base.model.*;
-import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.model.db.*;
-import org.jbundle.model.screen.*;
 import org.jbundle.base.thread.*;
 import com.tourgeek.tour.booking.db.*;
 import com.tourgeek.tour.product.tour.schedule.db.*;
@@ -89,7 +80,7 @@ public class TourEventUpdateProcess extends BaseProcess
         for (int iIndex = 0; iIndex < screenRecord.getFieldCount(); iIndex++)
         {
             BaseField field = screenRecord.getField(iIndex);
-            String strFieldName = field.getFieldName(false, true);
+            String strFieldName = field.getFieldName(false, true, false);
             if (this.getProperty(strFieldName) != null)
                 this.getScreenRecord().getField(iIndex).setString(this.getProperty(strFieldName));
         }
