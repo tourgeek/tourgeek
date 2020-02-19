@@ -82942,7 +82942,7 @@ new Booking(this);]]></LogicSource>
 for (int iIndex = 0; iIndex < screenRecord.getFieldCount(); iIndex++)
 {
     BaseField field = screenRecord.getField(iIndex);
-    String strFieldName = field.getFieldName(false, true);
+    String strFieldName = field.getFieldName(false, true, false);
     if (this.getProperty(strFieldName) != null)
         this.getScreenRecord().getField(iIndex).setString(this.getProperty(strFieldName));
 }
