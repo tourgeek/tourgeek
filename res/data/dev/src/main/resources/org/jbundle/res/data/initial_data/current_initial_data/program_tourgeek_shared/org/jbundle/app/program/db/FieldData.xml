@@ -100000,7 +100000,7 @@
 		<MaximumLength/>
 		<DefaultValue/>
 		<InitialValue/>
-		<FieldDescription>Private car/coach cost temporary field (non existant)</FieldDescription>
+		<FieldDescription>Private car/coach cost temporary field (non existent)</FieldDescription>
 		<FieldDescVertical>Private veh.</FieldDescVertical>
 		<FieldType>N</FieldType>
 		<FieldDimension/>
@@ -100022,7 +100022,7 @@
 		<MaximumLength/>
 		<DefaultValue/>
 		<InitialValue/>
-		<FieldDescription>Seat in Car/Coach cost calculated (non-existant)</FieldDescription>
+		<FieldDescription>Seat in Car/Coach cost calculated (non-existent)</FieldDescription>
 		<FieldDescVertical>Seat in coach</FieldDescVertical>
 		<FieldType>N</FieldType>
 		<FieldDimension/>

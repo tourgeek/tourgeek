@@ -7,19 +7,10 @@ package com.tourgeek.tour.acctpay.report;
 
 import java.util.*;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
+import org.bson.Document;
 import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
 import org.jbundle.base.model.*;
-import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.model.db.*;
-import org.jbundle.model.screen.*;
 import com.tourgeek.tour.acctpay.db.*;
 import com.tourgeek.tour.genled.db.*;
 
@@ -73,9 +64,10 @@ public class ApTrxBaseFilter extends ListFileFilter
      * @param strbFilter The SQL query string to add to.
      * @param bIncludeFileName Include the file name with this query?
      * @param vParamList The param list to add the raw data to (for prepared statements).
+     * @param doc
      * @return True if you should not skip this record (does a check on the local data).
      */
-    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList)
+    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList, Document doc)
     {
         if (this.isFilterChange())
         {
@@ -83,7 +75,7 @@ public class ApTrxBaseFilter extends ListFileFilter
         
             this.scanNewFilter();
         }
-        return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);
+        return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);
     }
     /**
      * Has the filter changed from the last time this was used?

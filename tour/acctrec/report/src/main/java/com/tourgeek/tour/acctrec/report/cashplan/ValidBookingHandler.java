@@ -7,25 +7,11 @@ package com.tourgeek.tour.acctrec.report.cashplan;
 
 import java.util.*;
 
+import org.bson.Document;
 import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
 import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
-import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.model.*;
-import org.jbundle.base.util.*;
 import org.jbundle.model.*;
-import org.jbundle.model.db.*;
-import org.jbundle.model.screen.*;
-import org.jbundle.base.screen.model.report.*;
-import com.tourgeek.tour.acctrec.db.*;
 import com.tourgeek.tour.booking.db.*;
-import com.tourgeek.tour.base.db.event.*;
-import com.tourgeek.tour.booking.detail.db.*;
-import org.jbundle.base.screen.model.util.*;
 import com.tourgeek.tour.product.base.db.*;
 
 /**
@@ -62,9 +48,10 @@ public class ValidBookingHandler extends FileListener
      * @param strbFilter The SQL query string to add to.
      * @param bIncludeFileName Include the file name with this query?
      * @param vParamList The param list to add the raw data to (for prepared statements).
+     * @param doc
      * @return True if you should not skip this record (does a check on the local data).
      */
-    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList)
+    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList, Document doc)
     {
         if (m_iAcceptedType == 0)
         {
@@ -88,7 +75,7 @@ public class ValidBookingHandler extends FileListener
         if (this.getOwner().getField(Booking.BALANCE).getValue() >= this.getOwner().getField(Booking.NET).getValue())
             if (this.getOwner().getField(Booking.BOOKING_STATUS_ID).getValue() != m_iAcceptedType)
                 return false; // Skip this one; not accepted and no money in yet
-        return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);   // Valid booking
+        return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);   // Valid booking
     }
 
 }

@@ -7,28 +7,11 @@ package com.tourgeek.tour.product.land.db;
 
 import java.util.*;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
+import org.bson.Document;
 import org.jbundle.thin.base.db.*;
-import org.jbundle.base.db.event.*;
 import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
 import org.jbundle.base.model.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.model.db.*;
-import org.jbundle.model.screen.*;
-import org.jbundle.base.screen.model.*;
-import org.jbundle.base.screen.model.util.*;
-import com.tourgeek.tour.product.base.db.*;
-import java.util.*;
-import com.tourgeek.tour.base.db.*;
-import java.text.*;
-import com.tourgeek.tour.product.land.event.*;
-import com.tourgeek.tour.message.land.request.data.*;
-import com.tourgeek.model.tour.booking.detail.db.*;
 
 /**
  *  LandPricingFilter - A filter for the valid pricing records for a land.
@@ -99,9 +82,10 @@ public class LandPricingFilter extends SubFileFilter
      * @param strbFilter The SQL query string to add to.
      * @param bIncludeFileName Include the file name with this query?
      * @param vParamList The param list to add the raw data to (for prepared statements).
+     * @param doc
      * @return True if you should not skip this record (does a check on the local data).
      */
-    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList)
+    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList, Document doc)
     {
         boolean bDontSkip = true;
         if (this.getOwner().getField(LandPricing.START_DATE).getValue() > m_dateTarget.getTime())    // Start > thisDate
@@ -113,7 +97,7 @@ public class LandPricingFilter extends SubFileFilter
         if (this.getOwner().getField(LandPricing.TO_PAX).getValue() < m_sTargetPax)  // End >= thisDate
             bDontSkip = false;      // Skip this one
         if (bDontSkip)
-            bDontSkip = super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);
+            bDontSkip = super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);
         return bDontSkip; // Don't skip (no criteria)
     }
 

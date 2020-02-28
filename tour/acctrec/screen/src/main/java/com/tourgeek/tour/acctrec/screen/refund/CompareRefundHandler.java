@@ -7,19 +7,9 @@ package com.tourgeek.tour.acctrec.screen.refund;
 
 import java.util.*;
 
-import org.jbundle.base.db.*;
-import org.jbundle.thin.base.util.*;
-import org.jbundle.thin.base.db.*;
+import org.bson.Document;
 import org.jbundle.base.db.event.*;
-import org.jbundle.base.db.filter.*;
 import org.jbundle.base.field.*;
-import org.jbundle.base.field.convert.*;
-import org.jbundle.base.field.event.*;
-import org.jbundle.base.model.*;
-import org.jbundle.base.util.*;
-import org.jbundle.model.*;
-import org.jbundle.model.db.*;
-import org.jbundle.model.screen.*;
 
 /**
  *  CompareRefundHandler - Compare the ArTrx type to make sure this is a refund type.
@@ -65,9 +55,10 @@ public class CompareRefundHandler extends FileListener
      * @param strbFilter The SQL query string to add to.
      * @param bIncludeFileName Include the file name with this query?
      * @param vParamList The param list to add the raw data to (for prepared statements).
+     * @param doc
      * @return True if you should not skip this record (does a check on the local data).
      */
-    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList)
+    public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList, Document doc)
     {
         boolean bDontSkip = false;
         
@@ -79,7 +70,7 @@ public class CompareRefundHandler extends FileListener
             bDontSkip = true;
         
         if (bDontSkip)
-            return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);    // Dont skip this record
+            return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);    // Dont skip this record
         else
             return false;   // Skip this one
     }
