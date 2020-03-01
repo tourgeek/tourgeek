@@ -110,6 +110,53 @@
         </plugins>
       </build>
     </profile>
+      <profile>
+          <id>export</id>
+          <activation>
+              <activeByDefault>false</activeByDefault>
+          </activation>
+          <build>
+              <plugins>
+                  <plugin>
+                      <groupId>org.codehaus.mojo</groupId>
+                      <artifactId>exec-maven-plugin</artifactId>
+                      <executions>
+                          <execution>
+                              <goals>
+                                  <goal>java</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                      <configuration> <!-- This plugin populates the databases: mvn -P import exec:java -->
+                          <mainClass>org.jbundle.base.db.xmlutil.XmlInOut</mainClass>
+                          <arguments>
+                              <argument>transferMode=export</argument>
+                              <argument>loadInitialData=false</argument>
+                              <argument>sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/data/src/main/resources/org/jbundle/res/data/</argument>
+<!--                              <argument>sourceDir=initial_data/current_initial_data</argument>-->
+<!--                              <argument>database=test</argument>-->
+                              <argument>record=.app.program.db.LogicFile</argument>
+                              <argument>export=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/data/src/main/resources/org/jbundle/res/data/initial_data/current_initial_data/program_base_shared/org/jbundle/app/program/db/LogicFile.xml</argument>
+                              <argument>mainSharedDBName=main_base</argument>
+                              <argument>mainUserDBName=mainUserDBName</argument>
+                              <argument>programSharedDBName=program_base</argument>
+                              <argument>local=Jdbc</argument>
+                              <argument>remote=Jdbc</argument>
+                              <argument>table=Jdbc</argument>
+                              <argument>messageserver=false</argument>
+                              <!-- argument>databaseproduct=derby</argument -->
+                          </arguments>
+                          <systemProperties>
+                              <systemProperty>
+                                  <key>myproperty</key>
+                                  <value>myvalue</value>
+                              </systemProperty>
+                          </systemProperties>
+                      </configuration>
+                  </plugin>
+              </plugins>
+          </build>
+      </profile>
   </profiles>
   
   <dependencies>
