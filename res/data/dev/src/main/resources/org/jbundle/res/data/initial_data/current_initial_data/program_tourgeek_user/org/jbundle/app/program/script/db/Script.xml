@@ -35,7 +35,7 @@
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Wed Mar 14 15:29:25 PDT 2012
-userArchiveFolder=/home/don/workspace/workspace/app/tourgeek/res/data/test/src/main/resources/com/tourgeek/res/data/test_data/current_test_data
+userArchiveFolder=/home/dcorley/workspace/workspace/app/tourgeek/res/data/test/src/main/resources/com/tourgeek/res/data/test_data/current_test_data
 type=USER_DATA
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
@@ -3337,7 +3337,7 @@ process=.base.db.util.log.RestoreBackupProcess
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Mon Sep 26 07:33:11 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/test/src/main/resources/com/tourgeek/res/data/test_data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/test/src/main/resources/com/tourgeek/res/data/test_data
 xclassList=UserInfo,UserGroup,UserResource,UserPermission,MessageControl,MessageDetail,MessageInfo,MessageProcessInfo,MessageTransport,MessageTransportInfo,Account,Period,FinStmt,FinStmtDetail,FinStmtHeader
 ]]></Properties>
 		<Command/>
@@ -3398,7 +3398,7 @@ transferMode=export
 		<Properties><![CDATA[#Field properties
 #Sat Jan 15 09:21:12 PST 2011
 sourceDir=raw_test_data
-converterPath=/home/don/workspace/jdance/WebContent/docs/styles/xsl/program/fixdemo.xsl
+converterPath=/home/dcorley/workspace/jdance/WebContent/docs/styles/xsl/program/fixdemo.xsl
 destDir=scratch_test_data
 listenerClass=.app.program.script.scan.XMLScanListener
 process=.app.program.manual.convert.ConvertCode
@@ -3502,7 +3502,7 @@ command=test
 #Sat Jan 15 09:29:20 PST 2011
 package=.tour
 dbPrefix=fred_
-archiveFolder=/home/don/workspace/tourgeek/tourgeek-config/tourgeek-config-webapp/src/main/webapp/com/tourgeek/data/testdata/current
+archiveFolder=/home/dcorley/workspace/tourgeek/tourgeek-config/tourgeek-config-webapp/src/main/webapp/com/tourgeek/data/testdata/current
 type=USER_DATA
 process=.app.program.script.process.ExportRecordsToXmlProcess
 project=Tour
@@ -3603,8 +3603,8 @@ package=org.jbundle.main.*
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Oct 05 15:58:51 PDT 2010
-sourcePrefix=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/
-converterPath=/home/don/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/program/
+sourcePrefix=/home/dcorley/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/
+converterPath=/home/dcorley/workspace/jbundle-workspace/jbundle-root/jbundle-config/jbundle-config-web/jbundle-config-web-docs/src/main/resources/docs/styles/xsl/program/
 destDir=flat/base
 listenerClass=.app.program.script.scan.XslImportScanListener
 process=.app.program.manual.convert.ConvertCode
@@ -3720,9 +3720,9 @@ sourceDir=com/tourmarketplace
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Jan 18 15:25:58 PST 2011
-sourcePrefix=/home/don/workspace/jbundle-workspace/
+sourcePrefix=/home/dcorley/workspace/jbundle-workspace/
 sourceDir=
-destDir=/home/don/deleteme
+destDir=/home/dcorley/deleteme
 process=.app.program.manual.convert.ConvertCode
 listenerClass=org.jbundle.app.program.script.scan.DeleteMeScanListener
 extension=xml
@@ -3741,7 +3741,7 @@ extension=xml
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Wed Oct 26 11:22:01 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/data/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/data/src/main/resources/org/jbundle/res/data
 local=Jdbc
 sourceDir=initial_data/current_initial_data
 standaloneProcess=.app.program.script.process.ExportRecordsToXmlProcess
@@ -3801,7 +3801,7 @@ systemname=_base
 programSharedDBName=program_app
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/app/src/main/resources/org/jbundle/res/data
 systemname=_app
 ]]></Properties>
 		<Command/>
@@ -3819,7 +3819,7 @@ systemname=_app
 		<Properties><![CDATA[#Field properties
 #Wed Oct 26 11:17:05 PDT 2011
 programSharedDBName=program_test
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/test/src/main/resources/org/jbundle/res/data
 systemname=_test
 ]]></Properties>
 		<Command/>
@@ -3851,7 +3851,7 @@ systemname=_test
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:17:17 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
 type=USER_DATA
 ]]></Properties>
 		<Command>Z</Command>
@@ -3868,7 +3868,7 @@ type=USER_DATA
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Oct 25 14:27:54 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
 type=SHARED_DATA
 ]]></Properties>
 		<Command>Z</Command>
@@ -3885,7 +3885,7 @@ type=SHARED_DATA
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:17:36 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
 type=USER_DATA
 database=main
 ]]></Properties>
@@ -3903,7 +3903,7 @@ database=main
 		<Code/>
 		<Properties><![CDATA[#Field properties
 #Tue Oct 25 14:28:19 PDT 2011
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
 type=SHARED_DATA
 database=main
 ]]></Properties>
@@ -3922,7 +3922,7 @@ database=main
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:15:02 PDT 2011
 locale=demo
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
 language=demo
 ]]></Properties>
 		<Command/>
@@ -3940,7 +3940,7 @@ language=demo
 		<Properties><![CDATA[#Field properties
 #Tue Nov 01 23:14:30 PDT 2011
 locale=demoquick
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
 language=demoquick
 ]]></Properties>
 		<Command/>
@@ -4084,7 +4084,7 @@ database=main
 		<Properties><![CDATA[#Field properties
 #Tue Oct 25 18:19:03 PDT 2011
 package=com.tourgeek.*
-sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/com/tourgeek/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/com/tourgeek/res/data
 ]]></Properties>
 		<Command>Z</Command>
 		<Source/>
@@ -4103,7 +4103,7 @@ sourcePrefix=/home/don/workspace/workspace/app/tourgeek/res/data/data/src/main/r
 programSharedDBName=program_test
 mainUserDBName=mainUserDBName
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/test/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/test/src/main/resources/org/jbundle/res/data
 database=test
 ]]></Properties>
 		<Command/>
@@ -4123,7 +4123,7 @@ database=test
 programSharedDBName=program_app
 mainUserDBName=main
 mainSharedDBName=main_base
-sourcePrefix=/home/don/workspace/workspace/jbundle/jbundle/res/data/app/src/main/resources/org/jbundle/res/data
+sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/app/src/main/resources/org/jbundle/res/data
 ]]></Properties>
 		<Command/>
 		<Source/>
