@@ -7,10 +7,28 @@ package com.tourgeek.tour.acctrec.report.pastdue;
 
 import java.util.*;
 
-import org.bson.Document;
 import org.jbundle.base.db.*;
+import org.jbundle.thin.base.util.*;
+import org.jbundle.thin.base.db.*;
 import org.jbundle.base.db.event.*;
+import org.jbundle.base.db.filter.*;
+import org.jbundle.base.field.*;
+import org.jbundle.base.field.convert.*;
+import org.jbundle.base.field.event.*;
+import org.jbundle.base.model.*;
+import org.jbundle.base.util.*;
+import org.jbundle.model.*;
+import org.jbundle.model.db.*;
+import org.jbundle.model.screen.*;
+import com.tourgeek.tour.genled.db.*;
+import org.jbundle.base.screen.model.report.*;
+import org.bson.*;
+import com.tourgeek.tour.acctrec.db.*;
 import com.tourgeek.tour.booking.db.*;
+import com.tourgeek.tour.product.tour.db.*;
+import com.tourgeek.tour.booking.detail.db.*;
+import org.jbundle.main.db.*;
+import org.jbundle.base.screen.model.util.*;
 
 /**
  *  PastDueHandler - Check to see if this booking is past-due.
@@ -47,7 +65,6 @@ public class PastDueHandler extends FileListener
      * @param strbFilter The SQL query string to add to.
      * @param bIncludeFileName Include the file name with this query?
      * @param vParamList The param list to add the raw data to (for prepared statements).
-     * @param doc
      * @return True if you should not skip this record (does a check on the local data).
      */
     public boolean doLocalCriteria(StringBuffer strbFilter, boolean bIncludeFileName, Vector vParamList, Document doc)
@@ -66,11 +83,11 @@ public class PastDueHandler extends FileListener
                 {
                     if (dAmountPaid < dDepositAmt)
                         if (m_recPastDue.getField(PastDueScreenRecord.MCO_AMOUNT_PAID).getValue() < (dDepositAmt * (1.0 - m_recPastDue.getField(PastDueScreenRecord.MCO_PER).getValue())))
-                            return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);     // Deposit not paid, print record
+                            return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);        // Deposit not paid, print record
                 }
                 else
                     if (dAmountPaid < dDepositAmt)
-                        return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);     // Deposit not paid, print record
+                        return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);        // Deposit not paid, print record
             }
         }
         if (m_recPastDue.getField(PastDueScreenRecord.CHECK_FINAL).getState() == true)
@@ -79,7 +96,7 @@ public class PastDueHandler extends FileListener
             { // Deposit date in range
                 double dBalance = this.getOwner().getField(Booking.BALANCE).getValue();
                 if (dBalance > 0)
-                    return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);   // Not fully paid, print it
+                    return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc); // Not fully paid, print it
             }
         }
         return false;   // Skip this record

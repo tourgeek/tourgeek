@@ -64,14 +64,14 @@ public class ReconciledConverter extends CheckConverter
     /**
      * Set the state of this field for binary fields (don't override this).
      * Usually overidden.
-     * @param state the state to set the data to.
+     * @param bState the state to set the data to.
      * @param bDisplayOption Display the data on the screen if true.
      * @param iMoveMode INIT, SCREEN, or READ move mode.
      * @return The error code.
      */
-    public int setState(boolean state, boolean bDisplayOption, int iMoveMode)
+    public int setState(boolean bState, boolean bDisplayOption, int iMoveMode)
     {
-        if (state)
+        if (bState)
             return ((BaseField)this.getField()).moveFieldToThis((BaseField)m_fldTargetValue, bDisplayOption, iMoveMode);
         else
             return this.getField().setData(null, bDisplayOption, iMoveMode);

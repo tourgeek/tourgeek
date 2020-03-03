@@ -24,6 +24,7 @@ import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
 import com.tourgeek.tour.genled.db.*;
 import org.jbundle.base.screen.model.report.*;
+import org.bson.*;
 import com.tourgeek.tour.acctrec.db.*;
 import com.tourgeek.tour.booking.db.*;
 import com.tourgeek.tour.product.tour.db.*;

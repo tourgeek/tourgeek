@@ -29,6 +29,7 @@ import java.text.*;
 import com.tourgeek.tour.product.land.event.*;
 import com.tourgeek.tour.message.land.request.data.*;
 import com.tourgeek.model.tour.booking.detail.db.*;
+import org.bson.*;
 import com.tourgeek.model.tour.product.land.db.*;
 
 /**

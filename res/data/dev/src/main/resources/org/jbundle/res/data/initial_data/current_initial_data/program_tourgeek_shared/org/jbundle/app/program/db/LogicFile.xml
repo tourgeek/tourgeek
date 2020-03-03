@@ -11976,7 +11976,7 @@ return iErrorCode;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="778">
-		<LastChanged>2011-08-05T15:59:51</LastChanged>
+		<LastChanged>2020-03-02T18:33:16</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>doRemoteCriteria</MethodName>
@@ -11989,10 +11989,10 @@ if (strbFilter != null)   if (strbFilter.length() != 0)
     strbFilter.append(" AND ");
 if (strbFilter != null)
     strbFilter.append("(");
-boolean bDontSkip2 = this.fieldCompare(m_fldToCheck, m_fldToCompare, m_strSeekSign, strbFilter, bIncludeFileName, vParamList);
+boolean bDontSkip2 = this.fieldCompare(m_fldToCheck, m_fldToCompare, m_strSeekSign, strbFilter, bIncludeFileName, vParamList, doc);
 if (strbFilter != null)
     strbFilter.append(" OR ");
-boolean bDontSkip3 = this.fieldCompare(m_fldToCheck, (String)null, "=", strbFilter, bIncludeFileName, vParamList);  // Is null
+boolean bDontSkip3 = this.fieldCompare(m_fldToCheck, (String)null, "=", strbFilter, bIncludeFileName, vParamList, doc);  // Is null
 if (strbFilter != null)
     strbFilter.append(") ");
 if (strbFilter != null)
@@ -12000,7 +12000,7 @@ if (strbFilter != null)
 else
     bDontSkip = (bDontSkip2 | bDontSkip3);
 if (bDontSkip)
-    return super.doRemoteCriteria(strbFilter, bIncludeFileName, vParamList);    // Dont skip this record
+    return super;    // Dont skip this record
 else
     return false;   // Skip this one]]></LogicSource>
 		<LogicThrows/>
@@ -22047,7 +22047,7 @@ m_recProfileDetail = recProfileDetail;]]></LogicSource>
 		<IncludeScope>1</IncludeScope>
 	</LogicFile>
 	<LogicFile ID="1527">
-		<LastChanged>2012-01-31T10:43:19</LastChanged>
+		<LastChanged>2020-03-02T19:59:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Sequence>100</Sequence>
 		<MethodName>doLocalCriteria</MethodName>
@@ -22069,11 +22069,11 @@ m_recProfileDetail = recProfileDetail;]]></LogicSource>
 		{
 			if (dAmountPaid < dDepositAmt)
 				if (m_recPastDue.getField(PastDueScreenRecord.MCO_AMOUNT_PAID).getValue() < (dDepositAmt * (1.0 - m_recPastDue.getField(PastDueScreenRecord.MCO_PER).getValue())))
-					return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);		// Deposit not paid, print record
+					return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);		// Deposit not paid, print record
 		}
 		else
 			if (dAmountPaid < dDepositAmt)
-				return super;		// Deposit not paid, print record
+				return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc);		// Deposit not paid, print record
 	}
 }
 if (m_recPastDue.getField(PastDueScreenRecord.CHECK_FINAL).getState() == true)
@@ -22082,7 +22082,7 @@ if (m_recPastDue.getField(PastDueScreenRecord.CHECK_FINAL).getState() == true)
 	{	// Deposit date in range
 		double dBalance = this.getOwner().getField(Booking.BALANCE).getValue();
 		if (dBalance > 0)
-			return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList);	// Not fully paid, print it
+			return super.doLocalCriteria(strbFilter, bIncludeFileName, vParamList, doc); // Not fully paid, print it
 	}
 }
 return false;		// Skip this record]]></LogicSource>

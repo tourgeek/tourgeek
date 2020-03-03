@@ -6725,7 +6725,7 @@ specification.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="246">
-		<LastChanged>2012-03-28T11:04:24</LastChanged>
+		<LastChanged>2020-03-02T18:28:30</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CheckReconDateHandler</ClassName>
 		<BaseClassName>CompareFileFilter</BaseClassName>
@@ -12466,7 +12466,7 @@ carrier is distributed to the override summary account:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="535">
-		<LastChanged>2012-03-29T10:37:00</LastChanged>
+		<LastChanged>2020-03-02T18:12:05</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>PastDueHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
@@ -18724,7 +18724,7 @@ When the transaction is made, this behavior creates an entry.]]></ClassDesc>
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="851">
-		<LastChanged>2012-03-29T10:37:00</LastChanged>
+		<LastChanged>2020-03-02T18:14:56</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ValidBookingHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
@@ -24148,7 +24148,7 @@ leaving all accounts in the correct state.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1191">
-		<LastChanged>2012-03-29T10:38:00</LastChanged>
+		<LastChanged>2020-03-02T18:27:22</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>CompareRefundHandler</ClassName>
 		<BaseClassName>FileListener</BaseClassName>
@@ -24652,7 +24652,7 @@ The profile data will be counted based on the critera entered.
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1219">
-		<LastChanged>2012-03-31T15:58:55</LastChanged>
+		<LastChanged>2020-03-02T17:46:01</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>FilterApTrxHandler</ClassName>
 		<BaseClassName>ListFileFilter</BaseClassName>
@@ -25645,7 +25645,7 @@ Enter a currency and all the vendors billing in this currency will diplay with t
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1275">
-		<LastChanged>2012-03-31T15:57:08</LastChanged>
+		<LastChanged>2020-03-02T17:39:12</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ApTrxBaseFilter</ClassName>
 		<BaseClassName>ListFileFilter</BaseClassName>
@@ -35281,7 +35281,7 @@ There are three ways to price a component:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1906">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2020-03-02T17:47:22</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ProfitCenterFilter</ClassName>
 		<BaseClassName>FileFilter</BaseClassName>
@@ -35332,7 +35332,7 @@ There are three ways to price a component:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1909">
-		<LastChanged>2012-03-31T22:20:21</LastChanged>
+		<LastChanged>2020-03-02T17:47:51</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>ExcludeClosingFilter</ClassName>
 		<BaseClassName>FileFilter</BaseClassName>
@@ -35434,7 +35434,7 @@ There are three ways to price a component:
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="1990">
-		<LastChanged>2011-08-05T15:59:50</LastChanged>
+		<LastChanged>2020-03-02T17:49:36</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>LandPricingFilter</ClassName>
 		<BaseClassName>SubFileFilter</BaseClassName>
@@ -37209,7 +37209,7 @@ These tables contains all of the standard code tables from the Open Travel Allia
 		<CopyDescFrom/>
 	</ClassInfo>
 	<ClassInfo ID="2204">
-		<LastChanged>2012-03-31T15:57:08</LastChanged>
+		<LastChanged>2020-03-02T17:44:54</LastChanged>
 		<Deleted>N</Deleted>
 		<ClassName>FilterApTrxDateRange</ClassName>
 		<BaseClassName>FileFilter</BaseClassName>

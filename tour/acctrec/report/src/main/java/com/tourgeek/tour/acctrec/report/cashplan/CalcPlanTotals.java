@@ -27,6 +27,7 @@ import com.tourgeek.tour.base.db.event.*;
 import com.tourgeek.tour.booking.detail.db.*;
 import org.jbundle.base.screen.model.util.*;
 import com.tourgeek.tour.product.base.db.*;
+import org.bson.*;
 
 /**
  *  CalcPlanTotals - Calculate the total for the cash plan report.

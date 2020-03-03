@@ -23,6 +23,7 @@ import org.jbundle.model.screen.*;
 import org.jbundle.base.screen.model.*;
 import com.tourgeek.tour.assetdr.db.*;
 import org.jbundle.base.screen.model.util.*;
+import org.bson.*;
 
 /**
  *  BankReconScreenRecord - Fields for Bank Acct Reconciliation.

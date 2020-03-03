@@ -28,6 +28,7 @@ import com.tourgeek.tour.booking.db.*;
 import com.tourgeek.tour.base.db.event.*;
 import com.tourgeek.tour.booking.detail.db.*;
 import com.tourgeek.tour.product.base.db.*;
+import org.bson.*;
 
 /**
  *  CashPlanReport - Cash Receipts Planning Report.

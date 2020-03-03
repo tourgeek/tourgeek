@@ -63868,4 +63868,154 @@ static  {
 		<ClassFieldsType>I</ClassFieldsType>
 		<IncludeScope>1</IncludeScope>
 	</ClassFields>
+	<ClassFields ID="5927">
+		<LastChanged>2020-03-02T17:38:37</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ApTrxBaseFilter</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>C</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5928">
+		<LastChanged>2020-03-02T17:44:38</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>FilterApTrxDateRange</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>P</ClassFieldsType>
+		<IncludeScope>4</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5929">
+		<LastChanged>2020-03-02T17:45:26</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>FilterApTrxHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>I</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5930">
+		<LastChanged>2020-03-02T17:47:09</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ProfitCenterFilter</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>P</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5931">
+		<LastChanged>2020-03-02T17:47:41</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ExcludeClosingFilter</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>P</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5932">
+		<LastChanged>2020-03-02T17:48:12</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>LandPricingFilter</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>P</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5933">
+		<LastChanged>2020-03-02T18:12:01</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>PastDueHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>P</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5934">
+		<LastChanged>2020-03-02T18:12:24</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>ValidBookingHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>I</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5935">
+		<LastChanged>2020-03-02T18:26:34</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>CompareRefundHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>P</ClassFieldsType>
+		<IncludeScope>1</IncludeScope>
+	</ClassFields>
+	<ClassFields ID="5936">
+		<LastChanged>2020-03-02T18:27:44</LastChanged>
+		<Deleted>N</Deleted>
+		<ClassInfoClassName>CheckReconDateHandler</ClassInfoClassName>
+		<ClassInfoID/>
+		<ClassFieldClass>org.bson</ClassFieldClass>
+		<ClassFieldSequence>0</ClassFieldSequence>
+		<ClassFieldName/>
+		<ClassFieldDesc/>
+		<ClassFieldProtect/>
+		<ClassFieldInitial/>
+		<ClassFieldInitialValue/>
+		<ClassFieldsType>P</ClassFieldsType>
+		<IncludeScope>4</IncludeScope>
+	</ClassFields>
 </file>

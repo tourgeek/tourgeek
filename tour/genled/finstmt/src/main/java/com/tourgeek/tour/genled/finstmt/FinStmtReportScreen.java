@@ -22,6 +22,7 @@ import org.jbundle.base.util.*;
 import org.jbundle.model.*;
 import org.jbundle.model.db.*;
 import org.jbundle.model.screen.*;
+import org.bson.*;
 import com.tourgeek.tour.genled.db.*;
 import org.jbundle.base.screen.model.report.*;
 import com.tourgeek.tour.genled.db.finstmt.*;

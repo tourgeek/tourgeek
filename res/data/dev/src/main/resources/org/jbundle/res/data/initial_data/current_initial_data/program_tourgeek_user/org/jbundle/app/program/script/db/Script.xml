@@ -3842,7 +3842,7 @@ systemname=_test
 		<Destination/>
 	</Script>
 	<Script ID="333">
-		<LastChanged>2011-11-01T23:17:20</LastChanged>
+		<LastChanged>2020-03-02T17:25:19</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export tour (user) program data</Name>
 		<ParentFolderID>332</ParentFolderID>
@@ -3850,16 +3850,16 @@ systemname=_test
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Tue Nov 01 23:17:17 PDT 2011
-sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+#Mon Mar 02 17:25:17 PST 2020
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/dev/src/main/resources/org/jbundle/res/data
 type=USER_DATA
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="334">
-		<LastChanged>2011-10-25T14:27:54</LastChanged>
+		<LastChanged>2020-03-02T17:24:58</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export tour (shared) program data</Name>
 		<ParentFolderID>332</ParentFolderID>
@@ -3867,11 +3867,11 @@ type=USER_DATA
 		<Comment/>
 		<Code/>
 		<Properties><![CDATA[#Field properties
-#Tue Oct 25 14:27:54 PDT 2011
-sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/org/jbundle/res/data
+#Mon Mar 02 17:24:55 PST 2020
+sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/dev/src/main/resources/org/jbundle/res/data
 type=SHARED_DATA
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
@@ -3948,7 +3948,7 @@ language=demoquick
 		<Destination/>
 	</Script>
 	<Script ID="339">
-		<LastChanged>2011-10-25T14:33:32</LastChanged>
+		<LastChanged>2020-03-02T18:37:28</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export base program data</Name>
 		<ParentFolderID>326</ParentFolderID>
@@ -3956,12 +3956,12 @@ language=demoquick
 		<Comment/>
 		<Code/>
 		<Properties/>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="340">
-		<LastChanged>2011-10-25T14:33:42</LastChanged>
+		<LastChanged>2020-03-02T18:37:33</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export base main data</Name>
 		<ParentFolderID>326</ParentFolderID>
@@ -3972,12 +3972,12 @@ language=demoquick
 #Tue Oct 25 14:33:39 PDT 2011
 database=main
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="341">
-		<LastChanged>2011-10-25T14:34:42</LastChanged>
+		<LastChanged>2020-03-02T18:37:42</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export app program data</Name>
 		<ParentFolderID>327</ParentFolderID>
@@ -3985,12 +3985,12 @@ database=main
 		<Comment/>
 		<Code/>
 		<Properties/>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="343">
-		<LastChanged>2011-10-25T14:35:46</LastChanged>
+		<LastChanged>2020-03-02T18:37:49</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export test program data</Name>
 		<ParentFolderID>330</ParentFolderID>
@@ -3998,12 +3998,12 @@ database=main
 		<Comment/>
 		<Code/>
 		<Properties/>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="345">
-		<LastChanged>2011-10-25T15:11:09</LastChanged>
+		<LastChanged>2020-03-02T18:37:59</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export tour demo data</Name>
 		<ParentFolderID>337</ParentFolderID>
@@ -4011,12 +4011,12 @@ database=main
 		<Comment/>
 		<Code/>
 		<Properties/>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="346">
-		<LastChanged>2011-10-25T15:11:04</LastChanged>
+		<LastChanged>2020-03-02T18:38:04</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export tour demo main data</Name>
 		<ParentFolderID>337</ParentFolderID>
@@ -4027,12 +4027,12 @@ database=main
 #Tue Oct 25 15:11:02 PDT 2011
 database=main
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="347">
-		<LastChanged>2011-10-25T15:11:40</LastChanged>
+		<LastChanged>2020-03-02T18:38:13</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export tour demoquick data</Name>
 		<ParentFolderID>338</ParentFolderID>
@@ -4040,12 +4040,12 @@ database=main
 		<Comment/>
 		<Code/>
 		<Properties/>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="348">
-		<LastChanged>2011-10-25T15:11:50</LastChanged>
+		<LastChanged>2020-03-02T18:38:18</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export tour demoquick main data</Name>
 		<ParentFolderID>338</ParentFolderID>
@@ -4056,7 +4056,7 @@ database=main
 #Tue Oct 25 15:11:47 PDT 2011
 database=main
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
@@ -4074,7 +4074,7 @@ database=main
 		<Destination/>
 	</Script>
 	<Script ID="350">
-		<LastChanged>2011-10-25T18:19:05</LastChanged>
+		<LastChanged>2020-03-02T18:38:40</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup tour data</Name>
 		<ParentFolderID>349</ParentFolderID>
@@ -4086,7 +4086,7 @@ database=main
 package=com.tourgeek.*
 sourcePrefix=/home/dcorley/workspace/workspace/app/tourgeek/res/data/data/src/main/resources/com/tourgeek/res/data
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
@@ -4130,7 +4130,7 @@ sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/app/src/
 		<Destination/>
 	</Script>
 	<Script ID="353">
-		<LastChanged>2011-10-25T18:27:24</LastChanged>
+		<LastChanged>2020-03-02T18:39:00</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup contact data</Name>
 		<ParentFolderID>352</ParentFolderID>
@@ -4141,12 +4141,12 @@ sourcePrefix=/home/dcorley/workspace/workspace/jbundle/jbundle/res/data/app/src/
 #Tue Oct 25 18:27:21 PDT 2011
 package=org.jbundle.app.office.*
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="354">
-		<LastChanged>2011-10-25T18:27:41</LastChanged>
+		<LastChanged>2020-03-02T18:39:06</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup dance data</Name>
 		<ParentFolderID>352</ParentFolderID>
@@ -4157,12 +4157,12 @@ package=org.jbundle.app.office.*
 #Tue Oct 25 18:27:39 PDT 2011
 package=org.jbundle.app.dance.*
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="355">
-		<LastChanged>2011-10-25T18:28:01</LastChanged>
+		<LastChanged>2020-03-02T18:39:10</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup picture data</Name>
 		<ParentFolderID>352</ParentFolderID>
@@ -4173,7 +4173,7 @@ package=org.jbundle.app.dance.*
 #Tue Oct 25 18:27:59 PDT 2011
 package=org.jbundle.app.picture.*
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
@@ -4195,7 +4195,7 @@ language=es
 		<Destination/>
 	</Script>
 	<Script ID="357">
-		<LastChanged>2011-10-26T05:38:10</LastChanged>
+		<LastChanged>2020-03-02T18:38:26</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Export es main data</Name>
 		<ParentFolderID>356</ParentFolderID>
@@ -4206,12 +4206,12 @@ language=es
 #Wed Oct 26 05:37:55 PDT 2011
 database=main
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="358">
-		<LastChanged>2011-10-26T05:41:54</LastChanged>
+		<LastChanged>2020-03-02T18:38:48</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup test data</Name>
 		<ParentFolderID>351</ParentFolderID>
@@ -4219,12 +4219,12 @@ database=main
 		<Comment/>
 		<Code/>
 		<Properties/>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
 	<Script ID="359">
-		<LastChanged>2011-10-26T05:42:36</LastChanged>
+		<LastChanged>2020-03-02T18:38:53</LastChanged>
 		<Deleted>N</Deleted>
 		<Name>Backup test es data</Name>
 		<ParentFolderID>351</ParentFolderID>
@@ -4236,7 +4236,7 @@ database=main
 locale=es
 language=es
 ]]></Properties>
-		<Command>Z</Command>
+		<Command>R</Command>
 		<Source/>
 		<Destination/>
 	</Script>
