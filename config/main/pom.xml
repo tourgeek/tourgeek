@@ -52,7 +52,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
   <profiles>
     <profile>
       <id>switch</id>
@@ -93,10 +92,10 @@
               <!-- argument>connectionType=proxy</argument>
         <argument>remotehost=${jbundle.server}</argument>
         <argument>codebase=${jbundle.codebase}</argument -->
-        <argument>local=Jdbc</argument>
-        <argument>remote=Jdbc</argument>
-        <argument>table=Jdbc</argument>
-                <argument>messageserver=false</argument>
+        <argument>local=${jbundle.db.local}</argument>
+        <argument>remote=${jbundle.db.remote}</argument>
+        <argument>table=${jbundle.db.table}</argument>
+        <argument>messageserver=false</argument>
 		<!-- argument>databaseproduct=derby</argument -->
             </arguments>
           <systemProperties>
@@ -140,9 +139,9 @@
                               <argument>mainSharedDBName=main_base</argument>
                               <argument>mainUserDBName=mainUserDBName</argument>
                               <argument>programSharedDBName=program_base</argument>
-                              <argument>local=Jdbc</argument>
-                              <argument>remote=Jdbc</argument>
-                              <argument>table=Jdbc</argument>
+                              <argument>local=${jbundle.db.local}</argument>
+                              <argument>remote=${jbundle.db.remote}</argument>
+                              <argument>table=${jbundle.db.table}</argument>
                               <argument>messageserver=false</argument>
                               <!-- argument>databaseproduct=derby</argument -->
                           </arguments>
