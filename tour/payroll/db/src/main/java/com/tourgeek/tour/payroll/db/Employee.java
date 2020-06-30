@@ -369,7 +369,7 @@ public class Employee extends Person
         }
         if (iKeyArea == 5)
         {
-            keyArea = this.makeIndex(DBConstants.UNIQUE, USER_ID_KEY);
+            keyArea = this.makeIndex(DBConstants.NOT_UNIQUE, USER_ID_KEY);
             keyArea.addKeyField(USER_ID, DBConstants.ASCENDING);
             keyArea.addKeyField(TERMINATION_DATE, DBConstants.ASCENDING);
         }
