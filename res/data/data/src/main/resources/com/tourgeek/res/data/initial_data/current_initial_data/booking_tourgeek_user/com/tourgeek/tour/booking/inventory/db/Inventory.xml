@@ -3419,34 +3419,4 @@
 		<Oversell/>
 		<Closed/>
 	</Inventory>
-	<Inventory ID="229">
-		<LastChanged>2013-05-02T16:57:29</LastChanged>
-		<Deleted>N</Deleted>
-		<ProductTypeID>3</ProductTypeID>
-		<ProductID>6</ProductID>
-		<RateID>0</RateID>
-		<ClassID>0</ClassID>
-		<OtherID>0</OtherID>
-		<InvDate>2013-10-28</InvDate>
-		<Blocked>10</Blocked>
-		<Used>0</Used>
-		<Available>10</Available>
-		<Oversell/>
-		<Closed/>
-	</Inventory>
-	<Inventory ID="230">
-		<LastChanged>2013-05-02T16:57:29</LastChanged>
-		<Deleted>N</Deleted>
-		<ProductTypeID>3</ProductTypeID>
-		<ProductID>6</ProductID>
-		<RateID>0</RateID>
-		<ClassID>0</ClassID>
-		<OtherID>0</OtherID>
-		<InvDate>2013-10-28</InvDate>
-		<Blocked>10</Blocked>
-		<Used>0</Used>
-		<Available>10</Available>
-		<Oversell/>
-		<Closed/>
-	</Inventory>
 </file>

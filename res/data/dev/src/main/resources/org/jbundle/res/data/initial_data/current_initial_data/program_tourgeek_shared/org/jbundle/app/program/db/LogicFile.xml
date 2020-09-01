@@ -61197,7 +61197,7 @@ return screen;]]></LogicSource>
 		<MethodInterface/>
 		<MethodClassName>BookingDetail</MethodClassName>
 		<LogicSource><![CDATA[try {
-    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
+    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 0);
     if (iProductType == ProductType.HOTEL_ID)
         return new BookingHotel(recordOwner);
     if (iProductType == ProductType.LAND_ID)
@@ -61347,7 +61347,7 @@ return bHandled;]]></LogicSource>
 		<MethodInterface/>
 		<MethodClassName>TourHeaderDetail</MethodClassName>
 		<LogicSource><![CDATA[try {
-    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
+    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 0);
     if (iProductType == ProductType.HOTEL_ID)
         return new TourHeaderHotel(recordOwner);
     if (iProductType == ProductType.LAND_ID)
@@ -71159,7 +71159,7 @@ return intMessageStatus.intValue();]]></LogicSource>
 		<MethodInterface/>
 		<MethodClassName>Inventory</MethodClassName>
 		<LogicSource><![CDATA[try {
-    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
+    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 0);
     if (iProductType == ProductType.HOTEL_ID)
         return new HotelInventory(recordOwner);
     if (iProductType == ProductType.LAND_ID)
@@ -91203,7 +91203,7 @@ if ((recApTrx.getField(ApTrx.TRX_STATUS_ID).getValue() == m_iDepartureEstimate)
 		<MethodInterface/>
 		<MethodClassName>ApTrx</MethodClassName>
 		<LogicSource><![CDATA[try {
-    int iApTrxTypeID = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
+    int iApTrxTypeID = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 0);
     if (iApTrxTypeID == ApTrx.AP_TRX_TYPE)
         return this;
     if (iApTrxTypeID == ApTrx.TICKET_TRX_TYPE)
