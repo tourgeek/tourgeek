@@ -350,9 +350,8 @@ public class TourHeaderDetail extends TourSub
      */
     public Record createSharedRecord(Object objKey, RecordOwner recordOwner)
     {
-        if (objKey instanceof Integer)
-        {
-            int iProductType = ((Integer)objKey).intValue();
+        try {
+            int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
             if (iProductType == ProductType.HOTEL_ID)
                 return new TourHeaderHotel(recordOwner);
             if (iProductType == ProductType.LAND_ID)
@@ -369,6 +368,7 @@ public class TourHeaderDetail extends TourSub
                 return new TourHeaderTour(recordOwner);
             if (iProductType == ProductType.TRANSPORTATION_ID)
                 return new TourHeaderTransportation(recordOwner);
+        } catch (Exception ex) {
         }
         return null;
     }

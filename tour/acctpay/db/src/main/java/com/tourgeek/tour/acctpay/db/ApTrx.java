@@ -370,13 +370,13 @@ public class ApTrx extends Trx
      */
     public Record createSharedRecord(Object objKey, RecordOwner recordOwner)
     {
-        if (objKey instanceof Integer)
-        {
-            int iApTrxTypeID = ((Integer)objKey).intValue();
+        try {
+            int iApTrxTypeID = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
             if (iApTrxTypeID == ApTrx.AP_TRX_TYPE)
                 return this;
             if (iApTrxTypeID == ApTrx.TICKET_TRX_TYPE)
                 return new TicketTrx(recordOwner);
+        } catch (Exception ex) {
         }
         return null;
     }

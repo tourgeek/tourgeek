@@ -797,9 +797,8 @@ public class BookingDetail extends BookingSub
      */
     public Record createSharedRecord(Object objKey, RecordOwner recordOwner)
     {
-        if (objKey instanceof Integer)
-        {
-            int iProductType = ((Integer)objKey).intValue();
+        try {
+            int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
             if (iProductType == ProductType.HOTEL_ID)
                 return new BookingHotel(recordOwner);
             if (iProductType == ProductType.LAND_ID)
@@ -816,6 +815,7 @@ public class BookingDetail extends BookingSub
                 return new BookingTour(recordOwner);
             if (iProductType == ProductType.TRANSPORTATION_ID)
                 return new BookingTransportation(recordOwner);
+        } catch (Exception ex) {
         }
         return null;
     }

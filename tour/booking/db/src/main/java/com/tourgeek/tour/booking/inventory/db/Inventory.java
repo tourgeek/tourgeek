@@ -513,9 +513,8 @@ public class Inventory extends VirtualRecord
      */
     public Record createSharedRecord(Object objKey, RecordOwner recordOwner)
     {
-        if (objKey instanceof Integer)
-        {
-            int iProductType = ((Integer)objKey).intValue();
+        try {
+            int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
             if (iProductType == ProductType.HOTEL_ID)
                 return new HotelInventory(recordOwner);
             if (iProductType == ProductType.LAND_ID)
@@ -532,6 +531,7 @@ public class Inventory extends VirtualRecord
                 return new TourHeaderInventory(recordOwner);
             if (iProductType == ProductType.TRANSPORTATION_ID)
                 return new TransportationInventory(recordOwner);
+        } catch (Exception ex) {
         }
         return null;
     }

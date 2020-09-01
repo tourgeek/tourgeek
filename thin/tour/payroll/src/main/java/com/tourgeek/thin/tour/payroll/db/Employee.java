@@ -224,7 +224,7 @@ public class Employee extends Person
         keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, DEPARTMENT_ID_KEY);
         keyArea.addKeyField(DEPARTMENT_ID, Constants.ASCENDING);
         keyArea.addKeyField(NAME_SORT, Constants.ASCENDING);
-        keyArea = new KeyAreaInfo(this, Constants.UNIQUE, USER_ID_KEY);
+        keyArea = new KeyAreaInfo(this, Constants.NOT_UNIQUE, USER_ID_KEY);
         keyArea.addKeyField(USER_ID, Constants.ASCENDING);
         keyArea.addKeyField(TERMINATION_DATE, Constants.ASCENDING);
     }
