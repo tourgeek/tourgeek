@@ -61196,9 +61196,8 @@ return screen;]]></LogicSource>
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>BookingDetail</MethodClassName>
-		<LogicSource><![CDATA[if (objKey instanceof Integer)
-{
-    int iProductType = ((Integer)objKey).intValue();
+		<LogicSource><![CDATA[try {
+    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
     if (iProductType == ProductType.HOTEL_ID)
         return new BookingHotel(recordOwner);
     if (iProductType == ProductType.LAND_ID)
@@ -61215,6 +61214,7 @@ return screen;]]></LogicSource>
         return new BookingTour(recordOwner);
     if (iProductType == ProductType.TRANSPORTATION_ID)
         return new BookingTransportation(recordOwner);
+} catch (Exception ex) {
 }
 return null;]]></LogicSource>
 		<LogicThrows/>
@@ -61346,9 +61346,8 @@ return bHandled;]]></LogicSource>
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>TourHeaderDetail</MethodClassName>
-		<LogicSource><![CDATA[if (objKey instanceof Integer)
-{
-    int iProductType = ((Integer)objKey).intValue();
+		<LogicSource><![CDATA[try {
+    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
     if (iProductType == ProductType.HOTEL_ID)
         return new TourHeaderHotel(recordOwner);
     if (iProductType == ProductType.LAND_ID)
@@ -61365,6 +61364,7 @@ return bHandled;]]></LogicSource>
         return new TourHeaderTour(recordOwner);
     if (iProductType == ProductType.TRANSPORTATION_ID)
         return new TourHeaderTransportation(recordOwner);
+} catch (Exception ex) {
 }
 return null;]]></LogicSource>
 		<LogicThrows/>
@@ -71158,9 +71158,8 @@ return intMessageStatus.intValue();]]></LogicSource>
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>Inventory</MethodClassName>
-		<LogicSource><![CDATA[if (objKey instanceof Integer)
-{
-    int iProductType = ((Integer)objKey).intValue();
+		<LogicSource><![CDATA[try {
+    int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
     if (iProductType == ProductType.HOTEL_ID)
         return new HotelInventory(recordOwner);
     if (iProductType == ProductType.LAND_ID)
@@ -71177,6 +71176,7 @@ return intMessageStatus.intValue();]]></LogicSource>
         return new TourHeaderInventory(recordOwner);
     if (iProductType == ProductType.TRANSPORTATION_ID)
         return new TransportationInventory(recordOwner);
+} catch (Exception ex) {
 }
 return null;]]></LogicSource>
 		<LogicThrows/>
@@ -91202,13 +91202,13 @@ if ((recApTrx.getField(ApTrx.TRX_STATUS_ID).getValue() == m_iDepartureEstimate)
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>ApTrx</MethodClassName>
-		<LogicSource><![CDATA[if (objKey instanceof Integer)
-{
-    int iApTrxTypeID = ((Integer)objKey).intValue();
+		<LogicSource><![CDATA[try {
+    int iApTrxTypeID = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
     if (iApTrxTypeID == ApTrx.AP_TRX_TYPE)
         return this;
     if (iApTrxTypeID == ApTrx.TICKET_TRX_TYPE)
         return new TicketTrx(recordOwner);
+} catch (Exception ex) {
 }
 return null;]]></LogicSource>
 		<LogicThrows/>
