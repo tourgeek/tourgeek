@@ -2,61 +2,13 @@
 	<HotelMealPricing ID="7">
 		<LastChanged>2012-09-21T18:06:54</LastChanged>
 		<Deleted>N</Deleted>
-		<ProductID/>
+		<ProductID>6</ProductID>
 		<PaxCategoryID/>
 		<RateID/>
 		<ClassID>0</ClassID>
 		<StartDate>2014-02-01</StartDate>
 		<EndDate>2014-03-31</EndDate>
 		<Cost>2,100.00</Cost>
-		<ProductTermsID>2</ProductTermsID>
-		<Price/>
-		<Commissionable/>
-		<CommissionRate/>
-		<PayAt>F</PayAt>
-	</HotelMealPricing>
-	<HotelMealPricing ID="8">
-		<LastChanged>2012-09-21T18:06:54</LastChanged>
-		<Deleted>N</Deleted>
-		<ProductID/>
-		<PaxCategoryID/>
-		<RateID/>
-		<ClassID>0</ClassID>
-		<StartDate>2014-02-01</StartDate>
-		<EndDate>2014-03-31</EndDate>
-		<Cost>1,880.00</Cost>
-		<ProductTermsID>2</ProductTermsID>
-		<Price/>
-		<Commissionable/>
-		<CommissionRate/>
-		<PayAt>F</PayAt>
-	</HotelMealPricing>
-	<HotelMealPricing ID="9">
-		<LastChanged>2012-09-21T18:06:54</LastChanged>
-		<Deleted>N</Deleted>
-		<ProductID/>
-		<PaxCategoryID/>
-		<RateID/>
-		<ClassID>0</ClassID>
-		<StartDate>2014-02-01</StartDate>
-		<EndDate>2014-03-31</EndDate>
-		<Cost>1,660.00</Cost>
-		<ProductTermsID>2</ProductTermsID>
-		<Price/>
-		<Commissionable/>
-		<CommissionRate/>
-		<PayAt>F</PayAt>
-	</HotelMealPricing>
-	<HotelMealPricing ID="10">
-		<LastChanged>2012-09-21T18:06:54</LastChanged>
-		<Deleted>N</Deleted>
-		<ProductID/>
-		<PaxCategoryID/>
-		<RateID/>
-		<ClassID>0</ClassID>
-		<StartDate>2014-02-01</StartDate>
-		<EndDate>2014-03-31</EndDate>
-		<Cost>1,150.00</Cost>
 		<ProductTermsID>2</ProductTermsID>
 		<Price/>
 		<Commissionable/>
