@@ -51,7 +51,7 @@ public class HotelAvail extends VirtualRecord
     public void init(RecordOwner screen)
     {
         if ((this.getTableNames(false) == null) || (this.getTableNames(false).length() == 0))
-            this.setTableNames("HotelAvail" + Double.toString(Math.random()));
+            this.setTableNames("HotelAvail" + Double.toString(Math.random()).substring(2));
         super.init(screen);
     }
     /**

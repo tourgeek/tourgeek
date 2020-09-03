@@ -97325,7 +97325,7 @@ return false;]]></LogicSource>
 		<MethodInterface/>
 		<MethodClassName>HotelAvail</MethodClassName>
 		<LogicSource><![CDATA[if ((this.getTableNames(false) == null) || (this.getTableNames(false).length() == 0))
-    this.setTableNames("HotelAvail" + Double.toString(Math.random()));
+    this.setTableNames("HotelAvail" + Double.toString(Math.random()).substring(2));
 super;]]></LogicSource>
 		<LogicThrows/>
 		<Protection/>
