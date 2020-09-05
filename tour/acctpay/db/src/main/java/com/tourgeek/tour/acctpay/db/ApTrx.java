@@ -371,7 +371,7 @@ public class ApTrx extends Trx
     public Record createSharedRecord(Object objKey, RecordOwner recordOwner)
     {
         try {
-            int iApTrxTypeID = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
+            int iApTrxTypeID = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 0);
             if (iApTrxTypeID == ApTrx.AP_TRX_TYPE)
                 return this;
             if (iApTrxTypeID == ApTrx.TICKET_TRX_TYPE)

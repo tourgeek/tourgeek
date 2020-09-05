@@ -798,7 +798,7 @@ public class BookingDetail extends BookingSub
     public Record createSharedRecord(Object objKey, RecordOwner recordOwner)
     {
         try {
-            int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 1);
+            int iProductType = (Integer) Converter.convertObjectToDatatype(objKey, Integer.class, 0);
             if (iProductType == ProductType.HOTEL_ID)
                 return new BookingHotel(recordOwner);
             if (iProductType == ProductType.LAND_ID)
