@@ -33,8 +33,8 @@ public class ProfileAnalysisField extends StringPopupField
     public static final String PROFILE_CLASS = "Profile Class";
     public static final String PROFILE_STATUS = "Profile status";
     public static final String PROFILE_TYPE = "Profile type";
-    public static final String SALES_REGION = "Sales region";
     public static final String SALESPERSON = "Salesperson";
+    public static final String SALES_REGION = "Sales region";
     public static final String STATE_REGION = "State or Region";
     /**
      * Default constructor.

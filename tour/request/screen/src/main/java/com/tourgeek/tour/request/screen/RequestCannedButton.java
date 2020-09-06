@@ -28,8 +28,8 @@ import org.jbundle.base.screen.model.util.*;
  */
 public class RequestCannedButton extends SCannedBox
 {
-    protected BaseField m_fldAgencyOrPax = null;
     protected Record m_PaPax = null;
+    protected BaseField m_fldAgencyOrPax = null;
     /**
      * Default constructor.
      */
@@ -52,8 +52,8 @@ public class RequestCannedButton extends SCannedBox
     public void init(ScreenLocation itsLocation, BasePanel parentScreen, Converter fieldConverter, String strDesc, int iDisplayFieldDesc, Record amAgcy, Record paPax, BaseField
      fldAgencyOrPax)
     {
-        m_fldAgencyOrPax = null;
         m_PaPax = null;
+        m_fldAgencyOrPax = null;
         m_fldAgencyOrPax = fldAgencyOrPax;
         m_PaPax = paPax;
         super.init(itsLocation, parentScreen, fieldConverter, iDisplayFieldDesc, null, null, strDesc, strDesc, null, amAgcy, null);

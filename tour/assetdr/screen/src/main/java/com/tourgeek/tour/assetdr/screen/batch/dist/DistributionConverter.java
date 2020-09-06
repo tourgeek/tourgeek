@@ -31,10 +31,10 @@ import org.jbundle.base.screen.model.util.*;
 public class DistributionConverter extends FieldConverter
 {
     public static final String DEFAULT = "-- default --";
+    public static final String SPLIT = "-- split --";
     protected Hashtable<Object,Object> m_htCache = new Hashtable<Object,Object>();
     protected Hashtable<Object,Object> m_htCacheAccountNo = new Hashtable<Object,Object>();
     protected BankTrxBatchDist m_recBankTrxBatchDist = null;
-    public static final String SPLIT = "-- split --";
     /**
      * Default constructor.
      */
