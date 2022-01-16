@@ -33,9 +33,9 @@ import com.tourgeek.tour.genled.db.*;
  */
 public class DisableOnSignHandler extends DisableOnFieldHandler
 {
+    protected String m_strSign;
     public static final String NEGATIVE = "-";
     public static final String POSITIVE = "+";
-    protected String m_strSign;
     /**
      * Default constructor.
      */

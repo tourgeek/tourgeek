@@ -88,7 +88,6 @@ public class Product extends VirtualRecord
      */
     public void init(RecordOwner screen)
     {
-        m_recMessageProcessInfo = null;
         m_recProductPricing = null;
         m_recProductTerms = null;
         m_recInventory = null;
