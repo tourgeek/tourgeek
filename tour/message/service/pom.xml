@@ -14,6 +14,6 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>_2014B</module>
+    <module>x2014B</module>
   </modules>
 </project>
