@@ -69,7 +69,7 @@ screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateResponseScreen
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties><![CDATA[#Field properties
 #Fri Mar 11 13:45:06 PST 2011
-jibx.packageName=org.jibx.schema.org.opentravel._2011B.hotel
+jibx.packageName=org.jibx.schema.org.opentravel.x2011B.hotel
 marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.hotel.request.in.HotelRateRequestSOAPMessageIn2011B
 ]]></Properties>
 	</MessageTransportInfo>
@@ -84,7 +84,7 @@ marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.hotel.request.in.HotelRa
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties><![CDATA[#Field properties
 #Fri Mar 11 08:45:28 PST 2011
-jibx.packageName=org.jibx.schema.org.opentravel._2011B.hotel
+jibx.packageName=org.jibx.schema.org.opentravel.x2011B.hotel
 marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2011B
 ]]></Properties>
 	</MessageTransportInfo>
@@ -172,7 +172,7 @@ screen=com.tourgeek.tour.booking.message.hotel.screen.HotelRateResponseScreen
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties><![CDATA[#Field properties
 #Fri Mar 11 08:46:37 PST 2011
-jibx.packageName=org.jibx.schema.org.opentravel._2011B.hotel
+jibx.packageName=org.jibx.schema.org.opentravel.x2011B.hotel
 marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.hotel.response.in.HotelRateResponseSOAPMsgReplyIn2011B
 ]]></Properties>
 	</MessageTransportInfo>
@@ -187,7 +187,7 @@ marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.hotel.response.in.HotelR
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties><![CDATA[#Field properties
 #Fri Mar 11 08:31:22 PST 2011
-jibx.packageName=org.jibx.schema.org.opentravel._2011B.hotel
+jibx.packageName=org.jibx.schema.org.opentravel.x2011B.hotel
 marshallerClass=com.tourgeek.tour.message.jibx.ota2006a.hotel.request.in.HotelRateRequestSOAPMessageIn2011B
 ]]></Properties>
 	</MessageTransportInfo>
@@ -823,7 +823,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties><![CDATA[#Field properties
 #Thu Mar 10 17:01:28 PST 2011
-jibx.packageName=org.jibx.schema.org.opentravel._2011B.ping
+jibx.packageName=org.jibx.schema.org.opentravel.x2011B.ping
 marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.base.request.in.PingRequestJibxMessageIn2011B
 ]]></Properties>
 	</MessageTransportInfo>
@@ -952,7 +952,7 @@ jaxb.packageName=net.sourceforge.ota_tools.jaxb.ota2006a.custom
 		<DefaultTransport>Y</DefaultTransport>
 		<Properties><![CDATA[#Field properties
 #Thu Mar 10 15:43:31 PST 2011
-jibx.packageName=org.jibx.schema.org.opentravel._2011B.ping
+jibx.packageName=org.jibx.schema.org.opentravel.x2011B.ping
 marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.base.response.in.PingResponseJibxMessageIn2011B
 ]]></Properties>
 	</MessageTransportInfo>
@@ -1496,7 +1496,7 @@ marshallerClass=org.jbundle.base.message.trx.message.external.convert.xml.XmlCon
 		<DefaultTransport/>
 		<Properties><![CDATA[#Field properties
 #Sat Jun 09 13:06:25 PDT 2012
-jibx.packageName=org.jibx.schema.org.opentravel._2011B.ping
+jibx.packageName=org.jibx.schema.org.opentravel.x2011B.ping
 marshallerClass=com.tourgeek.tour.message.jibx.ota2011b.base.request.in.PingRequestJibxMessageIn2011B
 ]]></Properties>
 	</MessageTransportInfo>
