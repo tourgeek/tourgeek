@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-acctpay-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.5</version>
+    <version>0.8.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.acctpay.report</artifactId>
@@ -17,24 +17,24 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.acctpay.db</artifactId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.booking.db</artifactId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
     </dependency>
 
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.acctpay</artifactId>
     </dependency>
     
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.acctpay</artifactId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

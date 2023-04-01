@@ -4,7 +4,7 @@
   <parent>
     <artifactId>tourgeek-thin-tour-reactor</artifactId>
     <groupId>com.tourgeek.thin</groupId>
-    <version>0.8.5</version>
+    <version>0.8.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourgeek.thin.tour.acctrec</artifactId>
@@ -21,13 +21,13 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.acctrec</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.thin</groupId>
       <artifactId>com.tourgeek.thin.tour.assetdr</artifactId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
     </dependency>
   </dependencies>
 

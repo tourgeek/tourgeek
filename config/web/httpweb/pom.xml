@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.tourgeek.config</groupId>
     <artifactId>tourgeek-config-web-reactor</artifactId>
-    <version>0.8.5</version>
+    <version>0.8.6-SNAPSHOT</version>
   </parent>
   
   <artifactId>com.tourgeek.config.web.httpweb</artifactId>
@@ -165,7 +165,7 @@
 	<dependencies>	    
 		<dependency>
 		    <groupId>com.tourgeek.config</groupId>
-		    <version>0.8.5</version>
+		    <version>0.8.6-SNAPSHOT</version>
 			<artifactId>tourgeek-config-dep-all</artifactId>
 			<type>pom</type>
 			<scope>provided</scope>	<!-- Hey this is OSGi -->

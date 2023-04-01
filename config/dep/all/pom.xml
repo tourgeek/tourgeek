@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-config-dep-reactor</artifactId>
     <groupId>com.tourgeek.config</groupId>
-    <version>0.8.5</version>
+    <version>0.8.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>tourgeek-config-dep-all</artifactId>
@@ -17,45 +17,45 @@
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-res</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
         <type>pom</type>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-thin</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
         <type>pom</type>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-tour</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
         <type>pom</type>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.test_data</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.site_data</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.initial_data</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.data.dev</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
     </dependency>
     <dependency>
         <groupId>com.tourgeek.res</groupId>
         <artifactId>com.tourgeek.res.docs</artifactId>
-        <version>0.8.5</version>
+        <version>0.8.6-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.config.dep</groupId>

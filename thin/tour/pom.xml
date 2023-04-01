@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourgeek-thin-reactor</artifactId>
     <groupId>com.tourgeek.thin</groupId>
-    <version>0.8.5</version>
+    <version>0.8.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>tourgeek-thin-tour-reactor</artifactId>

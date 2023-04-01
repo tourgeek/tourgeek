@@ -5,7 +5,7 @@
     <parent>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>tourgeek-tour-message-service-2014B-reactor</artifactId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
     </parent>
 
     <artifactId>com.tourgeek.tour.message.service.x2014B.ping</artifactId>

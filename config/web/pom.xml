@@ -5,7 +5,7 @@
   <parent>
     <artifactId>tourgeek-config-reactor</artifactId>
     <groupId>com.tourgeek.config</groupId>
-    <version>0.8.5</version>
+    <version>0.8.6-SNAPSHOT</version>
   </parent>
   <artifactId>tourgeek-config-web-reactor</artifactId>
   <name>tourgeek-config-web-reactor - Web projects parent</name>

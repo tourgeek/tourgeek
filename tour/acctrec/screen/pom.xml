@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-acctrec-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.5</version>
+    <version>0.8.6-SNAPSHOT</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.acctrec.screen</artifactId>
@@ -24,29 +24,29 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.acctrec.db</artifactId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
       <artifactId>com.tourgeek.tour.booking.entry</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
       <artifactId>com.tourgeek.tour.assetdr.screen</artifactId>
     </dependency>
     
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
       <artifactId>com.tourgeek.model.tour.acctrec</artifactId>
     </dependency>
     
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.acctrec</artifactId>
-      <version>0.8.5</version>
+      <version>0.8.6-SNAPSHOT</version>
     </dependency>
   </dependencies>
 
