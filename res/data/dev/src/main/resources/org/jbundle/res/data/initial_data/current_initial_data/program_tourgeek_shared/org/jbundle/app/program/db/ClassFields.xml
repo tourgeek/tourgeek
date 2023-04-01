@@ -39138,7 +39138,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.codetable</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.codetable</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -52788,7 +52788,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>ImportOTACodeTablesProcess</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62808,7 +62808,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseJibxMessageIn2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62823,7 +62823,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageIn2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62838,7 +62838,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageIn2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62868,7 +62868,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>BaseJibxMessageOut2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62928,7 +62928,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageOut2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -62943,7 +62943,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingRequestJibxMessageOut2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63033,7 +63033,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingResponseJibxMessageIn2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.ping</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.ping</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>
@@ -63048,7 +63048,7 @@ static  {
 		<Deleted>N</Deleted>
 		<ClassInfoClassName>PingResponseJibxMessageIn2014B</ClassInfoClassName>
 		<ClassInfoID/>
-		<ClassFieldClass>org.jibx.schema.org.opentravel._2014B.base</ClassFieldClass>
+		<ClassFieldClass>org.jibx.schema.org.opentravel.x2014B.base</ClassFieldClass>
 		<ClassFieldSequence>0</ClassFieldSequence>
 		<ClassFieldName/>
 		<ClassFieldDesc/>

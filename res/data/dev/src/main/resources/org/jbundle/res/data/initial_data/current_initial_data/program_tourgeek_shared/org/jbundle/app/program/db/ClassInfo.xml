@@ -39420,7 +39420,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>JibxConvertToMessage</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.base.request.in</ClassPackage>
+		<ClassPackage>.x2014B.base.request.in</ClassPackage>
 		<ClassSourceFile>BaseJibxMessageIn2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39437,7 +39437,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>BaseJibxMessageIn2014B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.base.request.in</ClassPackage>
+		<ClassPackage>.x2014B.base.request.in</ClassPackage>
 		<ClassSourceFile>PingRequestJibxMessageIn2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39454,7 +39454,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.base.request.out</ClassPackage>
+		<ClassPackage>.x2014B.base.request.out</ClassPackage>
 		<ClassSourceFile>BaseJibxMessageOut2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39471,7 +39471,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>BaseJibxMessageOut2014B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.base.request.out</ClassPackage>
+		<ClassPackage>.x2014B.base.request.out</ClassPackage>
 		<ClassSourceFile>PingRequestJibxMessageOut2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39488,7 +39488,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>BaseJibxMessageIn2014B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.base.response.in</ClassPackage>
+		<ClassPackage>.x2014B.base.response.in</ClassPackage>
 		<ClassSourceFile>PingResponseJibxMessageIn2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39505,7 +39505,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>BaseJibxMessageOut2014B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.base.response.out</ClassPackage>
+		<ClassPackage>.x2014B.base.response.out</ClassPackage>
 		<ClassSourceFile>PingResponseJibxMessageOut2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39607,7 +39607,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>BaseJibxMessageIn2014B</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.hotel.request.in</ClassPackage>
+		<ClassPackage>.x2014B.hotel.request.in</ClassPackage>
 		<ClassSourceFile>HotelRateRequestSOAPMessageIn2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39624,7 +39624,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.hotel.request.out</ClassPackage>
+		<ClassPackage>.x2014B.hotel.request.out</ClassPackage>
 		<ClassSourceFile>HotelRateRequestSOAPMessageOut2010</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39641,7 +39641,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>JibxConvertToMessage</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.hotel.response.in</ClassPackage>
+		<ClassPackage>.x2014B.hotel.response.in</ClassPackage>
 		<ClassSourceFile>HotelRateResponseSOAPMsgReplyIn2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
@@ -39658,7 +39658,7 @@ and creating the refund pending.]]></ClassDesc>
 		<BaseClassName>JibxConvertToNative</BaseClassName>
 		<ClassDesc/>
 		<ClassProjectID>1,048,593</ClassProjectID>
-		<ClassPackage>._2014B.hotel.response.out</ClassPackage>
+		<ClassPackage>.x2014B.hotel.response.out</ClassPackage>
 		<ClassSourceFile>HotelRateResponseSOAPMsgReplyOut2014B</ClassSourceFile>
 		<ClassType/>
 		<ClassExplain/>
