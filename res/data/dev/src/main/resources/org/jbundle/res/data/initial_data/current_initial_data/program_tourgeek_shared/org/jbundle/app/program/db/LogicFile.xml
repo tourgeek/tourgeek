@@ -101416,7 +101416,7 @@ payloadStdAttributes.setTarget(OTAPayloadStdAttributes.Target.PRODUCTION);]]></L
 		<MethodReturns/>
 		<MethodInterface/>
 		<MethodClassName>PingServiceActivator</MethodClassName>
-		<LogicSource>return org.jibx.schema.org.opentravel._2014B.ping.ws.PingService.class;</LogicSource>
+		<LogicSource>return org.jibx.schema.org.opentravel.x2014B.ping.ws.PingService.class;</LogicSource>
 		<LogicThrows/>
 		<Protection/>
 		<CopyFrom/>
