@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-request-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.5-SNAPSHOT</version>
+    <version>0.8.5</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.request.screen</artifactId>
@@ -17,27 +17,27 @@
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.request.db</artifactId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.profile.screen</artifactId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.profile.detail</artifactId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
       <artifactId>com.tourgeek.model.tour.request</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.tour</groupId>
       <artifactId>com.tourgeek.tour.profile.db</artifactId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.base.screen</groupId>
@@ -58,7 +58,7 @@
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.request</artifactId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
     </dependency>
   </dependencies>
 

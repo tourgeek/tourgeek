@@ -6,7 +6,7 @@
   <parent>
     <artifactId>tourgeek-tour-genled-reactor</artifactId>
     <groupId>com.tourgeek.tour</groupId>
-    <version>0.8.5-SNAPSHOT</version>
+    <version>0.8.5</version>
   </parent>
 
   <artifactId>com.tourgeek.tour.genled.db</artifactId>
@@ -16,7 +16,7 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
       <artifactId>com.tourgeek.model.tour.genled</artifactId>
     </dependency>
     <dependency>
@@ -29,7 +29,7 @@
     <dependency>
       <groupId>com.tourgeek.res</groupId>
       <artifactId>com.tourgeek.res.tour.genled</artifactId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
     </dependency>
   </dependencies>
 

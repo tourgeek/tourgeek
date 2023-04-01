@@ -6,7 +6,7 @@
   <parent>
     <groupId>com.tourgeek.config</groupId>
     <artifactId>tourgeek-config-reactor</artifactId>
-    <version>0.8.5-SNAPSHOT</version>
+    <version>0.8.5</version>
   </parent>
 
   <artifactId>com.tourgeek.config.main</artifactId>
@@ -162,7 +162,7 @@
     <dependency>
         <groupId>com.tourgeek.config</groupId>
         <artifactId>tourgeek-config-dep-all</artifactId>
-        <version>0.8.5-SNAPSHOT</version>
+        <version>0.8.5</version>
         <type>pom</type>
     </dependency>
   </dependencies>

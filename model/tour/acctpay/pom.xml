@@ -4,7 +4,7 @@
   <parent>
     <artifactId>tourgeek-model-tour-reactor</artifactId>
     <groupId>com.tourgeek.model</groupId>
-    <version>0.8.5-SNAPSHOT</version>
+    <version>0.8.5</version>
   </parent>
 
   <artifactId>com.tourgeek.model.tour.acctpay</artifactId>
@@ -14,17 +14,17 @@
   <dependencies>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
       <artifactId>com.tourgeek.model.tour.genled</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
       <artifactId>com.tourgeek.model.tour.booking</artifactId>
     </dependency>
     <dependency>
       <groupId>com.tourgeek.model</groupId>
-      <version>0.8.5-SNAPSHOT</version>
+      <version>0.8.5</version>
       <artifactId>com.tourgeek.model.tour.product</artifactId>
     </dependency>
   </dependencies>
